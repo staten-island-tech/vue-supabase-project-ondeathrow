@@ -1,15 +1,18 @@
 <template>
   <div class="login">
-    async function signUpNewUser() {
-  const { data, error } = await supabase.auth.signUp({
+   async function signUpNewUser() {
+ const { data, error } = await supabase.auth.signUp{
+  email: 'example@email.com',
+  password: 'example-password',
+    },
+  }  
+
+  async function signInWithEmail() {
+  const { data, error } = await supabase.auth.signInWithPassword({
     email: 'example@email.com',
     password: 'example-password',
-    options: {
-      emailRedirectTo: 'https://example.com/welcome',
-    },
   })
 }
-
 <!--     <h2>Magic Link</h2>
 
 <p>come gamble</p>
