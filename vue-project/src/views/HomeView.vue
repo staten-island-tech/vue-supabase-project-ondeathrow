@@ -1,23 +1,34 @@
 <template>
-  <div class="login">
+  <div>
+    <div class="login">
+      <form name="get in right now" @submit.prevent="login(username, password)">
+          <label for="username">username</label>
+          <input id="username" text="username" v-model="username"/>
+          <label for="password">password</label>
+          <input id="password" text="password" v-model="password"/>
+          <imput type="submit" value="enter"/>
+      </form>
+    </div>
+  </div>
+    
+
+
    async function signUpNewUser() {
- const { data, error } = await supabase.auth.signUp{
+ const { data, error } = await supabase.auth.signUp({
   email: 'example@email.com',
   password: 'example-password',
     },
-  }  
+  )}  
 
   async function signInWithEmail() {
   const { data, error } = await supabase.auth.signInWithPassword({
     email: 'example@email.com',
-    password: 'example-password',
+    password: 'example-password'
+
+    
   })
 }
-<!--     <h2>Magic Link</h2>
 
-<p>come gamble</p>
-<p><a href="{{ .ConfirmationURL }}">Log In</a></p> -->
-  </div>
 </template>
 
 <script>
