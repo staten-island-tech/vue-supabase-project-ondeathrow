@@ -4,6 +4,6 @@
 
 <template>
   <main>
-    Homr psgr.
+    home page
   </main>
 </template>
