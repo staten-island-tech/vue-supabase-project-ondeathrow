@@ -1,9 +1,4 @@
-<template>
-    <div>
-
-    </div>
-</template>
-
+<template></template>
 <script>
 //primevue vuetify tailwindcss gsap
 /*
@@ -207,6 +202,7 @@ export const characters = [
     rarity: 5,
     path: "Nihility",
     element: "Lightning",
+    obtained: false,
     icon: "",
   },  
   {
@@ -214,6 +210,7 @@ export const characters = [
     rarity: 5,
     path: "Eurdition",
     element: "Physical",
+    obtained: false,
     icon: "",
   },  
   {
@@ -221,6 +218,7 @@ export const characters = [
     rarity: 5,
     path: "Abundance",
     element: "Lightning",
+    obtained: false,
     icon: "",
   },  
   {
@@ -228,6 +226,7 @@ export const characters = [
     rarity: 5,
     path: "Nihility",
     element: "Wind",
+    obtained: false,
     icon: "",
   },  
   {
@@ -235,6 +234,7 @@ export const characters = [
     rarity: 5,
     path: "Destruction",
     element: "Wind",
+    obtained: false,
     icon: "",
   },  
   {
@@ -242,6 +242,7 @@ export const characters = [
     rarity: 5,
     path: "Harmony",
     element: "Wind",
+    obtained: false,
     icon: "",
   },  
   {
@@ -249,6 +250,7 @@ export const characters = [
     rarity: 5,
     path: "Destruction",
     element: "Physical",
+    obtained: false,
     icon: "",
   },  
   {
@@ -256,6 +258,7 @@ export const characters = [
     rarity: 5,
     path: "Destruction",
     element: "Imaginary",
+    obtained: false,
     icon: "",
   },  
   {
@@ -263,6 +266,7 @@ export const characters = [
     rarity: 5,
     path: "The Hunt",
     element: "Imaginary",
+    obtained: false,
     icon: "",
   },  
   {
@@ -270,6 +274,7 @@ export const characters = [
     rarity: 5,
     path: "Preservation",
     element: "Quantum",
+    obtained: false,
     icon: "",
   },  
   {
@@ -277,6 +282,7 @@ export const characters = [
     rarity: 5,
     path: "Preservation",
     element: "Ice",
+    obtained: false,
     icon: "",
   },  
   {
@@ -284,6 +290,7 @@ export const characters = [
     rarity: 5,
     path: "Erudition",
     element: "Fire",
+    obtained: false,
     icon: "",
   },  
   {
@@ -291,6 +298,7 @@ export const characters = [
     rarity: 5,
     path: "Abundance",
     element: "Wind",
+    obtained: false,
     icon: "",
   },  
   {
@@ -298,6 +306,7 @@ export const characters = [
     rarity: 5,
     path: "Erudition",
     element: "Lightning",
+    obtained: false,
     icon: "",
   },  
   {
@@ -305,6 +314,7 @@ export const characters = [
     rarity: 5,
     path: "Destruction",
     element: "Ice",
+    obtained: false,
     icon: "",
   },  
   {
@@ -312,6 +322,7 @@ export const characters = [
     rarity: 5,
     path: "Nihility",
     element: "Lightning",
+    obtained: false,
     icon: "",
   },  
   {
@@ -319,6 +330,7 @@ export const characters = [
     rarity: 5,
     path: "Abundance",
     element: "Imaginary",
+    obtained: false,
     icon: "",
   },  
   {
@@ -326,6 +338,7 @@ export const characters = [
     rarity: 5,
     path: "Harmony",
     element: "Ice",
+    obtained: false,
     icon: "",
   },  
   {
@@ -333,6 +346,7 @@ export const characters = [
     rarity: 5,
     path: "The Hunt",
     element: "Quantum",
+    obtained: false,
     icon: "",
   },  
   {
@@ -340,6 +354,7 @@ export const characters = [
     rarity: 5,
     path: "Nihility",
     element: "Quantum",
+    obtained: false,
     icon: "",
   },  
   {
@@ -347,6 +362,7 @@ export const characters = [
     rarity: 5,
     path: "Harmony",
     element: "Quantum",
+    obtained: false,
     icon: "",
   },  
   {
@@ -354,6 +370,7 @@ export const characters = [
     rarity: 5,
     path: "The Hunt",
     element: "Fire",
+    obtained: false,
     icon: "",
   },  
   {
@@ -361,6 +378,7 @@ export const characters = [
     rarity: 5,
     path: "",
     element: "",
+    obtained: true,
     icon: "",
   },  
   {
@@ -368,6 +386,7 @@ export const characters = [
     rarity: 5,
     path: "Nihility",
     element: "Imaginary",
+    obtained: false,
     icon: "",
   },  
   {
@@ -375,6 +394,7 @@ export const characters = [
     rarity: 5,
     path: "The Hunt",
     element: "Lightning",
+    obtained: false,
     icon: "",
   },  
   {
@@ -382,6 +402,7 @@ export const characters = [
     rarity: 4,
     path: "Destruction",
     element: "Lightning",
+    obtained: false,
     icon: "",
   },  
   {
@@ -389,6 +410,7 @@ export const characters = [
     rarity: 4,
     path: "Harmony",
     element: "Fire",
+    obtained: false,
     icon: "",
   },  
   {
@@ -396,6 +418,7 @@ export const characters = [
     rarity: 4,
     path: "The Hunt",
     element: "Wind",
+    obtained: false,
     icon: "",
   },  
   {
@@ -403,6 +426,7 @@ export const characters = [
     rarity: 4,
     path: "Abundance",
     element: "Fire",
+    obtained: false,
     icon: "",
   },  
   {
@@ -410,6 +434,7 @@ export const characters = [
     rarity: 4,
     path: "Nihility",
     element: "Fire",
+    obtained: false,
     icon: "",
   },  
   {
@@ -417,6 +442,7 @@ export const characters = [
     rarity: 4,
     path: "Harmony",
     element: "Physical",
+    obtained: false,
     icon: "",
   },  
   {
@@ -424,6 +450,7 @@ export const characters = [
     rarity: 4,
     path: "Erudition",
     element: "Ice",
+    obtained: false,
     icon: "",
   },  
   {
@@ -431,6 +458,7 @@ export const characters = [
     rarity: 4,
     path: "Destruction",
     element: "Fire",
+    obtained: false,
     icon: "",
   },  
   {
@@ -438,6 +466,7 @@ export const characters = [
     rarity: 4,
     path: "Nihility",
     element: "Physical",
+    obtained: false,
     icon: "",
   },  
   {
@@ -445,6 +474,7 @@ export const characters = [
     rarity: 4,
     path: "Abundance",
     element: "Quantum",
+    obtained: false,
     icon: "",
   },  
   {
@@ -452,6 +482,7 @@ export const characters = [
     rarity: 4,
     path: "Preservation",
     element: "Ice",
+    obtained: false,
     icon: "",
   },  
   {
@@ -459,6 +490,7 @@ export const characters = [
     rarity: 4,
     path: "Destruction",
     element: "Ice",
+    obtained: false,
     icon: "",
   },  
   {
@@ -466,6 +498,7 @@ export const characters = [
     rarity: 4,
     path: "Abundance",
     element: "Physical",
+    obtained: false,
     icon: "",
   },  
   {
@@ -473,6 +506,7 @@ export const characters = [
     rarity: 4,
     path: "Nihility",
     element: "Ice",
+    obtained: false,
     icon: "",
   },  
   {
@@ -480,6 +514,7 @@ export const characters = [
     rarity: 4,
     path: "Erudition",
     element: "Quantum",
+    obtained: false,
     icon: "",
   },  
   {
@@ -487,6 +522,7 @@ export const characters = [
     rarity: 4,
     path: "Nihility",
     element: "Wind",
+    obtained: false,
     icon: "",
   },  
   {
@@ -494,6 +530,7 @@ export const characters = [
     rarity: 4,
     path: "Erudition",
     element: "Lightning",
+    obtained: false,
     icon: "",
   },  
   {
@@ -501,6 +538,7 @@ export const characters = [
     rarity: 4,
     path: "The Hunt",
     element: "Physical",
+    obtained: false,
     icon: "",
   },  
   {
@@ -508,6 +546,7 @@ export const characters = [
     rarity: 4,
     path: "Harmony",
     element: "Lightning",
+    obtained: false,
     icon: "",
   },  
   {
@@ -515,6 +554,7 @@ export const characters = [
     rarity: 4,
     path: "Destruction",
     element: "Quantum",
+    obtained: false,
     icon: "",
   },  
   {
@@ -522,6 +562,7 @@ export const characters = [
     rarity: 4,
     path: "Harmony",
     element: "Imaginary",
+    obtained: false,
     icon: "",
   },  
 /*   {
@@ -529,11 +570,8 @@ export const characters = [
     rarity: 4,
     path: "",
     element: "",
+    obtained: false,
     icon: "",
   } */
 ];
 </script>
-
-<style lang="scss" scoped>
-
-</style>

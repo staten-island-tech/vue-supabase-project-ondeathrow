@@ -12,4 +12,8 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+.wrapper{
+  background-color: #8d8ba7;
+  height: 800px;
+}
 </style>

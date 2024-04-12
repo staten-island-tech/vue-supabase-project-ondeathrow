@@ -1,7 +1,7 @@
 <template>
     <h1>Characters</h1>
     <div class="card">
-
+        <h2></h2>
     </div>
 </template>
 
