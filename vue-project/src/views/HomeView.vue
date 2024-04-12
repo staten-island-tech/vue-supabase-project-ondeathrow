@@ -6,12 +6,18 @@
           <input id="username" text="username" v-model="username"/>
           <label for="password">password</label>
           <input id="password" text="password" v-model="password"/>
-          <imput type="submit" value="enter"/>
+          <input type="submit" value="enter"/>
       </form>
     </div>
   </div>
     
+  const username=ref( );
+  const password=ref( );
 
+function notLogin(username, passowrd){
+  console.log(username);
+  console.log(password);
+}
 
    async function signUpNewUser() {
  const { data, error } = await supabase.auth.signUp({
@@ -27,7 +33,7 @@
 
     
   })
-}
+} -->
 
 </template>
 
