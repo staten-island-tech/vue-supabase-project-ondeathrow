@@ -12,8 +12,11 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-.wrapper{
+/* .wrapper{
   background-color: #8d8ba7;
-  height: 800px;
+  height: 600px;
 }
+a{
+  margin: auto 5%;
+} */
 </style>
