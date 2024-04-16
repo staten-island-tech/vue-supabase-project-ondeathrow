@@ -11,14 +11,17 @@
     </div>
   </div>
     
-  const username=ref( );
-  const password=ref( );
+</template>
 
-function notLogin(username, passowrd){
+<script>
+//  const username=ref( );
+//   const password=ref( ); 
+
+function notLogin(username, password){
   console.log(username);
   console.log(password);
 }
-
+ 
    async function signUpNewUser() {
  const { data, error } = await supabase.auth.signUp({
   email: 'example@email.com',
@@ -26,19 +29,14 @@ function notLogin(username, passowrd){
     },
   )}  
 
-  async function signInWithEmail() {
-  const { data, error } = await supabase.auth.signInWithPassword({
-    email: 'example@email.com',
-    password: 'example-password'
+//   async function signInWithEmail() {
+//   const { data, error } = await supabase.auth.signInWithPassword({
+//     email: 'example@email.com',
+//     password: 'example-password'
 
     
-  })
-} -->
-
-</template>
-
-<script>
-
+//   })
+// }  
 </script>
 
 <style  scoped>
