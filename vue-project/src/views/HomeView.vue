@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="login">
+      <h1>sign up here</h1>
       <form name="get in right now" @submit.prevent="login(username, password)">
           <label for="username">username</label>
           <input id="username" text="username" v-model="username"/>
@@ -14,10 +15,10 @@
 </template>
 
 <script>
-//  const username=ref( );
-//   const password=ref( ); 
+const username= defineModel('username')
+const password= defineModel('password')
 
-function notLogin(username, password){
+function login(username, password){
   console.log(username);
   console.log(password);
 }
@@ -29,14 +30,14 @@ function notLogin(username, password){
     },
   )}  
 
-//   async function signInWithEmail() {
-//   const { data, error } = await supabase.auth.signInWithPassword({
-//     email: 'example@email.com',
-//     password: 'example-password'
+     async function signInWithEmail() {
+   const { data, error } = await supabase.auth.signInWithPassword({
+     email: 'example@email.com',
+     password: 'example-password'
 
     
-//   })
-// }  
+   })
+ }  
 </script>
 
 <style  scoped>
