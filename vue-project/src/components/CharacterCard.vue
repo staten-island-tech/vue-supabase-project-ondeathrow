@@ -1,16 +1,18 @@
 <template>
   <div class="card">
-      <h2>{{ Chara.name }}</h2>
-      <img :src="Chara.icon" :alt="Chara.name"/>
+    <img class="image-of-char" :src="Character.icon" :alt="Character.name"/>
+    <h2 class="char-name">{{ Character.name }}</h2>
   </div>
 </template>
 
-<script>
-  const props = defineProps({
-      Chara: Object,
-  })
+<script setup>
+const props = defineProps({
+    Character: Object,
+});
 </script>
 
 <style scoped>
-
+.image-of-char{
+    height: 13%;
+}
 </style>
