@@ -5,5 +5,7 @@
 </template>
 
 <style>
-
+.about{
+  font-size: 50%;
+}
 </style>

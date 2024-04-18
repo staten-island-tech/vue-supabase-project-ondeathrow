@@ -1,5 +1,5 @@
 <template>
-    <h1>Characters</h1>
+    <h1>Character Index</h1>
     <div class="container">
         <CharacterCard
             v-for="character in characters"
@@ -19,8 +19,13 @@ import CharacterCard from "@/components/CharacterCard.vue";
 .container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: "https://hsr.hoyoverse.com/_nuxt/img/pc-normal-bg.3870807.png";
 }
 .card{
     padding: 2%;
+}
+h1{
+    font-size: 135%;
 }
 </style>

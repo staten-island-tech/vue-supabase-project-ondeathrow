@@ -8,7 +8,7 @@ export const characters = [
     path: "Nihility",
     element: "Lightning",
     obtained: false,
-    icon: "https://genshinlab.com/wp-content/uploads/Acheron_h.png",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122837/7bbabff9dde54156d00585fc1d45605b_4199325960554656142.png",
   },  
   {
     name: "Argenti",
@@ -16,7 +16,7 @@ export const characters = [
     path: "Eurdition",
     element: "Physical",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113551/2bd119b8c3be5a8981f21e308d0ff9df_6080004376791968215.png",
   },  
   {
     name: "Aventurine",
@@ -24,7 +24,7 @@ export const characters = [
     path: "Preservation",
     element: "Imaginary",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122838/03821220467396a333cd5362ebe0e1d1_6315724069120210502.png",
   },
   {
     name: "Bailu",
@@ -32,7 +32,7 @@ export const characters = [
     path: "Abundance",
     element: "Lightning",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/10/08/1ce1708b783a06ad419257b4be29ea99_6612799854857232627.png",
   },  
   {
     name: "Black Swan",
@@ -40,7 +40,7 @@ export const characters = [
     path: "Nihility",
     element: "Wind",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122114/e09b820993f140deb0f552391784cb7e_2387142678634153379.png",
   },  
   {
     name: "Blade",
@@ -48,7 +48,7 @@ export const characters = [
     path: "Destruction",
     element: "Wind",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/07/18/03683ce37738b0d682a557671e301eae_8735543373298466281.png",
   },  
   {
     name: "Bronya",
@@ -56,7 +56,7 @@ export const characters = [
     path: "Harmony",
     element: "Wind",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/c6ab1f4cd2ece504b02e16d5f7a5af44_8279603082960819796.png",
   },  
   {
     name: "Clara",
@@ -64,7 +64,7 @@ export const characters = [
     path: "Destruction",
     element: "Physical",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/e4a5b2e737c5c59f7f0ddde372fa8ea2_146075503384718263.png",
   },  
   {
     name: "Dan Heng - Imbibitor Lunae",
@@ -72,7 +72,7 @@ export const characters = [
     path: "Destruction",
     element: "Imaginary",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/08/28/0ca26d025d72bd31944a00600f700a99_3883098866010654505.png",
   },  
   {
     name: "Dr. Ratio",
@@ -80,7 +80,7 @@ export const characters = [
     path: "The Hunt",
     element: "Imaginary",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/114134/a6c86498e909f09945664a1e5b4d20be_7065933365556000987.png",
   },  
   {
     name: "Fu Xuan",
@@ -88,7 +88,7 @@ export const characters = [
     path: "Preservation",
     element: "Quantum",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/08/28/bc0e8b39012e1e51b7f1e1bd2c78ddde_3381527091264434625.png",
   },  
   {
     name: "Gepard",
@@ -96,7 +96,7 @@ export const characters = [
     path: "Preservation",
     element: "Ice",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/a511485984be482bea05136de81b3b7b_8774670648688901664.png",
   },  
   {
     name: "Himeko",
@@ -104,7 +104,7 @@ export const characters = [
     path: "Erudition",
     element: "Fire",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/906705d02e536b45b29285f6d80c6f34_6762729813999787667.png",
   },  
   {
     name: "Huohuo",
@@ -112,7 +112,7 @@ export const characters = [
     path: "Abundance",
     element: "Wind",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113549/6241e29b78992e78f7be09ecc9a095d8_9119778655003994988.png",
   },  
   {
     name: "Jing Yuan",
@@ -120,7 +120,7 @@ export const characters = [
     path: "Erudition",
     element: "Lightning",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/09/30/ccb4b3e5d44ab5c35510bd5fce11fbf2_5075319800827409083.png",
   },  
   {
     name: "Jingliu",
@@ -128,7 +128,7 @@ export const characters = [
     path: "Destruction",
     element: "Ice",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113257/6b1caa6dcac86b51754256a626d7089a_6047546758250201368.png",
   },  
   {
     name: "Kafka",
@@ -136,7 +136,7 @@ export const characters = [
     path: "Nihility",
     element: "Lightning",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/a27a7f23e023aeea841d151ca864f6d7_8275876235530321253.png",
   },  
   {
     name: "Luocha",
@@ -144,7 +144,7 @@ export const characters = [
     path: "Abundance",
     element: "Imaginary",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/07/18/0df33e59f26280cb1f79227f9660a174_249196615581888334.png",
   },  
   {
     name: "Ruan Mei",
@@ -152,7 +152,7 @@ export const characters = [
     path: "Harmony",
     element: "Ice",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/114133/13f82e11d0a64fc4a7765a11e52ce63d_553982494913934113.png",
   },  
   {
     name: "Seele",
@@ -160,7 +160,7 @@ export const characters = [
     path: "The Hunt",
     element: "Quantum",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/41b2379465748b66c324949833871a37_3791760123368611675.png",
   },  
   {
     name: "Silver Wolf",
@@ -168,7 +168,7 @@ export const characters = [
     path: "Nihility",
     element: "Quantum",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/cf17c2dad074b88a6dbfa33446138c73_2646503772588786193.png",
   },  
   {
     name: "Sparkle",
@@ -176,7 +176,7 @@ export const characters = [
     path: "Harmony",
     element: "Quantum",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122124/418ee59a48e96cb3a8f5dbfd009200a1_2144754028775142076.png",
   },  
   {
     name: "Topaz & Numby",
@@ -184,7 +184,7 @@ export const characters = [
     path: "The Hunt",
     element: "Fire",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113259/aec4e9e1f59e78ff72d8d1b8b9dd0712_4605153740160210783.png",
   },  
   {
     name: "Trailblazer",
@@ -192,7 +192,7 @@ export const characters = [
     path: "",
     element: "",
     obtained: true,
-    icon: "",
+    icon: "https://oyster.ignimgs.com/mediawiki/apis.ign.com/honkai-star-rail/e/e6/Star-rail-trailblazer.png",
   },  
   {
     name: "Welt",
@@ -200,7 +200,7 @@ export const characters = [
     path: "Nihility",
     element: "Imaginary",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/bd5a57d0d35792277c457a067fc72492_8449768500674894029.png",
   },  
   {
     name: "Yanqing",
@@ -208,7 +208,7 @@ export const characters = [
     path: "The Hunt",
     element: "Lightning",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/10/08/34a4acaaf047598b582f86cfcf0a6893_936587332327584257.png",
   },  
   {
     name: "Arlan",
@@ -216,7 +216,7 @@ export const characters = [
     path: "Destruction",
     element: "Lightning",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/7213a47385a0b5c05e68b564733f2b19_6873881480647261389.png",
   },  
   {
     name: "Asta",
@@ -224,7 +224,7 @@ export const characters = [
     path: "Harmony",
     element: "Fire",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/99bb21e5ceb72b3f76c0a3b5148dfe08_8925972045760071235.png",
   },  
   {
     name: "Dan Heng",
@@ -232,7 +232,7 @@ export const characters = [
     path: "The Hunt",
     element: "Wind",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/10/0ee824040a139252d0e2037e52ab7755_7639207854703609873.png",
   },  
   {
     name: "Gallagher",
@@ -240,7 +240,7 @@ export const characters = [
     path: "Abundance",
     element: "Fire",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122839/72f42969256b2877af1b5bb5bd5b9f3d_1868580186070340307.png",
   },  
   {
     name: "Guinaifen",
@@ -248,7 +248,7 @@ export const characters = [
     path: "Nihility",
     element: "Fire",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113258/e90d16f57aca708b2806dc17fe5fd85a_8376468351414248938.png",
   },  
   {
     name: "Hanya",
@@ -256,7 +256,7 @@ export const characters = [
     path: "Harmony",
     element: "Physical",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113552/2b71f46b9d67d3ffc1d889fd4e967e9a_3247476334578569723.png",
   },  
   {
     name: "Herta",
@@ -264,7 +264,7 @@ export const characters = [
     path: "Erudition",
     element: "Ice",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/8f38072eccd10ce1b4df485c9d9f34d3_7138207484725960049.png",
   },  
   {
     name: "Hook",
@@ -272,7 +272,7 @@ export const characters = [
     path: "Destruction",
     element: "Fire",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/09/15/b6aeab86bea6ec7770817da70da341bc_7127072739336792149.png",
   },  
   {
     name: "Luka",
@@ -280,7 +280,7 @@ export const characters = [
     path: "Nihility",
     element: "Physical",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/07/18/b14015c52224fdb12e9479c15415df45_3263053423770451584.png",
   },  
   {
     name: "Lynx",
@@ -288,7 +288,7 @@ export const characters = [
     path: "Abundance",
     element: "Quantum",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/08/25/5d370b56f9b501cd9ceece492bda2757_101446868163858150.png",
   },  
   {
     name: "March 7th",
@@ -296,7 +296,7 @@ export const characters = [
     path: "Preservation",
     element: "Ice",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/01/20/ebf0f79b50bb0b1668fe9f801fcde898_6619280582358456926.png",
   },  
   {
     name: "Misha",
@@ -304,7 +304,7 @@ export const characters = [
     path: "Destruction",
     element: "Ice",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122125/1f6734903188a4e52392a944b7038424_4429179718536429240.png",
   },  
   {
     name: "Natasha",
@@ -312,7 +312,7 @@ export const characters = [
     path: "Abundance",
     element: "Physical",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/e9691b64bd3a0449d12265a659d5b301_2800750704985905201.png",
   },  
   {
     name: "Pela",
@@ -320,7 +320,7 @@ export const characters = [
     path: "Nihility",
     element: "Ice",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/01/20/8eb8fe9b661c44c15018e750e94678ba_7455952861324727421.png",
   },  
   {
     name: "Qingque",
@@ -328,7 +328,7 @@ export const characters = [
     path: "Erudition",
     element: "Quantum",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/09/22/2ce85064a040397a94b9633ba9ffc08b_4345980989372534083.png",
   },  
   {
     name: "Sampo",
@@ -336,7 +336,7 @@ export const characters = [
     path: "Nihility",
     element: "Wind",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/8bec1b8404758c78c799ae109e97ba68_9077892686689126095.png",
   },  
   {
     name: "Serval",
@@ -344,7 +344,7 @@ export const characters = [
     path: "Erudition",
     element: "Lightning",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/2c3c7f171f5ef5d8d210286b317baffc_6729124396776018550.png",
   },  
   {
     name: "Sushang",
@@ -352,7 +352,7 @@ export const characters = [
     path: "The Hunt",
     element: "Physical",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/09/21/56757405fd0bb121c4aa4dddb000d9c0_2139642753198143676.png",
   },  
   {
     name: "Tingyun",
@@ -360,7 +360,7 @@ export const characters = [
     path: "Harmony",
     element: "Lightning",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/09/21/5a5179d65cfb06d1d015c87799e2e740_8514351923560523609.png",
   },  
   {
     name: "Xueyi",
@@ -368,7 +368,7 @@ export const characters = [
     path: "Destruction",
     element: "Quantum",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/114135/015f96e57ba7744d32137dc761104eb4_8612953409015173590.png",
   },  
   {
     name: "Yukong",
@@ -376,7 +376,7 @@ export const characters = [
     path: "Harmony",
     element: "Imaginary",
     obtained: false,
-    icon: "",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/07/18/1108fb690e4e3f3739f126aa511c0c0c_6949917502973102490.png",
   },  
 /*   {
     name: "",
