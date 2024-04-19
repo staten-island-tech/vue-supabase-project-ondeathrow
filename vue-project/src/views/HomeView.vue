@@ -19,7 +19,8 @@
 // const username= defineModel('username')
 // const password= defineModel('password')
 
-   async function signUpNewUser() {
+function login(){
+  async function signUpNewUser() {
  const { data, error } = await supabase.auth.signUp({
   email: 'example@email.com',
   password: 'example-password',
@@ -32,6 +33,14 @@
      password: 'example-password'
    })
  }  
+
+console.log(signUpNewUser)
+console.log(signInWithEmail)
+}
+
+
+
+
 
 //  const loggedInUserId = 'd0714948'
 // const { data, error } = await supabase.loggedInUserId
