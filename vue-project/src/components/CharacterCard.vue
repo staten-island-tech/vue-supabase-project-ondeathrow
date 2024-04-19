@@ -2,6 +2,7 @@
   <div class="card">
     <img class="image-of-char" :src="Character.icon" :alt="Character.name"/>
     <h2 class="char-name">{{ Character.name }}</h2>
+    <img class="star-rare" :src="Character.rarityicon"/>
   </div>
 </template>
 
@@ -15,14 +16,23 @@ const props = defineProps({
 .char-name{
   font-size: 100%;
   margin: 0% 3% 0% 3%;
-  color: white;
+  color: #ffffff;
 }
 .card{
-  padding: 1%;
-  margin: 2%;
+  margin: 1%;
   background-color: #10162e;
+  border: 0.2rem solid #a98e61;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .image-of-char{
   width: 60%;
+}
+.image-of-char {
+  color: gray;
+}
+.star-rare{
+  height: 1rem;
 }
 </style>

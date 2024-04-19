@@ -6,6 +6,11 @@
   color: black;
 }
 
+::-webkit-scrollbar{
+  scrollbar-color: var(--highlight-color) var(--container-color);
+  scrollbar-width: thin;
+}
+
 .wrapper{
   width: 50%;
   display: flex;

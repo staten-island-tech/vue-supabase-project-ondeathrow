@@ -5,6 +5,7 @@ export const characters = [
   {
     name: "Acheron",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Nihility",
     element: "Lightning",
     obtained: false,
@@ -13,6 +14,7 @@ export const characters = [
   {
     name: "Argenti",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Eurdition",
     element: "Physical",
     obtained: false,
@@ -21,6 +23,7 @@ export const characters = [
   {
     name: "Aventurine",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Preservation",
     element: "Imaginary",
     obtained: false,
@@ -29,6 +32,7 @@ export const characters = [
   {
     name: "Bailu",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Abundance",
     element: "Lightning",
     obtained: false,
@@ -37,6 +41,7 @@ export const characters = [
   {
     name: "Black Swan",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Nihility",
     element: "Wind",
     obtained: false,
@@ -45,6 +50,7 @@ export const characters = [
   {
     name: "Blade",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Destruction",
     element: "Wind",
     obtained: false,
@@ -53,6 +59,7 @@ export const characters = [
   {
     name: "Bronya",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Harmony",
     element: "Wind",
     obtained: false,
@@ -61,6 +68,7 @@ export const characters = [
   {
     name: "Clara",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Destruction",
     element: "Physical",
     obtained: false,
@@ -69,6 +77,7 @@ export const characters = [
   {
     name: "Dan Heng - Imbibitor Lunae",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Destruction",
     element: "Imaginary",
     obtained: false,
@@ -77,6 +86,7 @@ export const characters = [
   {
     name: "Dr. Ratio",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "The Hunt",
     element: "Imaginary",
     obtained: false,
@@ -85,6 +95,7 @@ export const characters = [
   {
     name: "Fu Xuan",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Preservation",
     element: "Quantum",
     obtained: false,
@@ -93,6 +104,7 @@ export const characters = [
   {
     name: "Gepard",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Preservation",
     element: "Ice",
     obtained: false,
@@ -101,6 +113,7 @@ export const characters = [
   {
     name: "Himeko",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Erudition",
     element: "Fire",
     obtained: false,
@@ -109,6 +122,7 @@ export const characters = [
   {
     name: "Huohuo",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Abundance",
     element: "Wind",
     obtained: false,
@@ -117,6 +131,7 @@ export const characters = [
   {
     name: "Jing Yuan",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Erudition",
     element: "Lightning",
     obtained: false,
@@ -125,6 +140,7 @@ export const characters = [
   {
     name: "Jingliu",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Destruction",
     element: "Ice",
     obtained: false,
@@ -133,6 +149,7 @@ export const characters = [
   {
     name: "Kafka",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Nihility",
     element: "Lightning",
     obtained: false,
@@ -141,6 +158,7 @@ export const characters = [
   {
     name: "Luocha",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Abundance",
     element: "Imaginary",
     obtained: false,
@@ -149,6 +167,7 @@ export const characters = [
   {
     name: "Ruan Mei",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Harmony",
     element: "Ice",
     obtained: false,
@@ -157,6 +176,7 @@ export const characters = [
   {
     name: "Seele",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "The Hunt",
     element: "Quantum",
     obtained: false,
@@ -165,6 +185,7 @@ export const characters = [
   {
     name: "Silver Wolf",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Nihility",
     element: "Quantum",
     obtained: false,
@@ -173,6 +194,7 @@ export const characters = [
   {
     name: "Sparkle",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Harmony",
     element: "Quantum",
     obtained: false,
@@ -181,6 +203,7 @@ export const characters = [
   {
     name: "Topaz & Numby",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "The Hunt",
     element: "Fire",
     obtained: false,
@@ -189,6 +212,7 @@ export const characters = [
   {
     name: "Trailblazer",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "",
     element: "",
     obtained: true,
@@ -197,6 +221,7 @@ export const characters = [
   {
     name: "Welt",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Nihility",
     element: "Imaginary",
     obtained: false,
@@ -205,6 +230,7 @@ export const characters = [
   {
     name: "Yanqing",
     rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "The Hunt",
     element: "Lightning",
     obtained: false,

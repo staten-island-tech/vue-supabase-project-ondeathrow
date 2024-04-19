@@ -23,7 +23,7 @@ import CharacterCard from "@/components/CharacterCard.vue";
     background-image: "https://hsr.hoyoverse.com/_nuxt/img/pc-normal-bg.3870807.png";
 }
 .card{
-    padding: 2%;
+    padding: 1%;
 }
 h1{
     font-size: 135%;
