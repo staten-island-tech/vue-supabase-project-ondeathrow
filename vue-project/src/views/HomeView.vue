@@ -34,6 +34,13 @@ function login(){
    })
  }  
 
+ 
+const { data, error } = await supabase.auth.signInWithIdToken({
+  provider: 'google',
+  token: 'your-id-token'
+})
+
+
 console.log(signUpNewUser)
 console.log(signInWithEmail)
 }
