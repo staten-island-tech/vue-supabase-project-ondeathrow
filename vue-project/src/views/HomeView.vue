@@ -9,7 +9,7 @@
         <div class = "moniesdiv">
           <img class = "moniespic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJhPUJn3wx3CK5YHMdz7y7kHJGz_K-sR0D38CL6gSJA&s">
           1600
-          <button class = "addmorejades">+</button>
+          <button class = "addmorejades" @click="addmorejades">+</button>
         </div>
       </div>
 
@@ -75,6 +75,14 @@
 import { ref } from 'vue';
 import { warp } from '@/stores/warp';
 
+const date = new Date();
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+let currentdate = `${month}/${day}/${year}: ${time}`;
+
 const NahidaC = {
    rateupfivestar: "Nahida",
    rateupfourstar: ["Gaming", "Faruzan", "Noelle"],
@@ -100,8 +108,8 @@ const exitpopup = () => {
   history.value = false
 }
 
-let nofourstar = 0;
 
+let nofourstar = 0;
 const wish = (character) => {
 
   if (nofourstar === 9) {
@@ -160,9 +168,10 @@ const wish = (character) => {
 
 
 const wishrates = (character) => {
-  const result = wish(character)
-  wishHistory.value.push(result);
-  console.log(result)
+  let result = currentdate(); // Get the current date and store it in the result variable
+  wishHistory.value.push(result); // Push the result to the wishHistory array
+  result = wish(character); // Call the wish function to get the result of the wish
+  console.log(result); // Log the result to the console
 }
 
 const multipull = (character) => {
