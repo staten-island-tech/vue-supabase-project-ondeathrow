@@ -4,9 +4,9 @@
       <h1>sign up here</h1>
       <form name="login" @submit.prevent="login(username, password)">
           <label for="username">username</label>
-          <input id="username" text="username" v-model="username"/>
+          <input type="text" text="username" v-model="username"/>
           <label for="password">password</label>
-          <input id="password" text="password" v-model="password"/>
+          <input type="text" text="password" v-model="password"/>
           <input type="submit" value="enter"/>
       </form>
     </div>
@@ -33,12 +33,15 @@ function login(){
      password: 'example-password'
    })
  }  
+username.
+password. 
 
- 
-const { data, error } = await supabase.auth.signInWithIdToken({
-  provider: 'google',
-  token: 'your-id-token'
-})
+
+
+// const { data, error } = await supabase.auth.signInWithIdToken({
+//   provider: 'google',
+//   token: 'your-id-token'
+// })
 
 
 console.log(signUpNewUser)
