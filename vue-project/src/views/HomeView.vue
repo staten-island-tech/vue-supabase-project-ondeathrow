@@ -7,6 +7,6 @@
     home page
   </main>
   <p> hello 
-    hi welocome honkai star rail characters ad ssytem 
+    welcome to hsr !!!!1!!1!!
   </p>
 </template>

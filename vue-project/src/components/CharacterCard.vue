@@ -20,7 +20,7 @@ const props = defineProps({
 }
 .card{
   margin: 1%;
-  background-color: #10162e;
+  background-color: #10162eee;
   border: 0.2rem solid #a98e61;
   overflow: hidden;
   text-overflow: ellipsis;

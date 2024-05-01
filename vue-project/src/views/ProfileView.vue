@@ -11,8 +11,9 @@
 
 <script setup>
 import ProfileSomething from '../components/ProfileSomething.vue';
-import { characters } from '@/components/CharacterList.vue';
+import { characters, lightCones } from '@/components/CharacterList.vue';
 import CharacterCard from "@/components/CharacterCard.vue";
+
 </script>
 
 <style scoped>

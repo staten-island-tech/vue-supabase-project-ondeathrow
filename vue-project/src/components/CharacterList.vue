@@ -413,5 +413,9 @@ export const characters = [
     icon: "",
   } */
 ];
+export const lightCones = [
+  {
 
+  },
+];
 </script>
