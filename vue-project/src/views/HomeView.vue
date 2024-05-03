@@ -10,14 +10,18 @@
           <input type="submit" value="enter"/>
       </form>
     </div>
+    <!-- <login
+    v-model:username="username"
+    v-model:password="password"
+    /> -->
   </div>
     
 </template>
 
 <script>
 
-// const username= defineModel('username')
-// const password= defineModel('password')
+ const username= defineModel('username')
+ const password= defineModel('password')
 
 function login(){
   async function signUpNewUser() {
@@ -33,8 +37,12 @@ function login(){
      password: 'example-password'
    })
  }  
-username.
-password. 
+username(
+
+)
+password(
+  
+) 
 
 
 
