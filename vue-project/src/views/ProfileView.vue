@@ -21,7 +21,6 @@ import CharacterCard from "@/components/CharacterCard.vue";
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: "https://hsr.hoyoverse.com/_nuxt/img/pc-normal-bg.3870807.png";
 }
 .card{
     padding: 1%;

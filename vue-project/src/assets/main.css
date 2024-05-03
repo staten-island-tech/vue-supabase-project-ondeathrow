@@ -7,20 +7,23 @@
 }
 
 ::-webkit-scrollbar{
-  scrollbar-color: var(--highlight-color) var(--container-color);
+  scrollbar-color: pink;
   scrollbar-width: thin;
 }
 
 .wrapper{
-  width: 50%;
   display: flex;
   flex-wrap: wrap;
-  margin: 0% 0% 0% 10rem;
+  text-align: center;
+  /* 
+  position: fixed;
+  width: 100%;
+  background-color: white; */
 }
 
 a{
   text-align: center;
-  padding: 4%;
+  padding: 1%;
   font-size: 140%;
 }
 

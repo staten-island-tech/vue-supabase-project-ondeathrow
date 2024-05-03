@@ -9,7 +9,8 @@ export const characters = [
     path: "Nihility",
     element: "Lightning",
     obtained: false,
-    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122837/7bbabff9dde54156d00585fc1d45605b_4199325960554656142.png",
+    fullBody: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122837/6dd8141676b1aa499a4456aee3870212_1635765427851919463.png",
   },  
   {
     name: "Argenti",
@@ -18,7 +19,8 @@ export const characters = [
     path: "Eurdition",
     element: "Physical",
     obtained: false,
-    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113551/2bd119b8c3be5a8981f21e308d0ff9df_6080004376791968215.png",
+    fullBody: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113551/db61f7e468824e7a27c1374591ca59f2_8253493838975128264.png",
   },  
   {
     name: "Aventurine",
@@ -27,7 +29,7 @@ export const characters = [
     path: "Preservation",
     element: "Imaginary",
     obtained: false,
-    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122838/03821220467396a333cd5362ebe0e1d1_6315724069120210502.png",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122838/3951d1cfe25f83ce0dbccfc1e9179f38_8791635192165709278.png",
   },
   {
     name: "Bailu",
@@ -36,7 +38,7 @@ export const characters = [
     path: "Abundance",
     element: "Lightning",
     obtained: false,
-    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/10/08/1ce1708b783a06ad419257b4be29ea99_6612799854857232627.png",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/10/08/17e202ede9319aea9646f2b3283fc6e4_8623718235644422809.png",
   },  
   {
     name: "Black Swan",
@@ -45,7 +47,7 @@ export const characters = [
     path: "Nihility",
     element: "Wind",
     obtained: false,
-    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122114/e09b820993f140deb0f552391784cb7e_2387142678634153379.png",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122114/edf63f652678812e83d1c6df2be75daf_6129955511652481057.png",
   },  
   {
     name: "Blade",
@@ -54,7 +56,7 @@ export const characters = [
     path: "Destruction",
     element: "Wind",
     obtained: false,
-    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/07/18/03683ce37738b0d682a557671e301eae_8735543373298466281.png",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/07/18/b5e05f52778d84ef274a4467e78ce974_6070636965350012194.png",
   },  
   {
     name: "Bronya",
@@ -63,7 +65,16 @@ export const characters = [
     path: "Harmony",
     element: "Wind",
     obtained: false,
-    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/c6ab1f4cd2ece504b02e16d5f7a5af44_8279603082960819796.png",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/80e5957c2152c680220c4cb0eb9fb6d4_35087548008651410.png",
+  },  
+  {
+    name: "Boothill",
+    rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
+    path: "The Hunt",
+    element: "Physical",
+    obtained: false,
+    icon: "https://static.wikia.nocookie.net/houkai-star-rail/images/7/78/Character_Boothill_Icon.png",
   },  
   {
     name: "Clara",
@@ -91,7 +102,16 @@ export const characters = [
     element: "Imaginary",
     obtained: false,
     icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/114134/a6c86498e909f09945664a1e5b4d20be_7065933365556000987.png",
-  },  
+  }, 
+  {
+    name: "Firefly",
+    rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
+    path: "Destruction",
+    element: "Fire",
+    obtained: false,
+    icon: "",
+  },   
   {
     name: "Fu Xuan",
     rarity: 5,
@@ -129,6 +149,15 @@ export const characters = [
     icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113549/6241e29b78992e78f7be09ecc9a095d8_9119778655003994988.png",
   },  
   {
+    name: "Jade",
+    rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
+    path: "Erudition",
+    element: "Quantum",
+    obtained: false,
+    icon: "",
+  },  
+  {
     name: "Jing Yuan",
     rarity: 5,
     rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
@@ -163,6 +192,15 @@ export const characters = [
     element: "Imaginary",
     obtained: false,
     icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/07/18/0df33e59f26280cb1f79227f9660a174_249196615581888334.png",
+  },  
+  {
+    name: "Robin",
+    rarity: 5,
+    rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
+    path: "Harmony",
+    element: "Physical",
+    obtained: false,
+    icon: "",
   },  
   {
     name: "Ruan Mei",
@@ -242,7 +280,7 @@ export const characters = [
     path: "Destruction",
     element: "Lightning",
     obtained: false,
-    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/7213a47385a0b5c05e68b564733f2b19_6873881480647261389.png",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/fcd256b0f99517789c82f9a2c70b0b49_2383793506230310336.png",
   },  
   {
     name: "Asta",
@@ -250,7 +288,7 @@ export const characters = [
     path: "Harmony",
     element: "Fire",
     obtained: false,
-    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/99bb21e5ceb72b3f76c0a3b5148dfe08_8925972045760071235.png",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/41ffdfc9d4330534da7931c91573bc76_8172180063275619079.png",
   },  
   {
     name: "Dan Heng",
@@ -410,6 +448,7 @@ export const characters = [
     path: "",
     element: "",
     obtained: false,
+    fullBody: "",
     icon: "",
   } */
 ];
