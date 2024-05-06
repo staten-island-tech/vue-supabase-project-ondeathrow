@@ -83,7 +83,7 @@ export const characters = [
     path: "Destruction",
     element: "Physical",
     obtained: false,
-    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/e4a5b2e737c5c59f7f0ddde372fa8ea2_146075503384718263.png",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/16a5b5bd44392f616ac05545966b8fe8_5566256866340016142.png",
   },  
   {
     name: "Dan Heng - Imbibitor Lunae",
@@ -92,7 +92,7 @@ export const characters = [
     path: "Destruction",
     element: "Imaginary",
     obtained: false,
-    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/08/28/0ca26d025d72bd31944a00600f700a99_3883098866010654505.png",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/08/28/2852d52efb77373b978387f9af220352_8242804600294264177.png",
   },  
   {
     name: "Dr. Ratio",
@@ -101,7 +101,7 @@ export const characters = [
     path: "The Hunt",
     element: "Imaginary",
     obtained: false,
-    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/114134/a6c86498e909f09945664a1e5b4d20be_7065933365556000987.png",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/114134/dff9186a3fca6ae3667c823c117faf19_7442485835931115291.png",
   }, 
   {
     name: "Firefly",
@@ -119,7 +119,7 @@ export const characters = [
     path: "Preservation",
     element: "Quantum",
     obtained: false,
-    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/08/28/bc0e8b39012e1e51b7f1e1bd2c78ddde_3381527091264434625.png",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/08/28/5be1b41597872563d85668d9ac9280a2_7414032894606870599.png",
   },  
   {
     name: "Gepard",
@@ -128,7 +128,7 @@ export const characters = [
     path: "Preservation",
     element: "Ice",
     obtained: false,
-    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/a511485984be482bea05136de81b3b7b_8774670648688901664.png",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/019513b7e44dd4432d03b143ae4713d2_4785442007181626187.png",
   },  
   {
     name: "Himeko",
@@ -137,7 +137,7 @@ export const characters = [
     path: "Erudition",
     element: "Fire",
     obtained: false,
-    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/906705d02e536b45b29285f6d80c6f34_6762729813999787667.png",
+    icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/3f9c0361b06fb37e7a85a834d9ed671b_4678074096525310440.png",
   },  
   {
     name: "Huohuo",
@@ -146,7 +146,7 @@ export const characters = [
     path: "Abundance",
     element: "Wind",
     obtained: false,
-    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113549/6241e29b78992e78f7be09ecc9a095d8_9119778655003994988.png",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113549/a716bd8ea1eb70d43ff182b28682e2de_5240979789104297080.png",
   },  
   {
     name: "Jade",
