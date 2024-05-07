@@ -1,15 +1,20 @@
 <template>
-  <div class="card">
+  <router-link :to="charPath" class="card">
     <img class="image-of-char" :src="Character.icon" :alt="Character.name"/>
     <h2 class="char-name">{{ Character.name }}</h2>
     <img class="star-rare" :src="Character.rarityicon"/>
-  </div>
+  </router-link>
 </template>
 
 <script setup>
+import { computed } from 'vue-router';
 const props = defineProps({
     Character: Object,
 });
+
+const charPath = computed(()=>{
+  return `data/`
+})
 </script>
 
 <style scoped>
@@ -28,9 +33,11 @@ const props = defineProps({
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  
 }
 .image-of-char{
   width: 60%;
+  filter: greyscale(1);
 }
 .image-of-char {
   color: gray;

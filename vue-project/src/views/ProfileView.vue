@@ -24,7 +24,6 @@ import CharacterCard from "@/components/CharacterCard.vue";
 }
 .card{
     padding: 1%;
-    filter: greyscale(1);
 }
 h1{
     font-size: 135%;
