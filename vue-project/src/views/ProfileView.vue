@@ -27,5 +27,6 @@ import CharacterCard from "@/components/CharacterCard.vue";
 }
 h1{
     font-size: 135%;
+    color: #ffffff;
 }
 </style>

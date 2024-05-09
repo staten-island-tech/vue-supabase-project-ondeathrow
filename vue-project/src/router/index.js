@@ -22,11 +22,11 @@ const router = createRouter({
       name: 'profile',
       component: () => import('../views/ProfileView.vue')
     },
-    {
-      path: '/data',
+/*     {
+      path: '/data/:id',
       name: 'data',
       component: () => import('../views/CharacterData.vue')
-    }
+    }, */
   ]
 })
 

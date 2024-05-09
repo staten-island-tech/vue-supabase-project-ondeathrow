@@ -1,26 +1,28 @@
 <template>
-  <router-link :to="charPath" class="card">
+<!--   <router-link :to="charPath" class="card">
     <img class="image-of-char" :src="Character.icon" :alt="Character.name"/>
     <h2 class="char-name">{{ Character.name }}</h2>
     <img class="star-rare" :src="Character.rarityicon"/>
-  </router-link>
+  </router-link> -->
+  <div class="card">
+    <img class="image-of-char" :src="Character.icon" :alt="Character.name"/>
+    <h2 class="char-name">{{ Character.name }}</h2>
+    <img class="star-rare" :src="Character.rarityicon"/>
+  </div>
 </template>
 
 <script setup>
-import { computed } from 'vue-router';
+//import { computed } from 'vue-router';
 const props = defineProps({
     Character: Object,
 });
-
+/* 
 const charPath = computed(()=>{
   return `data/`
-})
+}) */
 </script>
 
 <style scoped>
-*{
-  background-image: "https://hsr.hoyoverse.com/_nuxt/img/pc-normal-bg.3870807.png";
-}
 .char-name{
   font-size: 100%;
   margin: 0% 3% 0% 3%;
@@ -28,7 +30,7 @@ const charPath = computed(()=>{
 }
 .card{
   margin: 1rem;
-  background-color: #10162eee;
+  background-color: #10162ead;
   border: 0.2rem solid #a98e61;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -37,10 +39,7 @@ const charPath = computed(()=>{
 }
 .image-of-char{
   width: 60%;
-  filter: greyscale(1);
-}
-.image-of-char {
-  color: gray;
+  filter: grayscale(100%);
 }
 .star-rare{
   height: 1rem;
