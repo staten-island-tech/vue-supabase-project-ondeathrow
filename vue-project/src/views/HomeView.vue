@@ -6,7 +6,6 @@
   <main>
     home page
   </main>
-  <p> hello 
-    welcome to hsr !!!!1!!1!!
+  <p> hello this is the home page
   </p>
 </template>
