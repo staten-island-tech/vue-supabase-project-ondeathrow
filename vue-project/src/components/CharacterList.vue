@@ -74,7 +74,7 @@ export const characters = [
     path: "The Hunt",
     element: "Physical",
     obtained: false,
-    icon: "https://static.wikia.nocookie.net/houkai-star-rail/images/7/78/Character_Boothill_Icon.png",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/123310/8944287625894decc7dada516476699b_6346927405924196056.png",
   },  
   {
     name: "Clara",
@@ -200,7 +200,7 @@ export const characters = [
     path: "Harmony",
     element: "Physical",
     obtained: false,
-    icon: "",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/123309/b62c590ac7a08dbcb56dc0e501779d44_3507602144959829598.png",
   },  
   {
     name: "Ruan Mei",
@@ -454,7 +454,66 @@ export const characters = [
 ];
 export const lightCones = [
   {
-
+    name: "",
+    rarity: 5,
+    path: "",
+    image: "",
+    level: 1,
+    stats: {
+      HP: 0,
+      ATK: 0,
+      DEF: 0,
+    },
+    passive: {
+      pName: "",
+      pDescrip: "",
+    },
+  },
+  {
+    name: "Along the Passing Shore",
+    rarity: 5,
+    image: "",
+    level: 1,
+    path: "Nihility",
+    stats: {
+      HP: 48,
+      ATK: 28,
+      DEF: 18,
+    },
+    passive: {
+      pName: "Steerer",
+      pDescrip: "Increases the wearer's CRIT DMG by 36~60%. When the wearer hits the enemy target, inflicts Mirage Fizzle on the enemy, lasting for 1 turn. This effect can be triggered 1 time against each target for every attack the wearer launches. The wearer deals 24~40% more DMG to targets afflicted with Mirage Fizzle, and DMG from the wearer's Ultimate additionally increases by 24~40%. "
+    },
+  },  {
+    name: "An Instant Before A Gaze",
+    rarity: 5,
+    path: "Erudition",
+    image: "",
+    level: 1,
+    stats: {
+      HP: 48,
+      ATK: 26,
+      DEF: 21,
+    },
+    passive: {
+      pName: "A Knight's Pilgrimage",
+      pDescrip: "Increases the wearer's CRIT DMG by 36~60%. When the wearer uses Ultimate, increases the wearer's Ultimate DMG based on their max energy. Each point of Energy increases the Ultimate DMG by 0.36~0.60%, up to 180 points of Energy."
+    },
+  },  {
+    name: "Baptism of Pure Thought",
+    rarity: 5,
+    path: "The Hunt",
+    image: "",
+    level: 1,
+    stats: {
+      HP: 43,
+      ATK: 26,
+      DEF: 24,
+    },
+    passive: {
+      pName: "Mental Training",
+      pDescrip: "Increases the wearer's CRIT DMG by 20~32%. For every debuff on the enemy target, the wearer's CRIT DMG dealt against this target increases by 8~12%, stacking up to 3 times. When using their Ultimate to attack the enemy target, the wearer receives the Disputation effect, which increases DMG dealt by 36~60% and enables their follow-up attacks to ignore 24~40% of the target's DEF. This effect lasts for 2 turns. ",
+    },
   },
 ];
 </script>

@@ -1,5 +1,6 @@
 <script setup>
-
+import { characters, lightCones } from '@/components/CharacterList.vue';
+console.log(lightCones.length);
 </script>
 
 <template>

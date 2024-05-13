@@ -46,6 +46,8 @@ const charPath = computed(()=>{
 }
 .image-of-char{
   width: 60%;
+  filter: grayscale(100);
+  z-index: 1;
 }
 .star-rare{
   height: 1rem;
