@@ -10,6 +10,7 @@
           <input type="submit" value="enter"/>
       </form>
     </div>
+    <!-- <button @click.prevent="signUp">Sign Up</button> -->
     <!-- <login
     v-model:username="username"
     v-model:password="password"
@@ -20,8 +21,8 @@
 
 <script>
 
- const username= defineModel('username')
- const password= defineModel('password')
+//  const username= defineModel('username')
+//  const password= defineModel('password')
 
 function login(){
   async function signUpNewUser() {
@@ -41,7 +42,7 @@ username(
 
 )
 password(
-  
+
 ) 
 
 
