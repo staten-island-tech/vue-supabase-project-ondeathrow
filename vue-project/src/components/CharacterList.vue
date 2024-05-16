@@ -10,6 +10,19 @@ export const characters = [
     element: "Lightning",
     obtained: false,
     fullBody: "",
+    baseStats: {
+      HP: 0,
+      ATK: 0,
+      DEF: 0,
+      SPD: 0,
+      TAUNT: 0,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+      //and everything else.
+    },
     icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122837/6dd8141676b1aa499a4456aee3870212_1635765427851919463.png",
   },  
   {
@@ -458,7 +471,7 @@ export const lightCones = [
     rarity: 5,
     path: "",
     image: "",
-    level: 1,
+    level: 80,
     stats: {
       HP: 0,
       ATK: 0,
@@ -473,12 +486,12 @@ export const lightCones = [
     name: "Along the Passing Shore",
     rarity: 5,
     image: "",
-    level: 1,
+    level: 80,
     path: "Nihility",
     stats: {
-      HP: 48,
-      ATK: 28,
-      DEF: 18,
+      HP: 1058,
+      ATK: 635,
+      DEF: 396,
     },
     passive: {
       pName: "Steerer",
@@ -489,11 +502,11 @@ export const lightCones = [
     rarity: 5,
     path: "Erudition",
     image: "",
-    level: 1,
+    level: 80,
     stats: {
-      HP: 48,
-      ATK: 26,
-      DEF: 21,
+      HP: 1058,
+      ATK: 582,
+      DEF: 463,
     },
     passive: {
       pName: "A Knight's Pilgrimage",
@@ -504,15 +517,60 @@ export const lightCones = [
     rarity: 5,
     path: "The Hunt",
     image: "",
-    level: 1,
+    level: 80,
     stats: {
-      HP: 43,
-      ATK: 26,
-      DEF: 24,
+      HP: 952,
+      ATK: 582,
+      DEF: 529,
     },
     passive: {
       pName: "Mental Training",
       pDescrip: "Increases the wearer's CRIT DMG by 20~32%. For every debuff on the enemy target, the wearer's CRIT DMG dealt against this target increases by 8~12%, stacking up to 3 times. When using their Ultimate to attack the enemy target, the wearer receives the Disputation effect, which increases DMG dealt by 36~60% and enables their follow-up attacks to ignore 24~40% of the target's DEF. This effect lasts for 2 turns. ",
+    },
+  },  {
+    name: "Before Dawn",
+    rarity: 5,
+    path: "Erudition",
+    image: "",
+    level: 80,
+    stats: {
+      HP: 1058,
+      ATK: 582,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Long Night",
+      pDescrip: "Wears the wearer's CRIT DMG by 60%. Increases the wearer's Skill and Utlimate DMG by 30%. After the wearer uses their Skill or Ultimate, they gain Somnus Corpus. Upon triggering a follow-up attack, Comnus Corpus will be consumed and the follow-up attack DMG increases by 80%.",
+    },
+  },  {
+    name: "Brighter Than the Sun",
+    rarity: 5,
+    path: "Destruction",
+    image: "",
+    level: 80,
+    stats: {
+      HP: 1058,
+      ATK: 635,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Defiant Till Death",
+      pDescrip: "Increases the wearer's CRIT RATE by 30%. When the wearer uses their Basic ATK, they will gain 1 stack of Dragon's Call, lasting for 2 turns. Each Stack of Dragon's Call increases the wearer's ATK by 30% and Energy Regeneration Rate by 10.0%. Dragon's Call may be stacked up to 2 times.",
+    },
+  },  {
+    name: "But the Battle Isn't Over",
+    rarity: 5,
+    path: "Harmony",
+    image: "",
+    level: 80,
+    stats: {
+      HP: 1164,
+      ATK: 529,
+      DEF: 463,
+    },
+    passive: {
+      pName: "",
+      pDescrip: "",
     },
   },
 ];

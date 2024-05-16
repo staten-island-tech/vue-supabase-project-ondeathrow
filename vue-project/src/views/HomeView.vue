@@ -1,6 +1,10 @@
 <script setup>
 import { characters, lightCones } from '@/components/CharacterList.vue';
 console.log(lightCones.length);
+lightCones.forEach(element => {
+  console.log(element.name);
+  console.log(element.passive.pDescrip);
+});
 </script>
 
 <template>

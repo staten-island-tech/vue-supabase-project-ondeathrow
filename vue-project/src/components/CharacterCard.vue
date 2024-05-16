@@ -36,13 +36,13 @@ const charPath = computed(()=>{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 24%;
+  width: 14%;
+  height: max-content;
   transition: 0.5s;
 }
 .card:hover{
   background-color: #18265f5b;
-  font-size: 105%;;
-  width: 25%;
+  border: 0.2rem solid #d6be91;
 }
 .image-of-char{
   width: 60%;
