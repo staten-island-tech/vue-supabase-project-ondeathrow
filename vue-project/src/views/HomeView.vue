@@ -20,6 +20,11 @@
 </template>
 
 <script>
+// const { storeToRefs } = require('pinia')
+import { useUserStore } from '@main.js'
+
+// access the `store` variable anywhere in the component ✨
+const store = useUserStore()
 
 //  const username= defineModel('username')
 //  const password= defineModel('password')
@@ -32,12 +37,43 @@ function login(){
     },
   )}  
 
-     async function signInWithEmail() {
-   const { data, error } = await supabase.auth.signInWithPassword({
-     email: 'example@email.com',
-     password: 'example-password'
-   })
- }  
+  
+//      async function signInWithEmail() {
+//    const signIn = await supabase.auth.signInWithPassword({}
+//     try {
+//       const {user, session, error} =await supabase.auth.signIn{(
+//       email: email.value,
+//       password: password.value,
+//     )};
+//       if (error){
+//         console.log(error)
+//       }
+//       else{
+        
+
+//       }
+
+//     }
+
+      
+//    )
+//  }  
+
+
+//  async function signInWithEmail(){
+//   const signin = await supabase.auth.signInWithPassword({
+//     try:{
+//         const (user, session, error) = await supabase.auth.signIn{(
+//           try{
+//             const {user, session, error} =await supabase.auth.signIn{(
+ 
+//      )};
+//           }
+//         )
+//         }
+//     }
+//   })
+//  }
 username(
 
 )
