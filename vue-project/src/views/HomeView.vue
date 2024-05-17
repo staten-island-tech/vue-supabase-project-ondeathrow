@@ -10,7 +10,7 @@
           <input type="submit" value="enter"/>
       </form>
     </div>
-    <!-- <button @click.prevent="signUp">Sign Up</button> -->
+    <button @click.prevent="signUp">Sign Up</button> 
     <!-- <login
     v-model:username="username"
     v-model:password="password"
@@ -21,9 +21,7 @@
 
 <script>
 // const { storeToRefs } = require('pinia')
-import { useUserStore } from '@main.js'
-
-// access the `store` variable anywhere in the component ✨
+import { useUserStore } from '@src/main.js'
 const store = useUserStore()
 
 //  const username= defineModel('username')
@@ -66,7 +64,7 @@ function login(){
 //         const (user, session, error) = await supabase.auth.signIn{(
 //           try{
 //             const {user, session, error} =await supabase.auth.signIn{(
- 
+//             
 //      )};
 //           }
 //         )
