@@ -4,22 +4,17 @@
     <h2 class="char-name">{{ Character.name }}</h2>
     <img class="star-rare" :src="Character.rarityicon"/>
   </router-link>
-<!--   <div class="card">
-    <img class="image-of-char" :src="Character.icon" :alt="Character.name"/>
-    <h2 class="char-name">{{ Character.name }}</h2>
-    <img class="star-rare" :src="Character.rarityicon"/>
-  </div> -->
 </template>
 
 <script setup>
 import { computed } from 'vue';
 const props = defineProps({
-    Character: Object,
+  Character: Object,
 });
 
 const charPath = computed(()=>{
   return `character/${props.Character.name}`
-})
+});
 </script>
 
 <style scoped>

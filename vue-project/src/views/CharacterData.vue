@@ -5,11 +5,11 @@
 </template>
 
 <script>
-import { characters } from '../components/CharacterList.vue';
+import { characters, lightCones } from '../components/CharacterList.vue';
 import CharacterCard from '@/components/CharacterCard.vue';
 import useRoute from 'vue';
 const route = useRoute();
-console.log("hello ssssssssssssssssssssssssssssss");
+console.log("hi");
 </script>
 
 <style scoped>
