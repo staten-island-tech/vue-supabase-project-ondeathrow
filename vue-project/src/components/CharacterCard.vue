@@ -34,6 +34,8 @@ const charPath = computed(()=>{
   width: 14%;
   height: max-content;
   transition: 0.5s;
+  hyphens: auto;
+  display: block;
 }
 .card:hover{
   background-color: #18265f5b;
@@ -41,7 +43,7 @@ const charPath = computed(()=>{
 }
 .image-of-char{
   width: 60%;
-  filter: grayscale(100);
+  filter: grayscale(0);
   z-index: 1;
 }
 .star-rare{

@@ -33,6 +33,19 @@ export const characters = [
     element: "Physical",
     obtained: false,
     fullBody: "",
+    baseStats: {
+      HP: 1047,
+      ATK: 737,
+      DEF: 363,
+      SPD: 103,
+      TAUNT: 75,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+      //and everything else.
+    },
     icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113551/db61f7e468824e7a27c1374591ca59f2_8253493838975128264.png",
   },  
   {
@@ -42,7 +55,7 @@ export const characters = [
     path: "Preservation",
     element: "Imaginary",
     obtained: false,
-    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122838/3951d1cfe25f83ce0dbccfc1e9179f38_8791635192165709278.png",
+    icon: "https://cdn.starrailstation.com/assets/a689849f61af1ba601f65834a8414859806b23ad28488916cadee237ae1c4541.webp",
   },
   {
     name: "Bailu",
@@ -460,6 +473,19 @@ export const characters = [
     rarity: 4,
     path: "",
     element: "",
+    baseStats: {
+      HP: 0,
+      ATK: 0,
+      DEF: 0,
+      SPD: 0,
+      TAUNT: 0,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+      //and everything else.
+    },
     obtained: false,
     fullBody: "",
     icon: "",
