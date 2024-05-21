@@ -1,6 +1,48 @@
 <template></template>
 <script>
 //primevue vuetify tailwindcss gsap
+const copypaste = [
+  {
+    name: "",
+    rarity: 4,
+    path: "",
+    element: "",
+    desc: ``,
+    baseStats: {
+      HP: 0,
+      ATK: 0,
+      DEF: 0,
+      SPD: 0,
+      TAUNT: 0,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+      //and everything else.
+    },
+    obtained: false,
+    fullBody: "",
+    icon: "",
+  },
+  {
+    name: "",
+    rarity: 5,
+    path: "",
+    image: "",
+    level: 80,
+    stats: {
+      HP: 0,
+      ATK: 0,
+      DEF: 0,
+    },
+    passive: {
+      pName: "",
+      pDescrip: "",
+    },
+  },
+];
+
 export const characters = [
   {
     name: "Acheron",
@@ -10,12 +52,13 @@ export const characters = [
     element: "Lightning",
     obtained: false,
     fullBody: "",
+    desc: `A drifter claiming to be a Galaxy Ranger. Her true name is unknown. She walks the cosmos alone, carrying with her a long sword.`,
     baseStats: {
-      HP: 0,
-      ATK: 0,
-      DEF: 0,
-      SPD: 0,
-      TAUNT: 0,
+      HP: 1125,
+      ATK: 698,
+      DEF: 436,
+      SPD: 101,
+      TAUNT: 100,
     },
     advStats: {
       CR: 0,
@@ -33,6 +76,7 @@ export const characters = [
     element: "Physical",
     obtained: false,
     fullBody: "",
+    desc: `A classic knight of the "Knights of Beauty" who is piously seeking his missing Aeon Idrila the "Beauty." Forthright and candid, he wanders the cosmos espousing the virtues of Idrila's good name.`,
     baseStats: {
       HP: 1047,
       ATK: 737,
@@ -44,7 +88,6 @@ export const characters = [
       CR: 0,
       CD: 0,
       Break: 0,
-      //and everything else.
     },
     icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113551/db61f7e468824e7a27c1374591ca59f2_8253493838975128264.png",
   },  
@@ -55,6 +98,19 @@ export const characters = [
     path: "Preservation",
     element: "Imaginary",
     obtained: false,
+    desc: `A high-ranking executive of the IPC's Strategic Investment Department. A risk-taker, his constant smile makes it difficult for people to discern his true feelings.`,
+    baseStats: {
+      HP: 1203,
+      ATK: 446,
+      DEF: 654,
+      SPD: 106,
+      TAUNT: 150,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://cdn.starrailstation.com/assets/a689849f61af1ba601f65834a8414859806b23ad28488916cadee237ae1c4541.webp",
   },
   {
@@ -64,6 +120,19 @@ export const characters = [
     path: "Abundance",
     element: "Lightning",
     obtained: false,
+    desc: `The High Elder of the Vidyadhara, who is also known as the "Healer Lady" on the Luofu. She uses her unique medical science and the medical treatment that can only be provided by the Vidyadhara dragon race to save lives.`,
+    baseStats: {
+      HP: 1319,
+      ATK: 562,
+      DEF: 485,
+      SPD: 98,
+      TAUNT: 100,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/10/08/17e202ede9319aea9646f2b3283fc6e4_8623718235644422809.png",
   },  
   {
@@ -73,6 +142,18 @@ export const characters = [
     path: "Nihility",
     element: "Wind",
     obtained: false,
+    baseStats: {
+      HP: 1086,
+      ATK: 659,
+      DEF: 485,
+      SPD: 102,
+      TAUNT: 100,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122114/edf63f652678812e83d1c6df2be75daf_6129955511652481057.png",
   },  
   {
@@ -82,6 +163,18 @@ export const characters = [
     path: "Destruction",
     element: "Wind",
     obtained: false,
+    baseStats: {
+      HP: 1358,
+      ATK: 543,
+      DEF: 485,
+      SPD: 97,
+      TAUNT: 125,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/07/18/b5e05f52778d84ef274a4467e78ce974_6070636965350012194.png",
   },  
   {
@@ -91,6 +184,18 @@ export const characters = [
     path: "Harmony",
     element: "Wind",
     obtained: false,
+    baseStats: {
+      HP: 1241,
+      ATK: 582,
+      DEF: 533,
+      SPD: 99,
+      TAUNT: 100,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/80e5957c2152c680220c4cb0eb9fb6d4_35087548008651410.png",
   },  
   {
@@ -100,6 +205,18 @@ export const characters = [
     path: "The Hunt",
     element: "Physical",
     obtained: false,
+    baseStats: {
+      HP: 1203,
+      ATK: 620,
+      DEF: 436,
+      SPD: 107,
+      TAUNT: 75,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/123310/8944287625894decc7dada516476699b_6346927405924196056.png",
   },  
   {
@@ -109,6 +226,18 @@ export const characters = [
     path: "Destruction",
     element: "Physical",
     obtained: false,
+    baseStats: {
+      HP: 1241,
+      ATK: 737,
+      DEF: 485,
+      SPD: 90,
+      TAUNT: 125,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/16a5b5bd44392f616ac05545966b8fe8_5566256866340016142.png",
   },  
   {
@@ -118,6 +247,18 @@ export const characters = [
     path: "Destruction",
     element: "Imaginary",
     obtained: false,
+    baseStats: {
+      HP: 1241,
+      ATK: 698,
+      DEF: 363,
+      SPD: 102,
+      TAUNT: 125,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/08/28/2852d52efb77373b978387f9af220352_8242804600294264177.png",
   },  
   {
@@ -127,6 +268,18 @@ export const characters = [
     path: "The Hunt",
     element: "Imaginary",
     obtained: false,
+    baseStats: {
+      HP: 1047,
+      ATK: 776,
+      DEF: 460,
+      SPD: 103,
+      TAUNT: 75,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/114134/dff9186a3fca6ae3667c823c117faf19_7442485835931115291.png",
   }, 
   {
@@ -136,6 +289,7 @@ export const characters = [
     path: "Destruction",
     element: "Fire",
     obtained: false,
+    
     icon: "",
   },   
   {
@@ -145,6 +299,18 @@ export const characters = [
     path: "Preservation",
     element: "Quantum",
     obtained: false,
+    baseStats: {
+      HP: 1474,
+      ATK: 465,
+      DEF: 606,
+      SPD: 100,
+      TAUNT: 150,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/08/28/5be1b41597872563d85668d9ac9280a2_7414032894606870599.png",
   },  
   {
@@ -154,6 +320,18 @@ export const characters = [
     path: "Preservation",
     element: "Ice",
     obtained: false,
+    baseStats: {
+      HP: 1397,
+      ATK: 543,
+      DEF: 654,
+      SPD: 92,
+      TAUNT: 150,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/019513b7e44dd4432d03b143ae4713d2_4785442007181626187.png",
   },  
   {
@@ -163,6 +341,18 @@ export const characters = [
     path: "Erudition",
     element: "Fire",
     obtained: false,
+    baseStats: {
+      HP: 1047,
+      ATK: 756,
+      DEF: 436,
+      SPD: 96,
+      TAUNT: 75,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/3f9c0361b06fb37e7a85a834d9ed671b_4678074096525310440.png",
   },  
   {
@@ -172,6 +362,18 @@ export const characters = [
     path: "Abundance",
     element: "Wind",
     obtained: false,
+    baseStats: {
+      HP: 1358,
+      ATK: 601,
+      DEF: 509,
+      SPD: 98,
+      TAUNT: 100,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113549/a716bd8ea1eb70d43ff182b28682e2de_5240979789104297080.png",
   },  
   {
@@ -181,6 +383,7 @@ export const characters = [
     path: "Erudition",
     element: "Quantum",
     obtained: false,
+
     icon: "",
   },  
   {
@@ -190,6 +393,18 @@ export const characters = [
     path: "Erudition",
     element: "Lightning",
     obtained: false,
+    baseStats: {
+      HP: 1164,
+      ATK: 698,
+      DEF: 485,
+      SPD: 99,
+      TAUNT: 75,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/09/30/ccb4b3e5d44ab5c35510bd5fce11fbf2_5075319800827409083.png",
   },  
   {
@@ -199,6 +414,18 @@ export const characters = [
     path: "Destruction",
     element: "Ice",
     obtained: false,
+    baseStats: {
+      HP: 1435,
+      ATK: 679,
+      DEF: 485,
+      SPD: 96,
+      TAUNT: 125,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113257/6b1caa6dcac86b51754256a626d7089a_6047546758250201368.png",
   },  
   {
@@ -208,6 +435,18 @@ export const characters = [
     path: "Nihility",
     element: "Lightning",
     obtained: false,
+    baseStats: {
+      HP: 1086,
+      ATK: 679,
+      DEF: 485,
+      SPD: 100,
+      TAUNT: 100,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://webstatic.hoyoverse.com/upload/op-public/2022/04/11/a27a7f23e023aeea841d151ca864f6d7_8275876235530321253.png",
   },  
   {
@@ -217,6 +456,18 @@ export const characters = [
     path: "Abundance",
     element: "Imaginary",
     obtained: false,
+    baseStats: {
+      HP: 1280,
+      ATK: 756,
+      DEF: 363,
+      SPD: 101,
+      TAUNT: 100,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://webstatic.hoyoverse.com/upload/op-public/2023/07/18/0df33e59f26280cb1f79227f9660a174_249196615581888334.png",
   },  
   {
@@ -226,6 +477,19 @@ export const characters = [
     path: "Harmony",
     element: "Physical",
     obtained: false,
+    desc: `A Halovian singer who was born in Penacony and has risen to cosmic fame. An elegant and demure young lady. This time, she has been invited home by The Family to grace everyone with song during the Charmony Festival. She can use the power of "Harmony" to broadcast her music, manifesting "resonance" among not only her fans but all manner of lifeforms.`,
+    baseStats: {
+      HP: 1280,
+      ATK: 640,
+      DEF: 485,
+      SPD: 102,
+      TAUNT: 100,
+    },
+    advStats: {
+      CR: 0,
+      CD: 0,
+      Break: 0,
+    },
     icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/123309/b62c590ac7a08dbcb56dc0e501779d44_3507602144959829598.png",
   },  
   {
@@ -473,6 +737,7 @@ export const characters = [
     rarity: 4,
     path: "",
     element: "",
+    desc: ``,
     baseStats: {
       HP: 0,
       ATK: 0,

@@ -5,7 +5,6 @@ lightCones.forEach(element => {
   console.log(element.name);
   console.log(element.passive.pDescrip);
 });
-const things = characters;
 </script>
 
 <template>
@@ -14,4 +13,6 @@ const things = characters;
   </main>
   <p> hello this is the home page
   </p>
+  <h4>
+  </h4>
 </template>
