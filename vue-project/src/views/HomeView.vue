@@ -21,11 +21,16 @@
 
 <script>
 // const { storeToRefs } = require('pinia')
-import { useUserStore } from '@main.js'
-
-// access the `store` variable anywhere in the component ✨
+import { useUserStore } from '/vue-project/src/main'
 const store = useUserStore()
+              
+Vue.use(PiniaVuePlugin)
+const pinia = createPinia()
 
+new Vue({
+  el: '#app',
+  pinia,
+})
 //  const username= defineModel('username')
 //  const password= defineModel('password')
 

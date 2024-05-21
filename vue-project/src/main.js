@@ -7,19 +7,12 @@ import App from './App.vue'
 import router from './router'
 
 const app = createApp(App)
+const pinata = createPinia
 
 app.use(createPinia())
 app.use(router)
 
 app.mount('#app')
-
-Vue.use(PiniaVuePlugin)
-const pinia = createPinia()
-
-new Vue({
-  el: '#app',
-  pinia,
-})
 
 export const useUserStore = defineStore('user',{
 })
