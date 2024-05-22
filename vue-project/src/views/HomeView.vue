@@ -5,6 +5,11 @@ lightCones.forEach(element => {
   console.log(element.name);
   console.log(element.passive.pDescrip);
 });
+// for(let i=0; i < characters.length; i++){
+//   let name = characters;
+//   let stats = name.baseStats.HP;
+//   console.log(name, stats);
+// }
 </script>
 
 <template>
