@@ -9,6 +9,7 @@ import { characters, lightCones } from '../components/CharacterList.vue';
 import CharacterCard from '@/components/CharacterCard.vue';
 import useRoute from 'vue';
 const route = useRoute();
+//include params somehow
 console.log("hi");
 </script>
 
