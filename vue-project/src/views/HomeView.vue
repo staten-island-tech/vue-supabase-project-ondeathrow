@@ -10,7 +10,7 @@
           <input type="submit" value="enter"/>
       </form>
     </div>
-    <!-- <button @click.prevent="signUp">Sign Up</button> -->
+    <button @click.prevent="signUp">Sign Up</button> 
     <!-- <login
     v-model:username="username"
     v-model:password="password"
@@ -22,6 +22,7 @@
 <script>
 // const { storeToRefs } = require('pinia')
 import { useUserStore } from '/vue-project/src/main'
+
 const store = useUserStore()
               
 Vue.use(PiniaVuePlugin)
@@ -71,7 +72,7 @@ function login(){
 //         const (user, session, error) = await supabase.auth.signIn{(
 //           try{
 //             const {user, session, error} =await supabase.auth.signIn{(
- 
+//             
 //      )};
 //           }
 //         )
