@@ -1,18 +1,16 @@
 <template>
-    <div class="container">
-        <CharacterCard
-            v-for="character in characters"
-            :key="character.name"
-            :Character="character"
-        />
-    </div>
+  <div class="container">
+    <CharacterData :character="selectedCharacter" />
+  </div>
 </template>
 
 <script setup>
-import ProfileSomething from '../components/ProfileSomething.vue';
-import { characters, lightCones } from '@/components/CharacterList.vue';
-import CharacterCard from "@/components/CharacterCard.vue";
+import { characters } from '@/components/CharacterList.vue';
+import CharacterData from "@/components/CharacterData.vue";
+import { useRoute } from 'vue-router';
 
+const route = useRoute();
+const selectedCharacter = characters.find(character => character.name === route.params.name);
 </script>
 
 <style scoped>
@@ -28,4 +26,4 @@ h1{
     font-size: 135%;
     color: #ffffff;
 }
-</style>
+</style>  
