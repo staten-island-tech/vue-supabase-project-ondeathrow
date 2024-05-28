@@ -1,16 +1,19 @@
 <template>
     <div class="displayChar">
+      <img class ="imageFull" :src="character.icon"/>
+      <div class="charinfo">
         <h2>{{ character.name }}</h2>
-        <img :src="character.icon"/>
-        <p> {{ character.desc }}</p>
-        <h4> Level 80 </h4>
-        <div class="stats">
-            <h4>HP: {{ character.baseStats.HP }}</h4>
-            <h4>ATK: {{ character.baseStats.ATK }}</h4>
-            <h4>DEF: {{ character.baseStats.DEF }}</h4>
-            <h4>SPD: {{ character.baseStats.SPD }}</h4>
-            <h4>TAUNT: {{ character.baseStats.TAUNT }}</h4>
+        <h6 class="level"> Lv. 80/80 </h6>
+        <div class="statCon">
+          <h4 class="stats">HP: {{ character.baseStats.HP }}</h4>
+          <h4 class="stats">ATK: {{ character.baseStats.ATK }}</h4>
+          <h4 class="stats">DEF: {{ character.baseStats.DEF }}</h4>
+          <h4 class="stats">Speed: {{ character.baseStats.SPD }}</h4>
+          <h4 class="stats">Crit Rate: {{ character.advStats.CR }}%</h4>
+          <h4 class="stats">Crit DMG: {{ character.advStats.CD }}%</h4>
         </div>
+        <p class="cDesc"> {{ character.desc }}</p>
+      </div>
     </div>
 </template>
 
@@ -33,6 +36,45 @@ console.log("hi");
 
 <style scoped>
 *{
-    background-color: #973232;
+  box-sizing: border-box;
+}
+h2{
+  margin: 0;
+}
+.level{
+  margin: 0%;
+  padding: 0%;
+  font-size: 100%;
+}
+.imageFull{
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  pointer-events: none;
+}
+.charinfo{
+  margin: 3%;
+  width: 40%;
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  background-color: #00000021;
+}
+.statCon{
+  padding: 3%;
+  text-align: right;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+.stats{
+  margin: 0;
+  text-align: right;
+}
+.cDesc{
+  width: 100%;
+  text-align: left;
+  position: absolute;
+  right: 50;
 }
 </style>

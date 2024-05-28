@@ -1,8 +1,8 @@
 <template>
-   <router-link :to="charPath" class="card">
-    <img class="image-of-char" :src="Character.icon" :alt="Character.name"/>
-    <h2 class="char-name">{{ Character.name }}</h2>
-    <img class="star-rare" :src="Character.rarityicon"/>
+   <router-link :to="charPath" class="card" draggable="false">
+    <img draggable="false" class="image-of-char" :src="Character.icon" :alt="Character.name"/>
+    <h2 draggable="false" class="char-name">{{ Character.name }}</h2>
+    <img draggable="false" class="star-rare" :src="Character.rarityicon"/>
   </router-link>
 </template>
 
