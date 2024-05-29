@@ -1,15 +1,17 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <h1>Pick a minigame to get monies</h1>
+  <h2>delete popup game, trivia, hitting the button at exactly the right time 
+  </h2>
+  <button>Pop up precision</button>
+  <button>Mr. Callahan Style Jeopardy</button>
+  <button class="three">Button Accuracy</button>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<script setup>
+
+
+
+const timer = Math.floor(Math.random() * 100) + 1; //make between 3 and 12 secs ig 
+console.log(timer) 
+
+</script>

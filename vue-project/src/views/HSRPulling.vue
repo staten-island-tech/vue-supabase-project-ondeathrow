@@ -1,3 +1,3 @@
 <template>
-    this is so dumb
+    hehehe
 </template>
