@@ -10,10 +10,9 @@
 </template>
 
 <script setup>
-import ProfileSomething from '../components/ProfileSomething.vue';
 import { characters, lightCones } from '@/components/CharacterList.vue';
 import CharacterCard from "@/components/CharacterCard.vue";
-
+console.log(characters.length);
 </script>
 
 <style scoped>

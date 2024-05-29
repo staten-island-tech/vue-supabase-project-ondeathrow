@@ -31,6 +31,8 @@ const copypaste = [
     rarity: 5,
     path: "",
     image: "",
+    equip: false,
+    obtained: false,
     stats: {
       HP: 0,
       ATK: 0,
@@ -112,7 +114,7 @@ export const characters = [
       CD: 50,
       Break: 0,
     },
-    icon: "https://cdn.starrailstation.com/assets/a689849f61af1ba601f65834a8414859806b23ad28488916cadee237ae1c4541.webp",
+    icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122838/3951d1cfe25f83ce0dbccfc1e9179f38_8791635192165709278.png",
   },
   {
     name: "Bailu",
@@ -1183,7 +1185,8 @@ export const lightCones = [
     rarity: 5,
     path: "",
     image: "",
-    level: 80,
+    equip: false,
+    obtained: false,
     stats: {
       HP: 0,
       ATK: 0,
@@ -1198,8 +1201,9 @@ export const lightCones = [
     name: "Along the Passing Shore",
     rarity: 5,
     image: "",
-    level: 80,
     path: "Nihility",
+    equip: false,
+    obtained: false,
     stats: {
       HP: 1058,
       ATK: 635,
@@ -1214,7 +1218,8 @@ export const lightCones = [
     rarity: 5,
     path: "Erudition",
     image: "",
-    level: 80,
+    equip: false,
+    obtained: false,
     stats: {
       HP: 1058,
       ATK: 582,
@@ -1229,7 +1234,8 @@ export const lightCones = [
     rarity: 5,
     path: "The Hunt",
     image: "",
-    level: 80,
+    equip: false,
+    obtained: false,
     stats: {
       HP: 952,
       ATK: 582,
@@ -1243,8 +1249,9 @@ export const lightCones = [
     name: "Before Dawn",
     rarity: 5,
     path: "Erudition",
+    equip: false,
+    obtained: false,
     image: "",
-    level: 80,
     stats: {
       HP: 1058,
       ATK: 582,
@@ -1259,7 +1266,8 @@ export const lightCones = [
     rarity: 5,
     path: "Destruction",
     image: "",
-    level: 80,
+    equip: false,
+    obtained: false,
     stats: {
       HP: 1058,
       ATK: 635,
@@ -1274,7 +1282,6 @@ export const lightCones = [
     rarity: 5,
     path: "Harmony",
     image: "",
-    level: 80,
     stats: {
       HP: 1164,
       ATK: 529,

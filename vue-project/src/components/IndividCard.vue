@@ -1,12 +1,18 @@
 <template>
-    <img class="fullchar" :src="Character.fullBody" :alt="Character.name"/>
-    <h2 class="char-name">{{ Character.name }}</h2>
 </template>
 
 <script setup>
-const props = defineProps({
-  Character: Object,
-});
+import { characters, lightCones } from './CharacterList.vue';
+
+function thing(){
+  const chaSt = characters.baseStats;
+  const addHP = lightCones.stats.HP;
+  const addDEF = lightCones.stats.DEF;
+  const addATK = lightCones.stats.ATK;
+  if(lightCones.equip === true){
+    const chaSt =+ addHP;
+  }
+}
 </script>
  
 <style scoped>

@@ -5,10 +5,13 @@
   font-style: normal;
   color: #ffffff;
   scrollbar-color: #414674 #1f1d31;
-  scrollbar-width: thin;
+  scrollbar-width: none;
   background-size: cover;
 }
-
+* ::selection{
+  color: #348791;
+  background-color: #e9c35a;
+}
 body{
   /* background-image: url("https://hsr.hoyoverse.com/_nuxt/img/pc-normal-bg.3870807.png");   */
   background-color: #1f1d31;
@@ -31,7 +34,7 @@ body{
 
 a{
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
   font-size: 140%;
   margin: auto;
   color: #ffffff;

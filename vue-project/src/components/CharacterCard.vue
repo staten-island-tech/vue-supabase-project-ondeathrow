@@ -8,6 +8,7 @@
 
 <script setup>
 import { computed } from 'vue';
+import { characters } from './CharacterList.vue';
 const props = defineProps({
   Character: Object,
 });
@@ -15,6 +16,18 @@ const props = defineProps({
 const charPath = computed(()=>{
   return `character/${props.Character.name}`
 });
+
+function colorscale(){
+  for(let i=0; i<characters.length; i++){
+    if(characters[i].obtained === true){
+      document.querySelector(".card").classList.remove("unobtained");
+      document.querySelector(".card").classList.add("obtained");
+    } else {
+      document.querySelector(".card").classList.remove("obtained");
+      document.querySelector(".card").classList.add("unobtained");
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -22,16 +35,17 @@ const charPath = computed(()=>{
   font-size: 100%;
   margin: 0% 3% 0% 3%;
   color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .card{
   margin: 1rem;
   font-size: 100%;
   background-color: #10162ead;
   border: 0.2rem solid #a98e61;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 14%;
+  display: inline-block;
+  width: calc(14%);
   height: max-content;
   transition: 0.5s;
   hyphens: auto;
