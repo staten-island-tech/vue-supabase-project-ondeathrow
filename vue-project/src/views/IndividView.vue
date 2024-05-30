@@ -15,15 +15,15 @@ const selectedCharacter = characters.find(character => character.name === route.
 
 <style scoped>
 .container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .card{
-    padding: 1%;
+  padding: 1%;
 }
 h1{
-    font-size: 135%;
-    color: #ffffff;
+  font-size: 135%;
+  color: #ffffff;
 }
 </style>  
