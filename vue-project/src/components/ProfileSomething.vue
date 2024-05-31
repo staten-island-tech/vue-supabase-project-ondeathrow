@@ -12,7 +12,7 @@
 //we can either change "obtained" to true when we get the char, or we can push those in a new array; the former seems more efficent
 import { characters, lightCones } from './CharacterList.vue';
 
-//relic??? then addition
+//relic??? then additions
 </script>
 
 <style scoped>

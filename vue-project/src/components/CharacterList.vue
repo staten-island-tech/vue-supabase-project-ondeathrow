@@ -146,7 +146,7 @@ export const characters = [
     path: "Nihility",
     element: "Wind",
     obtained: false,
-    fullBody: "https://honkailab.com/wp-content/uploads/2024/01/BlackSwan-1536x1234.webp",
+    fullBody: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/122114/d006c4e640e1136555030566fdbab632_600959861979807524.png",
     desc: `A Memokeeper of the Garden of Recollection. An indolent and mysterious soothsayer. "Remembrance" of men are hers to heed, threads of fate are hers to tug.`,
     baseStats: {
       HP: 1086,
@@ -284,7 +284,7 @@ export const characters = [
     path: "The Hunt",
     element: "Imaginary",
     obtained: false,
-    fullBody: "",
+    fullBody: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/114134/73415b6e6625f7d7fa3bcf6c93db7ba0_1694223275280494114.png",
     desc: `Member of the Intelligentsia Guild. Eccentric temperament, sharp-tongued but with an elegant demeanor. The face under the strange alabaster head sculpture is apparently unexpectedly handsome.`,
     baseStats: {
       HP: 1047,
@@ -319,7 +319,7 @@ export const characters = [
     path: "Preservation",
     element: "Quantum",
     obtained: false,
-    fullBody: "",
+    fullBody: "https://webstatic.hoyoverse.com/upload/op-public/2023/08/28/35f7231fce35b5f4ca665551f5523291_71931826496766719.png",
     desc: `Head of the Divination Commission on the Luofu. The person who uses the third eye and Matrix of Prescience to foretell the route of Xianzhou and the outcomes of events.`,
     baseStats: {
       HP: 1474,
