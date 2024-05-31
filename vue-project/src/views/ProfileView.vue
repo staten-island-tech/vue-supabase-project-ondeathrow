@@ -1,9 +1,10 @@
 <template>
     <h1>Character Index</h1>
-    <div class="profile">
+    <div style="background-image: url(imageIm)" class="profile">
         <h2>[username]</h2>
         <h4>[img profile]</h4>
-        <p class="signature" maxlength="75"> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaasjwe wednjwed wkejdiog wediwejdwek rnegckj weioetrklhkytmj uyklmtylkhrtog oprgtugr </p>
+        <p class="signature" maxlength="75"> background changes randomly aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaasjwe wednjwed wkejdiog wediwejdwek rnegckj weioetrklhkytmj uyklmtylkhrtog oprgtugr </p>
+        <h6> hi</h6>
     </div>
     <div class="container">
         <CharacterCard
@@ -16,8 +17,15 @@
 
 <script setup>
 import { characters, lightCones } from '@/components/CharacterList.vue';
+import { wallpapers } from '@/components/RandomWall.vue';
 import CharacterCard from "@/components/CharacterCard.vue";
 console.log(characters.length);
+
+let item = wallpapers[Math.floor(Math.random()*wallpapers.length)];
+console.log(item);
+let linkIm = item.image;
+console.log(linkIm);
+
 </script>
 
 <style scoped>
@@ -28,7 +36,6 @@ console.log(characters.length);
     width: 70%;
 }
 .profile{
-    background-image: url("https://preview.redd.it/nameless-journey-wallpaper-v0-esnnym3dfu5c1.jpeg?auto=webp&s=0fe86ef198e0e6f0231e2155084c4e4c81bb253d");    background-color: black;
     position: fixed;
     z-index: 2;
     right: 15px;

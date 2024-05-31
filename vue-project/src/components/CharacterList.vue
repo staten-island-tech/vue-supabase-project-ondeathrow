@@ -53,7 +53,7 @@ export const characters = [
     path: "Nihility",
     element: "Lightning",
     obtained: false,
-    fullBody: "",
+    fullBody: "https://honkailab.com/wp-content/uploads/Acheron.webp",
     desc: `A drifter claiming to be a Galaxy Ranger. Her true name is unknown. She walks the cosmos alone, carrying with her a long sword.`,
     baseStats: {
       HP: 1125,
@@ -77,7 +77,7 @@ export const characters = [
     path: "Eurdition",
     element: "Physical",
     obtained: false,
-    fullBody: "",
+    fullBody: "https://honkailab.com/wp-content/uploads/2023/11/Argenti-1536x1428.webp",
     desc: `A classic knight of the "Knights of Beauty" who is piously seeking his missing Aeon Idrila the "Beauty." Forthright and candid, he wanders the cosmos espousing the virtues of Idrila's good name.`,
     baseStats: {
       HP: 1047,
@@ -100,7 +100,7 @@ export const characters = [
     path: "Preservation",
     element: "Imaginary",
     obtained: false,
-    fullBody: "",
+    fullBody: "https://honkailab.com/wp-content/uploads/Aventurine.webp",
     desc: `A high-ranking executive of the IPC's Strategic Investment Department. A risk-taker, his constant smile makes it difficult for people to discern his true feelings.`,
     baseStats: {
       HP: 1203,
@@ -123,7 +123,7 @@ export const characters = [
     path: "Abundance",
     element: "Lightning",
     obtained: false,
-    fullBody: "",
+    fullBody: "https://honkailab.com/wp-content/uploads/2023/02/Bailu_honkai_star_rail_Splash_honkailab_genshinlab.webp",
     desc: `The High Elder of the Vidyadhara, who is also known as the "Healer Lady" on the Luofu. She uses her unique medical science and the medical treatment that can only be provided by the Vidyadhara dragon race to save lives.`,
     baseStats: {
       HP: 1319,
@@ -146,7 +146,7 @@ export const characters = [
     path: "Nihility",
     element: "Wind",
     obtained: false,
-    fullBody: "",
+    fullBody: "https://honkailab.com/wp-content/uploads/2024/01/BlackSwan-1536x1234.webp",
     desc: `A Memokeeper of the Garden of Recollection. An indolent and mysterious soothsayer. "Remembrance" of men are hers to heed, threads of fate are hers to tug.`,
     baseStats: {
       HP: 1086,
@@ -169,7 +169,7 @@ export const characters = [
     path: "Destruction",
     element: "Wind",
     obtained: false,
-    fullBody: "",
+    fullBody: "https://preview.redd.it/ri9rki23s8191.jpg?auto=webp&s=8daf3cf749089b9fce6777ee24be7a34e069ab9d",
     desc: `A member of the Stellaron Hunters, and a swordsman who abandoned his body to become a blade. Pledges loyalty to "Destiny's Slave," and possesses a terrifying self-healing ability.`,
     baseStats: {
       HP: 1358,
@@ -192,7 +192,7 @@ export const characters = [
     path: "Harmony",
     element: "Wind",
     obtained: false,
-    fullBody: "",
+    fullBody: "https://honkailab.com/wp-content/uploads/2023/02/Bronya_honkailab_full.png",
     desc: `Heir apparent to the Supreme Guardian of Belobog. She possesses pride befitting of a princess, but also the determination and integrity of a soldier.`,
     baseStats: {
       HP: 1241,
@@ -215,7 +215,7 @@ export const characters = [
     path: "The Hunt",
     element: "Physical",
     obtained: false,
-    fullBody: "",
+    fullBody: "https://honkailab.com/wp-content/uploads/boothill.webp",
     desc: `A cyborg cowboy drifting among the stars. Extremely optimistic and unrestrained. He is a member of the Galaxy Rangers who swore to punish the wretched by any and all means... His flamboyant and brash actions were all to draw the attention of the Interastral Peace Corporation — the target of his revenge.`,
     baseStats: {
       HP: 1203,
@@ -238,7 +238,7 @@ export const characters = [
     path: "Destruction",
     element: "Physical",
     obtained: false,
-    fullBody: "",
+    fullBody: "https://honkailab.com/wp-content/uploads/2023/02/Clara_honkai_star_rail_Splash_honkailab_genshinlab.webp",
     desc: `A vagrant girl who lives with robots. She is introverted, gentle, and has a pure heart. She wishes for all Underworlders to become a family.`,
     baseStats: {
       HP: 1241,
@@ -261,7 +261,7 @@ export const characters = [
     path: "Destruction",
     element: "Imaginary",
     obtained: false,
-    fullBody: "",
+    fullBody: "https://honkailab.com/wp-content/uploads/2023/08/danheng-imbibitorlunae-full-1472x1536.webp",
     desc: `Dan Heng's true form from his Vidyadhara lineage carries the residual power left behind by his past incarnation, the Imbibitor Lunae. Upon accepting the majestic horns atop his crown, he must accept all the merits and faults attributed to that sinner.`,
     baseStats: {
       HP: 1241,

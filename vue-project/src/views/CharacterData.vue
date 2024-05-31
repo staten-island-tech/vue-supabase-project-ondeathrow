@@ -1,6 +1,6 @@
 <template>
     <div class="displayChar">
-      <img class ="imageFull" :src="character.icon"/>
+      <img class ="imageFull" :src="character.fullBody"/>
       <div class="charinfo">
         <h2>{{ character.name }}</h2>
         <h6 class="level"> Lv. 80/80 </h6>
@@ -49,8 +49,9 @@ h2{
 .imageFull{
   position: absolute;
   left: 10%;
-  top: 20%;
+  top: 10%;
   pointer-events: none;
+  width: 65%;
 }
 .charinfo{
   margin: 3%;
