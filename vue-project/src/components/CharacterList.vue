@@ -169,7 +169,7 @@ export const characters = [
     path: "Destruction",
     element: "Wind",
     obtained: false,
-    fullBody: "https://preview.redd.it/ri9rki23s8191.jpg?auto=webp&s=8daf3cf749089b9fce6777ee24be7a34e069ab9d",
+    fullBody: "https://upload-os-bbs.hoyolab.com/upload/2022/05/26/7934611/d01ef191f3463c7ebc917883ecaa5f7b_5166386610407235058.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
     desc: `A member of the Stellaron Hunters, and a swordsman who abandoned his body to become a blade. Pledges loyalty to "Destiny's Slave," and possesses a terrifying self-healing ability.`,
     baseStats: {
       HP: 1358,
@@ -192,7 +192,7 @@ export const characters = [
     path: "Harmony",
     element: "Wind",
     obtained: false,
-    fullBody: "https://honkailab.com/wp-content/uploads/2023/02/Bronya_honkailab_full.png",
+    fullBody: "https://64.media.tumblr.com/5a3bbeab273d0ef370d531d0b20827e2/efcad93392ec2327-fb/s1280x1920/a782a0db29822339aca2ba7268390ccb0c55d875.png",
     desc: `Heir apparent to the Supreme Guardian of Belobog. She possesses pride befitting of a princess, but also the determination and integrity of a soldier.`,
     baseStats: {
       HP: 1241,
@@ -319,7 +319,7 @@ export const characters = [
     path: "Preservation",
     element: "Quantum",
     obtained: false,
-    fullBody: "https://webstatic.hoyoverse.com/upload/op-public/2023/08/28/35f7231fce35b5f4ca665551f5523291_71931826496766719.png",
+    fullBody: "https://64.media.tumblr.com/8aa9ad3bab6b4c0a11629fcd3c800045/bb0379831322bba5-b2/s1280x1920/f8ba9efab74558670e8843c0c2304fdcd9e2bfb2.png",
     desc: `Head of the Divination Commission on the Luofu. The person who uses the third eye and Matrix of Prescience to foretell the route of Xianzhou and the outcomes of events.`,
     baseStats: {
       HP: 1474,
@@ -388,7 +388,7 @@ export const characters = [
     path: "Abundance",
     element: "Wind",
     obtained: false,
-    fullBody: "",
+    fullBody: "https://cdn.starrailstation.com/assets/910a9e9a808282325ed8dad92e82dc315e40e08174c8d2cc095de37722e3fd13.webp",
     desc: `A trainee Ten-Lords Commission Judge of the Xianzhou Luofu, she is a young foxian girl possessed by a heliobus. She is a timid and weak girl who is afraid of all kinds of strange things, but is responsible for luring and subduing evil spirits.`,
     baseStats: {
       HP: 1358,
@@ -467,7 +467,7 @@ export const characters = [
     rarity: 5,
     rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Nihility",
-    fullBody: "",
+    fullBody: "https://preview.redd.it/kafka-splash-art-behind-the-scenes-v0-d0gfwbwxhp6b1.png?width=640&crop=smart&auto=webp&s=32c1466199032a939c84e639ea2e87d081b38070",
     desc: ``,
     element: "Lightning",
     obtained: false,
@@ -490,7 +490,7 @@ export const characters = [
     rarity: 5,
     rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Abundance",
-    fullBody: "",
+    fullBody: "https://upload-os-bbs.hoyolab.com/upload/2022/05/26/7934611/b9c3a3d5e3355729709ba9937508b34a_5989325761585156685.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
     desc: ``,
     element: "Imaginary",
     obtained: false,
@@ -514,7 +514,7 @@ export const characters = [
     rarityicon: "https://microbelift.com/wp-content/uploads/2020/06/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png",
     path: "Harmony",
     element: "Physical",
-    fullBody: "",
+    fullBody: "https://cdn.starrailstation.com/assets/0138e78111a7211d884e5ac86d8745f7d556b3d769edc541724ff94c9e7f8a84.webp",
     desc: ``,
     obtained: false,
     desc: `A Halovian singer who was born in Penacony and has risen to cosmic fame. An elegant and demure young lady. This time, she has been invited home by The Family to grace everyone with song during the Charmony Festival. She can use the power of "Harmony" to broadcast her music, manifesting "resonance" among not only her fans but all manner of lifeforms.`,
@@ -721,7 +721,7 @@ export const characters = [
     rarity: 4,
     path: "Destruction",
     element: "Lightning",
-    fullBody: "",
+    fullBody: "https://upload-os-bbs.hoyolab.com/upload/2022/05/26/7934611/a8098196feb50f9806d5d8e598dcaa88_1910286083887812049.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
     desc: ``,
     obtained: false,
     baseStats: {
@@ -1005,7 +1005,7 @@ export const characters = [
   {
     name: "Pela",
     rarity: 4,
-    fullBody: "",
+    fullBody: "https://upload-os-bbs.hoyolab.com/upload/2022/05/26/7934611/6d3bfacb2a5aee1a084dc8a030f426b5_6877348889844072147.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
     desc: ``,
     path: "Nihility",
     element: "Ice",
@@ -1051,7 +1051,7 @@ export const characters = [
     rarity: 4,
     path: "Nihility",
     element: "Wind",
-    fullBody: "",
+    fullBody: "https://upload-os-bbs.hoyolab.com/upload/2022/05/26/7934611/b82eefaf3431d2417565b3ef9e7fe711_3293112108286371035.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
     desc: ``,
     baseStats: {
       HP: 1023,
@@ -1096,7 +1096,7 @@ export const characters = [
     path: "The Hunt",
     element: "Physical",
     obtained: false,
-    fullBody: "",
+    fullBody: "https://64.media.tumblr.com/b51c482e8147016b62e2f46ab19ed07a/5c5142f732df4847-23/s1280x1920/8355be021fb566b953bcc28f8844841383acf41b.png",
     baseStats: {
       HP: 917,
       ATK: 564,
@@ -1160,7 +1160,7 @@ export const characters = [
     name: "Yukong",
     rarity: 4,
     path: "Harmony",
-    fullBody: "",
+    fullBody: "https://64.media.tumblr.com/bc2627140ffc7749ad500017caff506d/5d38bf749b247c3f-57/s1280x1920/75919db83e8b2a8034181902e44f807ca9af3dc3.png",
     desc: ``,
     element: "Imaginary",
     baseStats: {
@@ -1181,20 +1181,20 @@ export const characters = [
 ];
 export const lightCones = [
   {
-    name: "",
-    rarity: 5,
-    path: "",
-    image: "",
+    name: "None",
+    rarity: 0,
+    path: "None",
+    image: "None",
     equip: false,
-    obtained: false,
+    obtained: true,
     stats: {
       HP: 0,
       ATK: 0,
       DEF: 0,
     },
     passive: {
-      pName: "",
-      pDescrip: "",
+      pName: "None",
+      pDescrip: "None",
     },
   },
   {

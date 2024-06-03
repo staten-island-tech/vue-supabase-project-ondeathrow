@@ -15,6 +15,10 @@
         <p class="cDesc"> {{ character.desc }}</p>
       </div>
     </div>
+    <div class="lightCC">
+      <div class="lightinv"></div>
+      <button class="lightB" @click="disp"> Insert Lightcone </button>
+    </div>
 </template>
 
 <script>
@@ -32,6 +36,19 @@ export default {
   }
 };
 console.log("hi");
+function disp(){
+  console.log("button clicked");
+}
+/* function things(e){
+  e.preventDefault();
+  display();
+  cards();
+};
+function display(){
+}
+function cards(){
+  lightCones.forEach((e)=> console.log(e.name));
+} */
 </script>
 
 <style scoped>
@@ -40,6 +57,13 @@ console.log("hi");
 }
 h2{
   margin: 0;
+}
+.lightCC{
+  background-color: white;
+  position: fixed;
+  width: max-content;
+  bottom: 10%;
+  right: 15%;
 }
 .level{
   margin: 0%;
@@ -63,14 +87,14 @@ h2{
 }
 .statCon{
   padding: 3%;
-  text-align: right;
+  text-align: justify;
   width: max-content;
   margin: 0 auto;
   position: relative;
 }
 .stats{
   margin: 0;
-  text-align: right;
+  text-align: justify;
 }
 .cDesc{
   width: 100%;

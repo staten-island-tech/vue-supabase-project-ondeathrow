@@ -3,8 +3,8 @@
     <div style="background-image: url(imageIm)" class="profile">
         <h2>[username]</h2>
         <h4>[img profile]</h4>
-        <p class="signature" maxlength="75"> background changes randomly aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaasjwe wednjwed wkejdiog wediwejdwek rnegckj weioetrklhkytmj uyklmtylkhrtog oprgtugr </p>
-        <h6> hi</h6>
+        <p class="signature" maxlength="75"> insert backgound changing randomly </p>
+        <h6> {{linkIm }}</h6>
     </div>
     <div class="container">
         <CharacterCard
@@ -22,7 +22,6 @@ import CharacterCard from "@/components/CharacterCard.vue";
 console.log(characters.length);
 
 let item = wallpapers[Math.floor(Math.random()*wallpapers.length)];
-console.log(item);
 let linkIm = item.image;
 console.log(linkIm);
 
