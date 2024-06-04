@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import cosmos from "@/images/Wallpaper_Cosmodyssey.png";
 export const wallpapers = [
     {
         name: "Conductor's Treat",
@@ -13,7 +14,7 @@ export const wallpapers = [
     },{
         name: "Cosmodyssey",
         desc: "A train on its tracks in a city.",
-        image: "",
+        image: cosmos,
     },{
         name: "Ingenium Dreams",
         desc: "A dark, gloomy looking city with birds flying past, carrying the banner of the city perhaps. Dark trees stem out towards the street and lanterns lit up across the streets.",
