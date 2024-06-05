@@ -21,7 +21,7 @@
 
 <script>
 // const { storeToRefs } = require('pinia')
-import { useUserStore } from '/vue-project/src/main'
+import { useUserStore } from ''
 
 const store = useUserStore()
               
@@ -35,35 +35,38 @@ new Vue({
 //  const username= defineModel('username')
 //  const password= defineModel('password')
 
-function login(){
+
+function logup(){
   async function signUpNewUser() {
- const { data, error } = await supabase.auth.signUp({
+      const { data, error } = await supabase.auth.signUp({
   email: 'example@email.com',
   password: 'example-password',
+  options: {
+    data: {
+      username: 'John',
+      age: 27,
     },
-  )}  
+  },
+  })
 
-  
-//      async function signInWithEmail() {
-//    const signIn = await supabase.auth.signInWithPassword({}
-//     try {
-//       const {user, session, error} =await supabase.auth.signIn{(
-//       email: email.value,
-//       password: password.value,
-//     )};
-//       if (error){
-//         console.log(error)
-//       }
-//       else{
-        
+  const {data: { user },} = await supabase.auth.getUser()
+let metadata = user.user_metadata
 
-//       }
 
-//     }
 
-      
-//    )
-//  }  
+/* create table public.profiles (
+  id uuid not null references auth.users on delete cascade,
+  first_name text,
+  last_name text,
+
+  primary key (id)
+);
+
+alter table public.profiles enable row level security; */
+
+
+
+ }  
 
 
 //  async function signInWithEmail(){
@@ -95,11 +98,11 @@ password(
 // })
 
 
-console.log(signUpNewUser)
-console.log(signInWithEmail)
+
 }
 
-
+console.log(logup)
+console.log(signInWithEmail)
 
 
 
