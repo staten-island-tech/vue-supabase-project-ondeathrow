@@ -1,9 +1,3 @@
-<template>
-    <div>
-
-    </div>
-</template>
-
 <script>
 import cosmos from "@/images/Wallpaper_Cosmodyssey.png";
 export const wallpapers = [
@@ -34,7 +28,3 @@ export const wallpapers = [
     },
 ]
 </script>
-
-<style scoped>
-
-</style>

@@ -14,7 +14,7 @@ const props = defineProps({
 });
 
 const charPath = computed(()=>{
-  return `character/${props.Character.name}`
+  return `character/${props.Character.name}`;
 });
 
 function colorscale(){

@@ -2,8 +2,8 @@
     <h1>Character Index</h1>
     <div :style="{ backgroundImage: 'url(' + linkIm + ')' }" class="profile">
         <h2>[username]</h2>
-        <h4>[img profile]</h4>
-        <p class="signature" maxlength="75"> insert background changing randomly </p>
+        <h4>[img avatar]</h4>
+        <p class="signature" maxlength="75"> signature/bio here!!! </p>
         <h6>{{ linkIm }}</h6>
     </div>
     <div class="container">
@@ -47,6 +47,11 @@ onMounted(() => {
     margin: 1rem;
     background-size: cover;
     background-position: center;
+}
+h6{
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
 }
 .signature{
     overflow: hidden;
