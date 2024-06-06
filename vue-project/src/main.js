@@ -14,12 +14,12 @@ app.use(router)
 
 app.mount('#app')
 
-export const useUserStore = defineStore('user',{
-})
+//export const useUserStore = defineStore('user',{
+//})
 
-import postgres from 'postgres'
+//import postgres from 'postgres'
 
-const connectionString = process.env.DATABASE_URL
-const sql = postgres(connectionString)
+//const connectionString = process.env.DATABASE_URL
+//const sql = postgres(connectionString)
 
-export default sql
+//export default sql
