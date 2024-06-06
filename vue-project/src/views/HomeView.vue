@@ -34,6 +34,23 @@ async function register() {
     console.error(error);
   }
 }
+
+async function login() {
+  try {
+    console.log("abc");
+    const { data, error } = await supabase.auth.signIn({
+      email: email.value,
+      password: password.value,
+    });
+    console.log(email.value);
+    console.log(password.value);
+    console.log(data);
+    if (error) throw error;
+  } catch (error) {
+    console.error(error);
+  }
+}
+  
 </script>
 
 <style scoped></style>
