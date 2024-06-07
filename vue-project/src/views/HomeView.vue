@@ -35,7 +35,20 @@ async function register() {
   }
 }
 
-async function login() {
+<div>
+    <div class="signin">
+      <h1>sign over here</h1>
+      <form @submit.prevent="register()">
+        <label for="email">email</label>
+        <input type="email" v-model="email" id="email" />
+        <label for="password">password</label>
+        <input type="password" v-model="password" id="password" />
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+  </div>
+  
+  async function login() {
   try {
     console.log("abc");
     const { data, error } = await supabase.auth.signIn({
