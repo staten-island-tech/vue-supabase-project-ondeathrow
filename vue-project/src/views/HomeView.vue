@@ -303,6 +303,35 @@ const openpage = (bannername) => {
 };
 
 const pulllogic = () => {
+  let result; 
+  if (currentpage.value === "Acheron") {
+    if (count === 9) {
+      const fourfive = Math.floor(Math.random() * 5100) + 1 
+    }
+    else {
+      const rateup = Math.floor(Math.random() * 76) + 1 
+      if (rateup <= 38) {
+        const which = Math.floor(Math.random() * 38) + 1 
+        result.push(acheron[0].fourstarchara[which])
+      }
+      else {
+        const whichrate = Math.floor(Math.random() * 3) + 1 
+        if (whichrate === 1) {
+          result = "Gallagher"
+        }
+        else if (whichrate === 2) {
+          result = "Pela"
+        }
+        else {
+          result = "Dan Heng"
+        }
+      }
+    }
+  }
+}
+
+
+const nope = () => {
   let result;
   if (count === 9){
     const fourfive =  Math.floor(Math.random() * 5100) + 1; 
