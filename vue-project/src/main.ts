@@ -1,15 +1,13 @@
 import './assets/main.css'
 
 import { createApp } from 'vue'
-import { createPinia, PiniaVuePlugin, defineStore } from 'pinia'
+import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
 
-const app = createApp(App)
-const pinata = createPinia
-
-app.use(createPinia())
+const app = createApp(App);
+const pinia = createPinia();
 app.use(router)
-
-app.mount('#app')
+app.use(pinia);
+app.mount('#app');
