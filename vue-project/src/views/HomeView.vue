@@ -333,91 +333,50 @@ const pulllogic = () => {
           }
         }
       }
-      count = 0;
+      count = 0;  
     } else {
-      const rateup = Math.floor(Math.random() * 76) + 1;
-      if (rateup <= 38) {
-        const allfour = [...acheron[0].fourstarchara, ...acheron[0].fourstarlc];
-        const which = Math.floor(Math.random() * allfour.length);
-        result = allfour[which];
-      } else {
-        const whichrate = Math.floor(Math.random() * 3) + 1;
-        if (whichrate === 1) {
-          result = "Gallagher";
-        } else if (whichrate === 2) {
-          result = "Pela";
-        } else {
-          result = "Dan Heng";
+      const reg = Math.floor(Math.random() * 1000) + 1;
+      if (reg <= 6) {
+        const fourfive = Math.floor(Math.random() * 5100) + 1;
+        if (fourfive <= 306) {
+          const winloss = Math.floor(Math.random() * 2) + 1;
+          if (winloss === 1) {
+            result = "Acheron";
+          } else {
+            const lossarr = [...acheron[0].loss];
+            const losswho = Math.floor(Math.random() * lossarr.length);
+            result = lossarr[losswho];
+          }
         }
+      } else if (reg > 6 && reg <= 51) {
+        const rateup = Math.floor(Math.random() * 76) + 1;
+        if (rateup <= 38) {
+          const allfour = [...acheron[0].fourstarchara, ...acheron[0].fourstarlc];
+          const which = Math.floor(Math.random() * allfour.length);
+          result = allfour[which];
+        } else {
+          const whichrate = Math.floor(Math.random() * 3) + 1;
+          if (whichrate === 1) {
+            result = "Gallagher";
+          } else if (whichrate === 2) {
+            result = "Pela";
+          } else {
+            result = "Dan Heng";
+          }
+        }
+        count = 0; 
+      } else {
+        const allthree = [...acheron[0].threestars];
+        const whichthree = Math.floor(Math.random() * allthree.length);
+        result = allthree[whichthree];
+        count++; 
       }
     }
-  } else {
-    result = "bitch";
+  } else if (currentpage.value === "Luocha" ) {
+    
   }
   return result;
 };
-
-
-
-
-
-/* const nope = () => {
-  let result;
-  if (count === 9){
-    const fourfive =  Math.floor(Math.random() * 5100) + 1; 
-    if (fourfive <= 306) {
-        const winloss = Math.floor(Math.random() * 2) + 1
-      if (winloss === 1) {
-        const who = Math.floor(Math.random() * 7) + 1 
-        result = "welt, gepard";
-      }
-      else {
-        result = "win";
-      }
-    }
-    else {
-      const rateup = Math.floor(Math.random() * 76) + 1 
-      if (rateup <=38) {
-        const which = Math.floor(Math.random() * 38) + 1 
-        result = which;
-      }
-      else {
-        const whichrate = Math.floor(Math.random() * 3) + 1 
-        result = whichrate;
-      }
-    }
-  }
-  else {
-    const reg =  Math.floor(Math.random() * 1000) + 1;
-    if (reg <= 6) {
-      const five = Math.floor(Math.random() * 2) + 1
-      if (five === 1) {
-        const who = Math.floor(Math.random() * 7) +1 
-        result = "welt, gepard";
-      }
-      else {
-        result = "win";
-      }
-    }
-    else if (reg > 6 && reg <= 51) {
-      const rateup = Math.floor(Math.random() * 76) + 1 
-      if (rateup <=38) {
-        const which = Math.floor(Math.random() * 38) + 1 
-        result = which;
-      }
-      else {
-        const whichrate = Math.floor(Math.random() * 3) + 1 
-        result = whichrate;
-      }
-    }
-    else {
-      const three = Math.floor(Math.random() * 21) + 1 
-      result = three;
-    }
-  }
-  return result; 
-};
- */
 
 
 const rng = pulllogic();
