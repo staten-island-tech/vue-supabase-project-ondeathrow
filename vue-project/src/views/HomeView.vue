@@ -7,15 +7,15 @@ async function register() {
   try {
     console.log("aaa");
     const { data, error } = await supabase.auth.signUp({
-      email: email.value,
-      password: password.value,
+    email: email.value,
+    password: password.value,
     });
     console.log(email.value);
     console.log(password.value);
     console.log(data);
     if (error) throw error;
   } catch (error) {
-    console.error(error);<div>
+    console.error(error);
 
 
 
