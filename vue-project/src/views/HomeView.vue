@@ -1,14 +1,13 @@
 <template>
-    <div class="signup">
-      <h1>sign up over here</h1>
-      <form @submit.prevent="register()">
+      <div class="signup">
+        <h1>sign up over here</h1>
+        <form @submit.prevent="register()">
         <label for="email">email</label>
         <input type="email" v-model="email" id="email" />
         <label for="password">password</label>
         <input type="password" v-model="password" id="password" />
         <button type="submit">Sign Up</button>
       </form>
-    </div>
   </div>
 
     <div class="signin">
@@ -21,19 +20,17 @@
         <button type="submit">Sign In</button>
       </form>
     </div>
-  </div>
 
-   
 </template>
 
-<script setup>
+<script setup >
 
 import { supabase } from "../lib/supabaseClient.js";
 import { ref } from "vue";
 const email = ref("");
 const password = ref("");
 const user = ref("");
-const login = ref(");
+const login = ref("");
 
 
 async function register() {
