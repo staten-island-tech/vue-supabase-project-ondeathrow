@@ -303,16 +303,42 @@ const openpage = (bannername) => {
 };
 
 const pulllogic = () => {
-  let result; 
+  let result;
   if (currentpage.value === "Acheron") {
     if (count === 9) {
       const fourfive = Math.floor(Math.random() * 5100) + 1;
+      if (fourfive <= 306) {
+        const winloss = Math.floor(Math.random() * 2) + 1;
+        if (winloss === 1) {
+          result = "Acheron";
+        } else {
+          const lossarr = [...acheron[0].loss];
+          const losswho = Math.floor(Math.random() * lossarr.length);
+          result = lossarr[losswho];
+        }
+      } else {
+        const rateup = Math.floor(Math.random() * 76) + 1;
+        if (rateup <= 38) {
+          const allfour = [...acheron[0].fourstarchara, ...acheron[0].fourstarlc];
+          const which = Math.floor(Math.random() * allfour.length);
+          result = allfour[which];
+        } else {
+          const whichrate = Math.floor(Math.random() * 3) + 1;
+          if (whichrate === 1) {
+            result = "Gallagher";
+          } else if (whichrate === 2) {
+            result = "Pela";
+          } else {
+            result = "Dan Heng";
+          }
+        }
+      }
     } else {
       const rateup = Math.floor(Math.random() * 76) + 1;
       if (rateup <= 38) {
-        const allfour = [...acheron[0].fourstarchara, ...acheron[0].fourstarlc]
-        const which = Math.floor(Math.random() * allfour.length)
-        result = allfour[which]
+        const allfour = [...acheron[0].fourstarchara, ...acheron[0].fourstarlc];
+        const which = Math.floor(Math.random() * allfour.length);
+        result = allfour[which];
       } else {
         const whichrate = Math.floor(Math.random() * 3) + 1;
         if (whichrate === 1) {
