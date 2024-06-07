@@ -1,35 +1,53 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+*{
+  text-align: center;
+  font-family: "din-2014", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffffff;
+  scrollbar-color: #414674 #1f1d31;
+  scrollbar-width: none;
+  background-size: cover;
+}
+* ::selection{
+  color: #348791;
+  background-color: #e9c35a;
+}
+body{
+  /* background-image: url("https://hsr.hoyoverse.com/_nuxt/img/pc-normal-bg.3870807.png");   */
+  background-color: #1f1d31;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-a,
-.green {
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  position: sticky;
+  z-index: 4;
+  width: 100%;
+  height: 10%;    
+  top: 0;
+  color: #ffffff;
+  background-color: #242c47fa;
+}
+
+a{
+  text-align: center;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 140%;
+  margin: auto;
+  color: #ffffff;
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  transition: 0.5s;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+a:hover{
+  background-color: #374572fa;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+nav{
+  text-align: left;
+  display: flex;
+  width: 30px;
 }
