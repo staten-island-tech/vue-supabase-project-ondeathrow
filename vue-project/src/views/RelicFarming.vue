@@ -1,24 +1,16 @@
 <template>
+    <h1>Click</h1>
     <div>
         <h1>Cavern Of Corrosion</h1>
-        <button>Path of Gelid Wind</button>
-        <button>Eagle of Twilight Line</button>
-        <button>Champion of Streetwise Boxing</button>
-        <button>Thief of Shooting Meteor</button>
-        <button>Passerby of Wandering Cloud</button>
-        <button>Musketeer of Wild Wheat</button>
-        <button>Guard of Wuthering Snow</button>
-        <button>Genius of Brilliant Stars</button>
-        <button>Knight of Purity Palace</button>
-        <button>Band of Sizzling Thunder</button>
-        <button>Firesmith of Lava-Forging</button>
-        <button>Wastelander of Banditry Desert</button>
-        <button>Longevous Disciple</button>
-        <button>Messenger Traversing Hackerspace</button>
-        <button>The Ashblazing Grand Duke</button>
-        <button>Prisoner of Deep Confinement</button>
-        <button>Pioneer Diver of Dead Waters</button>
-        <button>Master of Dream Machinations</button>
+        <button>Path of Gelid Wind - Hunter of Glacial Frost & Eagle of Twilight Line</button>
+        <button>Path of Jabbing Punch - Champion of Streetwise Boxing & Thief of Shooting Meteor</button>
+        <button>Path of Drifting - Passerby of Wandering Cloud & Musketeer of Wild Wheat</button>
+        <button>Path of Providence - Guard of Wuthering Snow & Genius of Brilliant Stars</button>
+        <button>Path of Holy Hymn - Knight of Purity Palace & Band of Sizzling Thunder</button>
+        <button>Path of Conflagration - Firesmith of Lava-Forging & Wastelander of Banditry Desert</button>
+        <button>Path of Elixir Seekers - Longevous Disciple & Messenger Traversing Hackerspace</button>
+        <button>Path of Darkness - The Ashblazing Grand Duke & Prisoner in Deep Confinement</button>
+        <button>Path of Dreamdive - Pioneer of Dead River Waters & Master of Dream Machinations</button>
     </div>
     <div> 
         <h1>Planetar Ornements</h1>
