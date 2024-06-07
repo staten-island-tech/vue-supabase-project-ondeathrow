@@ -2,6 +2,7 @@
 <script>
 //primevue vuetify tailwindcss gsap
 import fiveStar from "../images/five-star.png";
+import fourStar from "../images/four-star.png";
 const copypaste = [
   {
     name: "",
@@ -301,7 +302,7 @@ export const characters = [
     },
     icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/114134/dff9186a3fca6ae3667c823c117faf19_7442485835931115291.png",
   }, 
-  {
+/*   {
     name: "Firefly",
     rarity: 5,
     rarityicon: fiveStar,
@@ -312,7 +313,7 @@ export const characters = [
     obtained: false,
     
     icon: "",
-  },   
+  }, */   
   {
     name: "Fu Xuan",
     rarity: 5,
@@ -405,7 +406,7 @@ export const characters = [
     },
     icon: "https://fastcdn.hoyoverse.com/content-v2/hkrpg/113549/a716bd8ea1eb70d43ff182b28682e2de_5240979789104297080.png",
   },  
-  {
+/*   {
     name: "Jade",
     rarity: 5,
     rarityicon: fiveStar,
@@ -414,9 +415,8 @@ export const characters = [
     fullBody: "",
     desc: ``,
     obtained: false,
-
     icon: "",
-  },  
+  },  */ 
   {
     name: "Jing Yuan",
     rarity: 5,
@@ -695,7 +695,7 @@ export const characters = [
   {
     name: "Arlan",
     rarity: 4,
-    rarityicon: fiveStar,
+    rarityicon: fourStar,
     path: "Destruction",
     element: "Lightning",
     fullBody: "https://upload-os-bbs.hoyolab.com/upload/2022/05/26/7934611/a8098196feb50f9806d5d8e598dcaa88_1910286083887812049.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
@@ -719,6 +719,7 @@ export const characters = [
     name: "Asta",
     rarity: 4,
     path: "Harmony",
+    rarityicon: fourStar,
     element: "Fire",
     fullBody: "https://cdn.starrailstation.com/assets/f965a7d560c29efd93379ca4cc37cfd830b6eafe533c9a50eb0269685ccb1616.webp",
     desc: `The lead researcher of Herta Space Station and a lady from a renowned family. She's an astronomer overflowing with curiosity, and excels at managing the disparate staff of the space station.`,
@@ -740,6 +741,7 @@ export const characters = [
   {
     name: "Dan Heng",
     rarity: 4,
+    rarityicon: fourStar,
     fullBody: "https://cdn.starrailstation.com/assets/309d9ef8358c4d7f2ea5028683a697eebb73f246bd8a58d2f2d5a3732179894e.webp",
     desc: `A cold and reserved young man who is reticent about his past. To avoid his kin, he decided to travel with the Astral Express.`,
     path: "The Hunt",
@@ -762,6 +764,7 @@ export const characters = [
   {
     name: "Gallagher",
     rarity: 4,
+    rarityicon: fourStar,
     path: "Abundance",
     fullBody: "https://cdn.starrailstation.com/assets/d478212eceda00d9dc262c5f54902b368626c3faf35ca1934ed34d22c84d4663.webp",
     desc: `A security officer of the Bloodhound Family at Penacony. He is always courteous toward visiting guests but keeps his vigilance about him. He seems to carry a weight of a complicated past, yet he never voluntarily divulges any details.`,
@@ -784,6 +787,7 @@ export const characters = [
   {
     name: "Guinaifen",
     rarity: 4,
+    rarityicon: fourStar,
     path: "Nihility",
     fullBody: "https://cdn.starrailstation.com/assets/fe5736c61990639719759500193efb2c13f52e4c8565f20de2d653bbe65a802d.webp",
     desc: `A performance artist visiting the Xianzhou Luofu — in other words, a street performer. She's chasing a new life on the Luofu when not concerned with food and shelter.`,
@@ -806,6 +810,7 @@ export const characters = [
   {
     name: "Hanya",
     rarity: 4,
+    rarityicon: fourStar,
     path: "Harmony",
     element: "Physical",
     fullBody: "https://cdn.starrailstation.com/assets/f3b440b4bc7cd44dfd1215d8b9123d6bee5b783194d3a27a570d1f46dd1da6a9.webp",
@@ -828,6 +833,7 @@ export const characters = [
   {
     name: "Herta",
     rarity: 4,
+    rarityicon: fourStar,
     fullBody: "https://cdn.starrailstation.com/assets/f91c274df7c76a1c913b4235837ad3649851936c31a5b358c96269fc445e379d.webp",
     desc: `Member 83 of the Genius Society. The real master of the space station. An incredibly intelligent yet unsympathetic scientist.`,
     path: "Erudition",
@@ -850,6 +856,7 @@ export const characters = [
   {
     name: "Hook",
     rarity: 4,
+    rarityicon: fourStar,
     fullBody: "https://cdn.starrailstation.com/assets/6b9f0d3eaa7d240b3dc49f9fbb0f6e5afee0402477861422f627cfcb407019ce.webp",
     desc: `Boss (self-proclaimed) of an Underworld adventure squad, The Moles. She loves freedom and sees life as a series of adventures.`,
     path: "Destruction",
@@ -872,6 +879,7 @@ export const characters = [
   {
     name: "Luka",
     rarity: 4,
+    rarityicon: fourStar,
     path: "Nihility",
     fullBody: "https://cdn.starrailstation.com/assets/22fe1d85da647081a7020c5d3f6cdec5f585da751d5ac221e421de98693859d1.webp",
     desc: `The boxing champion in Belobog's Underworld, and one of Wildfire's most capable fighters. The consecutive reigning champion of the Fight Club, whose enthusiasm inspires children of the Underworld to dream big.`,
@@ -894,6 +902,7 @@ export const characters = [
   {
     name: "Lynx",
     rarity: 4,
+    rarityicon: fourStar,
     path: "Abundance",
     element: "Quantum",
     fullBody: "https://cdn.starrailstation.com/assets/a360a27b0fe1bae71d3b63d67fe185a0122aade3bb500653e6ea342191cb3bb1.webp",
@@ -916,6 +925,7 @@ export const characters = [
   {
     name: "March 7th",
     rarity: 4,
+    rarityicon: fourStar,
     path: "Preservation",
     fullBody: "https://cdn.starrailstation.com/assets/962679a645ad06e6c4a8cd574bba4ea29ac74da972d29eadee14e7a08703cb2f.webp",
     desc: `A girl who once slumbered in eternal ice and knows nothing about her past. To find out the truth about her origins, she decided to travel with the Astral Express. As of right now, she has prepared about 67 different versions of her life story for herself.`,
@@ -938,6 +948,7 @@ export const characters = [
   {
     name: "Misha",
     rarity: 4,
+    rarityicon: fourStar,
     path: "Destruction",
     fullBody: "https://cdn.starrailstation.com/assets/f313ab391a54a5508a6c601d604f08410d02e880edc73b4ddbae3fdc560af2cd.webp",
     desc: `A well-behaved young man serving as a hotel bellboy in Penacony. Misha has a great longing for the Nameless and dreams of one day embarking on a journey of his own.`,
@@ -962,6 +973,7 @@ export const characters = [
     fullBody: "https://cdn.starrailstation.com/assets/c8b0dd59b5081d24b987ac634322f8ade49e8d3332278503ec84454cb13a1d90.webp",
     desc: `	A doctor from the Underworld and a caregiver of children. Alongside her kindness and caring, she also has a hidden dangerous side.`,
     rarity: 4,
+    rarityicon: fourStar,
     path: "Abundance",
     element: "Physical",
     obtained: false,
@@ -982,6 +994,7 @@ export const characters = [
   {
     name: "Pela",
     rarity: 4,
+    rarityicon: fourStar,
     fullBody: "https://upload-os-bbs.hoyolab.com/upload/2022/05/26/7934611/6d3bfacb2a5aee1a084dc8a030f426b5_6877348889844072147.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
     desc: `An intelligence officer for the Silvermane Guards. She has a serious personality and is revered by other members of the Silvermane Guards.`,
     path: "Nihility",
@@ -1004,6 +1017,7 @@ export const characters = [
   {
     name: "Qingque",
     rarity: 4,
+    rarityicon: fourStar,
     path: "Erudition",
     fullBody: "https://cdn.starrailstation.com/assets/a3c4a87dbec7414cfb034d00b786b505e980f975391972264a7141b45e9834a1.webp",
     desc: `Diviner of the Divination Commission on the Xianzhou Luofu, and a librarian. Always slacks off and is about to be demoted to a "door guardian."`,
@@ -1026,6 +1040,7 @@ export const characters = [
   {
     name: "Sampo",
     rarity: 4,
+    rarityicon: fourStar,
     path: "Nihility",
     element: "Wind",
     fullBody: "https://upload-os-bbs.hoyolab.com/upload/2022/05/26/7934611/b82eefaf3431d2417565b3ef9e7fe711_3293112108286371035.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
@@ -1050,6 +1065,7 @@ export const characters = [
     fullBody: "https://cdn.starrailstation.com/assets/3d7f97aca7f4d238a3b1eb1ea3d9a7712a1dbec3577ff2182bccf114d9814a81.webp",
     desc: `	A Belobog mechanic who used to be a researcher for the Technology Division of the Architects. As Gepard Landau's elder sister, her personality stands in stark contrast to her brother's. She loves an ancient form of music known as "rock 'n' roll" that was popular before the Eternal Freeze.`,
     rarity: 4,
+    rarityicon: fourStar,
     path: "Erudition",
     element: "Lightning",
     obtained: false,
@@ -1070,6 +1086,7 @@ export const characters = [
   {
     name: "Sushang",
     rarity: 4,
+    rarityicon: fourStar,
     path: "The Hunt",
     element: "Physical",
     obtained: false,
@@ -1092,6 +1109,7 @@ export const characters = [
   {
     name: "Tingyun",
     rarity: 4,
+    rarityicon: fourStar,
     path: "Harmony",
     element: "Lightning",
     obtained: false,
@@ -1114,6 +1132,7 @@ export const characters = [
   {
     name: "Xueyi",
     rarity: 4,
+    rarityicon: fourStar,
     path: "Destruction",
     element: "Quantum",
     fullBody: "https://cdn.starrailstation.com/assets/2c60f4c80b729c5d2ffb4b3def0902b57aa3253cc16db3d1bd385b2d80e5e78e.webp",
@@ -1136,6 +1155,7 @@ export const characters = [
   {
     name: "Yukong",
     rarity: 4,
+    rarityicon: fourStar,
     path: "Harmony",
     fullBody: "https://64.media.tumblr.com/bc2627140ffc7749ad500017caff506d/5d38bf749b247c3f-57/s1280x1920/75919db83e8b2a8034181902e44f807ca9af3dc3.png",
     desc: `Head of the Sky-Faring Commission on the Xianzhou Luofu. Yukong was a seasoned pilot and a deadshot. Since heading up the commission, she's been buried under mountains of paperwork.`,
@@ -1162,7 +1182,7 @@ export const lightCones = [
     rarity: 0,
     path: "None",
     image: "None",
-    equip: false,
+    equip: true,
     obtained: true,
     stats: {
       HP: 0,
@@ -1177,7 +1197,7 @@ export const lightCones = [
   {
     name: "Along the Passing Shore",
     rarity: 5,
-    image: "",
+    image: "https://cdn.starrailstation.com/assets/48fba474105fd0e1339ba798e7af0d5860e9eb42ce68dfe40f4f9419963f35d5.webp",
     path: "Nihility",
     equip: false,
     obtained: false,
@@ -1194,7 +1214,7 @@ export const lightCones = [
     name: "An Instant Before A Gaze",
     rarity: 5,
     path: "Erudition",
-    image: "",
+    image: "https://cdn.starrailstation.com/assets/0ecea51f000ff7bbc7b80c15b19150d26d18756482b6197c9560a8016661aa60.webp",
     equip: false,
     obtained: false,
     stats: {
@@ -1210,7 +1230,7 @@ export const lightCones = [
     name: "Baptism of Pure Thought",
     rarity: 5,
     path: "The Hunt",
-    image: "",
+    image: "https://cdn.starrailstation.com/assets/279928ae8cd2756ced85b5ce4e6b939f866a2d5af8ac77574e868ee8a8ce7c91.webp",
     equip: false,
     obtained: false,
     stats: {
@@ -1228,7 +1248,7 @@ export const lightCones = [
     path: "Erudition",
     equip: false,
     obtained: false,
-    image: "",
+    image: "https://cdn.starrailstation.com/assets/95d7726c284d6d53c31cb91a3c71c3323cdf1121fce9d40c88e9b8ae75ba6b02.webp",
     stats: {
       HP: 1058,
       ATK: 582,
@@ -1242,7 +1262,7 @@ export const lightCones = [
     name: "Brighter Than the Sun",
     rarity: 5,
     path: "Destruction",
-    image: "",
+    image: "https://cdn.starrailstation.com/assets/e01b35fda86c2337dd53ae93b188470d413e2ec027368361efcc184b0403fb73.webp",
     equip: false,
     obtained: false,
     stats: {
@@ -1258,16 +1278,1187 @@ export const lightCones = [
     name: "But the Battle Isn't Over",
     rarity: 5,
     path: "Harmony",
-    image: "",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/c8f9ba53ef11e8ac594d5a34642ec0b8c5663bd00ffe4720b11f1d4fdd31a11f.webp",
     stats: {
       HP: 1164,
       ATK: 529,
       DEF: 463,
     },
     passive: {
-      pName: "",
-      pDescrip: "",
+      pName: "Helr",
+      pDescrip: "Increases the wearer's Energy Regeneration by 10~18% and regenerates 1 Skill Point when the wearer uses their Ultimate on an ally. This effect can be triggered after every 2 uses of the wearer's Ultimate. When the wearer uses their Skill, the next ally taking action (except the wearer) deals 30~50% more DMG for 1 turn(s).",
+    },
+  },	{
+    name: "Cruising in the Stellar Sea",
+    rarity: 5,
+    path: "The Hunt",
+    image: "https://cdn.starrailstation.com/assets/7dd2a7d3b25c51a03411550532a3b453beaa20155861c352badc8a1d2765954a.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 952,
+      ATK: 529,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Chase",
+      pDescrip: "Increases the wearer's CRIT rate by 8~16%, and increases their CRIT rate against enemies with HP less than or equal to 50% by an extra 8~16%. When the wearer defeats an enemy, their ATK is increased by 20~40% for 2 turn(s).",
+    },
+  },{
+    name: "Earthly Escapade",
+    rarity: 5,
+    path: "Harmony",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/34eb5a1e8dc9541b6b476ced5dc88ba3c789f0c6a22cf15e9194472e45cc367e.webp",
+    stats: {
+      HP: 1164,
+      ATK: 529,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Capriciousness",
+      pDescrip: "Increases the wearer's CRIT DMG by 32~60%. At the start of the battle, the wearer gains Mask, lasting for 3 turns. While the wearer has Mask, the wearer's allies have their CRIT Rate increased by 10~14% and their CRIT DMG increased by 28~56%. For every 1 Skill Point the wearer recovers (including Skill Points that exceed the limit), they gain 1 stack of Radiant Flame. And when the wearer has 4 stacks of Radiant Flame, all the stacks are removed, and they gain Mask, lasting for 4 turns.",
+    },
+  },{
+    name: "Echoes of the Coffin",
+    rarity: 5,
+    path: "Abundance",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/845317b72407202c1a177dae60f7cbebd3762f01e419de95d7bc3903a9b0a9fe.webp",
+    stats: {
+      HP: 1164,
+      ATK: 582,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Thorns",
+      pDescrip: "Increases the wearer's ATK by 24~40%. After the wearer uses an attack, for each different enemy target the wearer hits, regenerates 3~5 Energy. Each attack can regenerate Energy up to 3 time(s) this way. After the wearer uses their Ultimate, all allies gain 12~20 SPD for 1 turn.",
+    },
+  },{
+    name: "Flowing Nightglow",
+    rarity: 5,
+    path: "Harmony",
+    image: "https://cdn.starrailstation.com/assets/c80b71f5b40be7519776dc9783df74db3011d20a35e7b8a1c7fd637246feee2e.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 952,
+      ATK: 635,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Pacify",
+      pDescrip: "Every time an ally attacks, the wearer gains 1 stack of Cantillation. Each stack of Cantillation increases the wearer's Energy Regeneration Rate by 3.0~5.0%, stacking up to 5 time(s). When the wearer uses their Ultimate, removes Cantillation and gains Cadenza. Cadenza increases the wearer's ATK by 48~96% and increases all allies' DMG dealt by 24~40%, lasting for 1 turn(s).",
+    },
+  },{
+    name: "I Shall Be My Own Sword",
+    rarity: 5,
+    path: "Destruction",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/190225a61123ac128256792d3ffae81bf4c5865238f883b2b1245e2b5390163d.webp",
+    stats: {
+      HP: 1164,
+      ATK: 582,
+      DEF: 396,
+    },
+    passive: {
+      pName: "With This Evening Jade",
+      pDescrip: "Increases the wearer's CRIT DMG by 20~32%. When an ally (excluding the wearer) gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by 14.0~24.0%. When 3 stacks are reached, additionally enables the attack to ignore 12~20% of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
+    },
+  },{
+    name: "In the Name of the World",
+    rarity: 5,
+    path: "Nihility",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/6c9a1637244cd6680dc3ca82b9982df1805a32ee77e62a9c21b4a6456920b40f.webp",
+    stats: {
+      HP: 1058,
+      ATK: 582,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Inheritor",
+      pDescrip: "Increases the wearer's DMG to debuffed enemies by 24~40%. When the wearer uses their Skill, the Effect Hit Rate for this attack increases by 18~30%, and ATK increases by 24~40%.",
+    },
+  },{
+    name: "In the Night",
+    equip: false,
+    obtained: false,
+    rarity: 5,
+    path: "The Hunt",
+    image: "https://cdn.starrailstation.com/assets/20023d49530f62821d6e826e229581e1471815385597e7d15c67561451907dbd.webp",
+    stats: {
+      HP: 1058,
+      ATK: 582,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Flowers and Butterflies",
+      pDescrip: "Increases the wearer's CRIT Rate by 18~30%. While the wearer is in battle, for every 10 SPD that exceeds 100, the DMG of the wearer's Basic ATK and Skill is increased by 6~10% and the CRIT DMG of their Ultimate is increased by 12~20%. This effect can stack up to 6 time(s).",
+    },
+  },{
+    name: "Incessant Rain",
+    rarity: 5,
+    equip: false,
+    obtained: false,
+    path: "Nihility",
+    image: "https://cdn.starrailstation.com/assets/7d4088bcc6b860f56f883915e6ec641311884d7ab3ca048a90bf75de89a65a9d.webp",
+    stats: {
+      HP: 1058,
+      ATK: 582,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Mirage of Reality",
+      pDescrip: "Increases the wearer's Effect Hit Rate by 24~40%. When the wearer deals DMG to an enemy that currently has 3 or more debuffs, increases the wearer's CRIT Rate by 12~20%. After the wearer uses their Basic ATK, Skill, or Ultimate, there is a 100% base chance to implant Aether Code on a random hit target that does not yet have it. Targets with Aether Code receive 12~20% increased DMG for 1 turn.",
+    },
+  },{
+    name: "Inherently Unjust Destiny",
+    rarity: 5,
+    path: "Preservation",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/2f2afd373e02252f884e2eb338f91adf9f6990c4e07b7a90b4050e6e3a0697d4.webp",
+    stats: {
+      HP: 1058,
+      ATK: 423,
+      DEF: 661,
+    },
+    passive: {
+      pName: "All-In",
+      pDescrip: "Increases the wearer's DEF by 40~64%. When the wearer provides a Shield to an ally, the wearer's CRIT DMG increases by 40~64%, lasting for 2 turn(s). When the wearer's follow-up attack hits an enemy target, there is a 100~160% base chance to increase the DMG taken by the attacked enemy target by 10.0~16%, lasting for 2 turn(s).",
+    },
+  },{
+    name: "Moment of Victory",
+    rarity: 5,
+    path: "Preservation",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/4db7702f66e28b6ac3f000d7601ff53460d4515038c4a389e4086eb946099249.webp",
+    stats: {
+      HP: 1058,
+      ATK: 476,
+      DEF: 595,
+    },
+    passive: {
+      pName: "Verdict",
+      pDescrip: "Increases the wearer's DEF by 24~40% and Effect Hit Rate by 24~40%. Increases the chance for the wearer to be attacked by enemies. When the wearer is attacked, increase their DEF by an extra 24~40% until the end of the wearer's turn.",
+    },
+  },{
+    name: "Night of Fright",
+    rarity: 5,
+    path: "Abundance",
+    image: "https://cdn.starrailstation.com/assets/9b6e941e01cd6d0d4e62cbc3ed303d24ca4cf9753c1e3b9b1985509493a1dc19.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 1164,
+      ATK: 476,
+      DEF: 529,
+    },
+    passive: {
+      pName: "Deep, Deep Breaths",
+      pDescrip: "Increases the wearer's Energy Regeneration Rate by 12~20%. When any ally uses their Ultimate, the wearer restores HP for the ally currently with the lowest HP percentage by an amount equal to 10~14% of the healed ally's Max HP. When the wearer provides healing for an ally, increases the healed ally's ATK by 2.4~4.0%. This effect can stack up to 5 times and lasts for 2 turn(s).",
+    },
+  },{
+    name: "Night on the Milky Way",
+    rarity: 5,
+    path: "Erudition",
+    image: "https://cdn.starrailstation.com/assets/c13caada0da9aa415ef0318db7758df931155128b0f995f3f9d309d3d54637c1.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 1164,
+      ATK: 582,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Meteor Swarm",
+      pDescrip: "For every enemy on the field, increases the wearer's ATK by 9.0~15.0%, up to 5 stacks. When an enemy is inflicted with Weakness Break, the DMG dealt by the wearer increases by 30~50% for 1 turn.",
+    },
+  },{
+    name: "On the Fall of an Aeon",
+    rarity: 5,
+    path: "Destruction",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/f67b2fd21014f9bbdbb7690719f1f11a01c32074d4255f0ed26771ea9e6db363.webp",
+    stats: {
+      HP: 1058,
+      ATK: 529,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Moth to Flames",
+      pDescrip: "Whenever the wearer attacks, their ATK is increased by 8~16% in this battle. This effect can stack up to 4 time(s). After a character inflicts Weakness Break on an enemy, the wearer's DMG increases by 12~24% for 2 turn(s).",
+    },
+  },{
+    name: "Past Self in Mirror",
+    rarity: 5,
+    path: "Harmony",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/d50932a2642c0386cce0e550ba30a2e17f2d2557369ae0e2559e0d0c4440e34b.webp",
+    stats: {
+      HP: 1058,
+      ATK: 529,
+      DEF: 529,
+    },
+    passive: {
+      pName: "Bones",
+      pDescrip: "Increases the wearer's Break Effect by 60~100%. When the wearer uses their Ultimate, increases all allies' DMG by 24~40%, lasting for 3 turn(s). Should the wearer's Break Effect exceed or equal 150%, 1 Skill Point will be recovered. At the start of each wave, all allies regenerate 10~20 Energy immediately. Effects of the same type cannot stack.",
+    },
+  },{
+    name: "Patience Is All You Need",
+    rarity: 5,
+    path: "Nihility",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/1702bfa1909fbfe345f8cb4a8c0e3a928f243128fa33afe84d31945ea17fd4a5.webp",
+    stats: {
+      HP: 1058,
+      ATK: 582,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Spider Web",
+      pDescrip: "Increases DMG dealt by the wearer by 24~40%. After every attack launched by the wearer, their SPD increases by 4.8~8.0%, stacking up to 3 times. If the wearer hits an enemy target that is not affected by Erode, there is a 100% base chance to inflict Erode to the target. Enemies afflicted with Erode are also considered to be Shocked and will receive Lightning DoT at the start of each turn equal to 60~100% of the wearer's ATK, lasting for 1 turn.",
+    },
+  },{
+    name: "Reforged Remembrance",
+    rarity: 5,
+    path: "Nihility",
+    image: "https://cdn.starrailstation.com/assets/d7068246f2a2d7e681b03658a4a7ed41f978ef15aba62ad14553ee567bec667d.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 1058,
+      ATK: 582,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Crystallize",
+      pDescrip: "Increases the wearer's Effect Hit Rate by 40~60%. When the wearer deals DMG to an enemy inflicted with Wind Shear, Burn, Shock, or Bleed, each respectively grants 1 stack of Prophet, stacking up to 4 time(s). In a single battle, only 1 stack of Prophet can be granted for each type of DoT. Every stack of Prophet increases wearer's ATK by 5~9% and enables the DoT dealt to ignore 7.2~10.0% of the target's DEF.",
+    },
+  },{
+    name: "Sailing Towards A Second Life",
+    rarity: 5,
+    path: "The Hunt",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/e0a5e44412c56813dd7a8461ee48440234c1838d1cf66e2c603d39a3debcbf7a.webp",
+    stats: {
+      HP: 1058,
+      ATK: 582,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Rough Water",
+      pDescrip: "Increases the wearer's Break Effect by 60~100%. The Break DMG dealt by the wearer ignores 20~32% of the target's DEF. When the wearer's Break Effect in battle is at 150% or greater, increases their SPD by 12~20%.",
+    },
+  },{
+    name: "She Already Shut Her Eyes",
+    rarity: 5,
+    path: "Preservation",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/44b7d48c2d877b5c8e664e7b32b1daac587bdfd3bfb4a9d9d2a44916edc3dcf7.webp",
+    stats: {
+      HP: 1270,
+      ATK: 423,
+      DEF: 529,
+    },
+    passive: {
+      pName: "Visoscape",
+      pDescrip: "Increases the wearer's Max HP by 24~40% and Energy Regeneration Rate by 12~20%. When the wearer's HP is reduced, all allies' DMG dealt increases by 9.0~15.0%, lasting for 2 turn(s). At the start of every wave, restores HP to all allies by an amount equal to 80~100% of their respective lost HP.",
+    },
+  },{
+    name: "Sleep Like the Dead",
+    rarity: 5,
+    path: "The Hunt",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/73939037f6b392eb8c7e7e39cc80917666a9f39bfb1002fa77c2df5a57aa0c09.webp",
+    stats: {
+      HP: 1058,
+      ATK: 582,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Sweet Dreams",
+      pDescrip: "Increases the wearer's CRIT DMG by 30~50%. When the wearer's Basic ATK or Skill does not result in a CRIT Hit, increases their CRIT Rate by 36~60% for 1 turn. This effect can only trigger once every 3 turn(s).",
+    },
+  },{
+    name: "Solitary Healing",
+    rarity: 5,
+    path: "Nihility",
+    image: "https://cdn.starrailstation.com/assets/314435f9ecf17421fb3b03bd51a7824b63d74beb3d685f88dbec26ba1321c9d5.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 1058,
+      ATK: 529,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Chaos Elixir",
+      pDescrip: "Increases the wearer's Break Effect by 20~40%. When the wearer uses their Ultimate, increases DoT dealt by the wearer by 24~48%, lasting for 2 turn(s). When a target enemy suffering from DoT imposed by the wearer is defeated, regenerates 4~6 Energy for the wearer.",
+    },
+  },{
+    name: "Something Irreplaceable",
+    rarity: 5,
+    path: "Destruction",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/292c767bbdd8fff4d2a5f90519d04dbfd4e7bd16332b26af1d44aaa5a99daef4.webp",
+    stats: {
+      HP: 1164,
+      ATK: 582,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Kinship",
+      pDescrip: "Increases the wearer's ATK by 24~40%. When the wearer defeats an enemy or is hit, immediately restores HP equal to 8~12% of the wearer's ATK. At the same time, the wearer's DMG is increased by 24~40% until the end of their next turn. This effect cannot stack and can only trigger 1 time per turn.",
+    },
+  },{
+    name: "Texture of Memories",
+    rarity: 5,
+    path: "Preservation",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/3cb63e0f8066b0918a6edd0520ad8f9df1dc693fd7740ff24691878a7c2f5f1e.webp",
+    stats: {
+      HP: 1058,
+      ATK: 423,
+      DEF: 529,
+    },
+    passive: {
+      pName: "Treasure",
+      pDescrip: "Increases the wearer's Effect RES by 8~16%. If the wearer is attacked and has no Shield, they gain a Shield equal to 16~32% of their Max HP for 2 turn(s). This effect can only be triggered once every 3 turn(s). If the wearer has a Shield when attacked, the DMG they receive decreases by 12~24%.",
+    },
+  },{
+    name: "The Unreachable Side",
+    rarity: 5,
+    path: "Destruction",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/9b3226dfcad789e505887e9138b44bcc065c2f44a03691bdcbdd975971f6221c.webp",
+    stats: {
+      HP: 1270,
+      ATK: 582,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Unfulfilled Yearning",
+      pDescrip: "Increase the wearer's CRIT Rate and Max HP by 18~30%. After the wearer is attacked or consumes their own HP, increases the wearer's DMG by 24~40%. This effect is dispelled after the user uses an attack.",
+    },
+  },{
+    name: "Time Waits for No One",
+    rarity: 5,
+    path: "Abundance",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/069ed70fc8da105a80ecab26bb053bd0344659fd6b65e68f58592c54a5fe55f9.webp",
+    stats: {
+      HP: 1270,
+      ATK: 476,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Morn, Noon, Dusk, and Night",
+      pDescrip: "Increases the wearer's Max HP by 18~30% and Outgoing Healing by 12~20%. When the wearer heals allies, record the amount of Outgoing Healing. When any ally launches an attack, a random attacked enemy takes additional DMG equal to 36~60% of the recorded Outgoing Healing value. The type of this Additional DMG is of the same Type as the wearer's. This Additional DMG is not affected by other buffs, and can only occur 1 time per turn.",
+    },
+  },{
+    name: "Worrisome, Blissful",
+    rarity: 5,
+    path: "The Hunt",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/abc5d27bbf9462445091059ae6aae841ab1d97d63bf06fcec92e8022f9d9158a.webp",
+    stats: {
+      HP: 1058,
+      ATK: 582,
+      DEF: 463,
+    },
+    passive: {
+      pName: "One At A Time",
+      pDescrip: "Increase the wearer's CRIT Rate by 18~30% and their follow-up attacks' DMG by 30~50%. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to 2 stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by 12~20%.",
+    },
+  },{
+    name: "A Secret Vow",
+    rarity: 4,
+    equip: false,
+    obtained: false,
+    path: "Destruction",
+    image: "https://cdn.starrailstation.com/assets/fad104fc6aec321b9a02d9eaae519b9144968c7ad58aaf0ab9e6e589ec846f33.webp",
+    stats: {
+      HP: 1058,
+      ATK: 476,
+      DEF: 264,
+    },
+    passive: {
+      pName: "Spare No Effort",
+      pDescrip: "Increases DMG dealt by the wearer by 20~40%. The wearer also deals an extra 20~40% of DMG to enemies whose current HP percentage is equal to or higher than the wearer's current HP percentage.",
+    },
+  },{
+    name: "Before the Tutorial Mission Starts",
+    rarity: 4,
+    path: "Nihility",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/d93fb10710bcafcb4f2c3f02a504466bd52bbb0102e6bb07bc4c3a6f787b4e50.webp",
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Quick on the Draw",
+      pDescrip: "Increases the wearer's Effect Hit Rate by 20~40%. When the wearer attacks DEF-reduced enemies, regenerates 4~8 Energy.",
+    },
+  },{
+    name: "Boundless Choreo",
+    rarity: 4,
+    path: "Nihility",
+    image: "https://cdn.starrailstation.com/assets/0c5e9499d7fb5f5b6db646b2654aa8fb9c7debe7209f699cb808a6eff856cfc4.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Scrutinize",
+      pDescrip: "Increase the wearer's CRIT Rate by 8~16%. The wearer deals 24~48% more CRIT DMG to enemies that are currently Slowed or have reduced DEF.",
+    },
+  },{
+    name: "Carve the Moon, Weave the Clouds",
+    rarity: 4,
+    path: "Harmony",
+    image: "https://cdn.starrailstation.com/assets/3e55e1c9c2852df224ba6f6938905f2a5efcd4670a2a661b8ffaa23a77767755.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Secret",
+      pDescrip: "At the start of the battle and whenever the wearer's turn begins, one of the following effects is applied randomly: All allies' ATK increases by 10~20%, all allies' CRIT DMG increases by 12~24%, or all allies' Energy Regeneration Rate increases by 6~12%. The applied effect cannot be identical to the last effect applied, and will replace the previous effect. The applied effect will be removed when the wearer has been knocked down. Effects of the similar type cannot be stacked.",
+    },
+  },{
+    name: "Concert for Two",
+    rarity: 4,
+    path: "Preservation",
+    image: "https://cdn.starrailstation.com/assets/2105fa207135c58cd48f45dc52813cb0f313b8da65d96f6962b8143331670ecf.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 952,
+      ATK: 370,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Inspire",
+      pDescrip: "Increases the wearer's DEF by 16~32%. For every on-field character that has a Shield, the DMG dealt by the wearer increases by 4~8%.",
+    },
+  },{
+    name: "Dance! Dance! Dance!",
+    rarity: 4,
+    path: "Harmony",
+    image: "https://cdn.starrailstation.com/assets/001b2b92d7cb99d73d5d51ab54dd63209ab129cf7701602780984e7fc9c4f6bb.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 952,
+      ATK: 423,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Cannot Stop It!",
+      pDescrip: "When the wearer uses their Ultimate, all allies' actions are Advanced Forward by 16~24%.",
+    },
+  },{
+    name: "Day One of New Life",
+    rarity: 4,
+    path: "Preservation",
+    image: "https://cdn.starrailstation.com/assets/7895f540dab6b5ecc5fca97883c2da9421de8f227c9cd6817722af3d549ee58a.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 952,
+      ATK: 370,
+      DEF: 463,
+    },
+    passive: {
+      pName: "At This Very Moment",
+      pDescrip: "Increases wearer's DEF by 16~24%. After entering battle, increases All-Type RES of all allies by 8~12%. Effects of the same type cannot stack.",
+    },
+  },{
+    name: "Destiny's Threads Forewoven",
+    rarity: 4,
+    equip: false,
+    obtained: false,
+    path: "Preservation",
+    image: "https://cdn.starrailstation.com/assets/425a7fefa851c7d2382aa3a9a2bf54109ad4b6276a63ce83d11833637e8d77c1.webp",
+    stats: {
+      HP: 952,
+      ATK: 370,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Insight",
+      pDescrip: "Increases the wearer's Effect RES by 12~20%. For every 100 DEF the wearer has, increases the wearer's DMG dealt by 0.8~1.2%, up to a maximum increase of 32~48%.",
+    },
+  },{
+    name: "Dreamville Adevnture",
+    rarity: 4,
+    path: "Harmony",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/425a7fefa851c7d2382aa3a9a2bf54109ad4b6276a63ce83d11833637e8d77c1.webp",
+    stats: {
+      HP: 952,
+      ATK: 423,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Solidarity",
+      pDescrip: "After the wearer uses a certain type of ability such as Basic ATK, Skill, or Ultimate, all allies gain Childishness, which increases allies' DMG for the same type of ability as used by the wearer by 12~20%. Childishness only takes effect for the most recent type of ability the wearer used and cannot be stacked.",
+    },
+  },{
+    name: "Eyes of the Prey",
+    rarity: 4,
+    path: "Nihility",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/d413f70f97eceba24ad6cf04502f033ff3ae2bff04866a5273a036d2b00ba98c.webp",
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Self-Confidence",
+      pDescrip: "Increases the wearer's Effect Hit Rate by 20~40% and increases DoT by 24~48%.",
+    },
+  },{
+    name: "Fermata",
+    rarity: 4,
+    path: "Nihility",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/72c715983edd31f15b92b3f2a3d98bbc369c61e94b0d8f344b8ddd21a8928911.webp",
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Semibreve Rest",
+      pDescrip: "Increases Break Effect dealt by the wearer by 16~32%, and increases their DMG to enemies afflicted with Shock or Wind Shear by 16~32%. This also applies to DoT.",
+    },
+  },{
+    name: "Final Victor",
+    rarity: 4,
+    path: "The Hunt",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/35b24424db8c352f74968e4dfb30d543ad8707aa8cfc3238226b32131d4bb363.webp",
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "All In",
+      pDescrip: "Increases the wearer's ATK by 12~20%. When the wearer lands a CRIT hit on enemies, gains a stack of Good Fortune, stacking up to 4 times. Every stack of Good Fortune the wearer has will increase their CRIT DMG by 8~12%. Good Fortune will be removed at the end of the wearer's turn.",
+    },
+  },{
+    name: "Flames Afar",
+    rarity: 4,
+    path: "Destruction",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/eda3dadde293313d702bf21772aa2924241e9dc69f10928e969b4bb0f55d4585.webp",
+    stats: {
+      HP: 1058,
+      ATK: 476,
+      DEF: 264,
+    },
+    passive: {
+      pName: "Deflagration",
+      pDescrip: "When the cumulative HP loss of the wearer during a single attack exceeds 25% of their Max HP, or if the amount of their own HP they consume at one time is greater than 25% of their Max HP, immediately heals the wearer for 15% of their Max HP. At the same time, increases the DMG they deal by 25~50% for 2 turn(s). This effect can only be triggered once every 3 turn(s).",
+    },
+  },{
+    name: "For Tomorrow's Journey",
+    rarity: 4,
+    path: "Harmony",
+    image: "https://cdn.starrailstation.com/assets/873f6a392dd8b918354c529c1721d7d5d90ba8f91c7c2ea0aa3405a7ca09d219.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Bonds",
+      pDescrip: "Increases the wearer's ATK by 16~32%. After the wearer uses their Ultimate, increases their DMG dealt by 18~30%, lasting for 1 turn(s).",
+    },
+  },{
+    name: "Geniuses' Repose",
+    rarity: 4,
+    path: "Erudition",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/89db81ceb96a4b8973bd72c39c78fb9ef5ed840998d2a2cedcd5773a5a962d5b.webp",
+    stats: {
+      HP: 846,
+      ATK: 476,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Each Now Has a Role to Play",
+      pDescrip: "Increases the wearer's ATK by 16~32%. When the wearer defeats an enemy, the wearer's CRIT DMG increases by 24~48% for 3 turn(s).",
+    },
+  },{
+    name: "Good Night and Sleep Well",
+    rarity: 4,
+    path: "Nihility",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/2216e9d1737b5c3a6655e354c103ee9a153f9a917b2a7b35689c08dd4b08ad84.webp",
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Toller",
+      pDescrip: "For every debuff the target enemy has, the DMG dealt by the wearer increases by 12~24%, stacking up to 3 time(s). This effect also applies to DoT.",
+    },
+  },{
+    name: "Hey, Over Here",
+    rarity: 4,
+    path: "Abundance",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/77c983513ab0f538d3a3d2b4ca14d528f38395ed1ad6766ab385b1b6addf72ea.webp",
+    stats: {
+      HP: 952,
+      ATK: 423,
+      DEF: 396,
+    },
+    passive: {
+      pName: "I'm Not Afraid!",
+      pDescrip: "Increases the wearer's Max HP by 8~12%. When the wearer uses Skill, increases Outgoing Healing by 16~28%, lasting for 2 turns.",
+    },
+  },{
+    name: "Indeilble Promise",
+    rarity: 4,
+    path: "Destruction",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/4c6a6ade71600cdcb159046610e0547d8f63f958037be45f4cb8cc2648e73a4b.webp",
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Inferitance",
+      pDescrip: "Increases the wearer's Break Effect by 28~56%. When the wearer uses their Ultimate, increases their CRIT Rate by 15~30%, lasting for 2 turn(s).",
+    },
+  },{
+    name: "It's Showtime",
+    rarity: 4,
+    path: "Nihility",
+    image: "https://cdn.starrailstation.com/assets/0f7b35b50e465945ee32829e105dba2adc30c6854ee5a10b8eebad67c4a07cd0.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 1058,
+      ATK: 476,
+      DEF: 264,
+    },
+    passive: {
+      pName: "Self-Amusement",
+      pDescrip: "When the wearer inflicts a debuff on an enemy, gains a stack of Trick. Every stack of Trick increases the wearer's DMG dealt by 6~10%, stacking up to 3 times. This effect lasts for 1 turn. When the wearer's Effect Hit Rate is 80% or higher, increases ATK by 20~36%.",
+    },
+  },{
+    name: "Landau's Choice",
+    rarity: 4,
+    equip: false,
+    obtained: false,
+    path: "Preservation",
+    image: "https://cdn.starrailstation.com/assets/fbb218b0f7e719252cf41cc128ecfb80de028a35b86962823598735ea23767ee.webp",
+    stats: {
+      HP: 952,
+      ATK: 423,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Time Fleets Away",
+      pDescrip: "The wearer is more likely to be attacked, and DMG taken is reduced by 16~24%.",
+    },
+  },{
+    name: "Make the World Clamor",
+    rarity: 4,
+    path: "Erudition",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/b3e3d54eba4ea560dd24a34f5cccbe87f27bec388e432d59d33d068825f5edb1.webp",
+    stats: {
+      HP: 846,
+      ATK: 476,
+      DEF: 396,
+    },
+    passive: {
+      pName: "The Power of Sound",
+      pDescrip: "The wearer regenerates 20~32 Energy immediately upon entering battle, and increases Ultimate DMG by 32~64%.",
+    },
+  },{
+    name: "Memories of the Past",
+    rarity: 4,
+    equip: false,
+    obtained: false,
+    path: "Harmony",
+    image: "https://cdn.starrailstation.com/assets/d502e2178479bd57ac2e020af07c2a9a4829b2530f3eae5f290792aafe896e26.webp",
+    stats: {
+      HP: 952,
+      ATK: 423,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Old Photo",
+      pDescrip: "Increases the wearer's Break Effect by 28~56%. When the wearer attacks, additionally regenerates 4~8 Energy. This effect cannot be repeatedly triggered in a single turn.",
+    },
+  },{
+    name: "Nowhere to Run",
+    rarity: 4,
+    path: "Destruction",
+    image: "https://cdn.starrailstation.com/assets/54297fd23b0082b6da6396c56349899595d1fd4613c5018f7df626398bde599c.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 952,
+      ATK: 529,
+      DEF: 264,
+    },
+    passive: {
+      pName: "Desperate Times",
+      pDescrip: "Increases the wearer's ATK by 24~48%. Whenever the wearer defeats an enemy, they restore HP equal to 12~24% of their ATK.",
+    },
+  },{
+    name: "Only Silence Remains",
+    rarity: 4,
+    path: "The Hunt",
+    image: "https://cdn.starrailstation.com/assets/43aa269a8c9a982286b179e8ee3d218b865073547c6fce942e339bdbd291c2f6.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Record",
+      pDescrip: "Increases the wearer's ATK by 16~32%. If there are 2 or fewer enemies on the field, increases wearer's CRIT Rate by 12~24%.",
+    },
+  },{
+    name: "Past and Future",
+    rarity: 4,
+    path: "Harmony",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/a0ea4979c2d4b0989b61f600970bec8ee6566bcd2d02403e6a4bbe0bb21eaa56.webp",
+    stats: {
+      HP: 952,
+      ATK: 423,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Kites From the Past",
+      pDescrip: "When the wearer uses their Skill, then the next ally taking action (except the wearer) deals 16~32% increased DMG for 1 turn(s).",
+    },
+  },{
+    name: "Perfect Timing",
+    rarity: 4,
+    equip: false,
+    obtained: false,
+    path: "Abundance",
+    image: "https://cdn.starrailstation.com/assets/8ec619bd49a91a8cb27d84a4732ab950f5ba601c440ef151cdb3781e0f87387f.webp",
+    stats: {
+      HP: 952,
+      ATK: 423,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Refraction of Sightline",
+      pDescrip: "Increases the wearer's Effect RES by 16~32% and increases Outgoing Healing by an amount that is equal to 33~45% of Effect RES. Outgoing Healing can be increased this way by up to 15~27%.",
+    },
+  },{
+    name: "Planetary Rendezvous",
+    rarity: 4,
+    path: "Harmony",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/1f022e279e5e327f7a9409a9aa9dbd93c8227f80ae1d2e19f6389d92a0e41551.webp",
+    stats: {
+      HP: 1058,
+      ATK: 423,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Departure",
+      pDescrip: "Upon battle entry, if an ally deals the same DMG Type as the wearer, DMG dealt increases by 12~24%.",
+    },
+  },{
+    name: "Post-Op Conversation",
+    rarity: 4,
+    equip: false,
+    obtained: false,
+    path: "Abundance",
+    image: "https://cdn.starrailstation.com/assets/e72b74d77b7fb66ce3e7f217a8c7eb3f2515ada5bfb34b6367d262e82028a87d.webp",
+    stats: {
+      HP: 1058,
+      ATK: 423,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Mutual Healing",
+      pDescrip: "Increases the wearer's Energy Regeneration Rate by 8~16% and increases Outgoing Healing when they use their Ultimate by 12~24%.",
+    },
+  },{
+    name: "Quid Pro Quo",
+    rarity: 4,
+    path: "Abundance",
+    image: "https://cdn.starrailstation.com/assets/960c7994ccc42cb6a3e43032f771ec8c4286a6df5cb6dba149518278a0663d2b.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 952,
+      ATK: 423,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Enjoy With Rapture",
+      pDescrip: "At the start of the wearer's turn, regenerates 8~16 Energy for a randomly chosen ally (excluding the wearer) whose current Energy is lower than 50%.",
+    },
+  },{
+    name: "Resolution Shines As Pearls of Sweat",
+    rarity: 4,
+    path: "Nihility",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/64933796ab1bd0f2d536ab2ecf165e46fdf31f5c5b5c1571f988d367da979aaa.webp",
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Glance Back",
+      pDescrip: "When the wearer hits an enemy and if the hit enemy is not already Ensnared, then there is a 60~100% base chance to Ensnare the hit enemy. Ensnared enemies' DEF decreases by 12~16% for 1 turn(s).",
+    },
+  },{
+    name: "Return to Darkness",
+    rarity: 4,
+    path: "The Hunt",
+    image: "https://cdn.starrailstation.com/assets/f42641ebde76701b92930a2d18a1fbb1a7707c1ced786f88168fd9d9b5f386ab.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 846,
+      ATK: 529,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Raging Waves",
+      pDescrip: "Increases the wearer's CRIT Rate by 12~24%. After a CRIT Hit, there is a 16~32% fixed chance to dispel 1 buff on the target enemy. This effect can only trigger 1 time per attack.",
+    },
+  },{
+    name: "River Flows in Spring",
+    rarity: 4,
+    path: "The Hunt",
+    image: "https://cdn.starrailstation.com/assets/18577c1fde3855accbd19af29697388ea98728575cb49b3977c56dba0a152530.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 846,
+      ATK: 476,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Stave Off the Lingering Cold",
+      pDescrip: "After entering battle, increases the wearer's SPD by 8~12% and DMG by 12~24%. When the wearer takes DMG, this effect will disappear. This effect will resume after the end of the wearer's next turn.",
+    },
+  },{
+    name: "Shared Feeling",
+    rarity: 4,
+    path: "Abundance",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/76c24126287b9cdaa4e60add26270ae8dbabc059d242d2b4203c37e518822d39.webp",
+    stats: {
+      HP: 952,
+      ATK: 423,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Cure and Repair",
+      pDescrip: "Increases the wearer's Outgoing Healing by 10~20%. When using Skill, regenerates 2~4 Energy for all allies.",
+    },
+  },{
+    name: "Subscribe for More!",
+    rarity: 4,
+    path: "The Hunt",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/cfa34d8332f0951817e18eac52b6665d752968223d699db08a34038790ef70ec.webp",
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Like Before You Leave!",
+      pDescrip: "Increases the DMG of the wearer's Basic ATK and Skill by 24~48%. This effect increases by an extra 24~48% when the wearer's current Energy reaches its max level.",
+    },
+  },{
+    name: "Swordplay",
+    rarity: 4,
+    path: "The Hunt",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/4310143b61d3101f215f8c371091d47d05d87fe255d415a0cd50cdbcd9e6aaf2.webp",
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Answers of Their Own",
+      pDescrip: "For each time the wearer hits the same target, DMG dealt increases by 8~16%, stacking up to 5 time(s). This effect will be dispelled when the wearer changes targets.",
+    },
+  },{
+    name: "The Birth of the Self",
+    rarity: 4,
+    path: "Erudition",
+    image: "https://cdn.starrailstation.com/assets/e9e9d09bda90449eb412ac7e8bbe890b831db167063d9a21cc1782480d75160d.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "The Maiden in the Painting",
+      pDescrip: "Increases DMG dealt by the wearer's follow-up attacks by 24~48%. If the current HP of the target enemy is below 50% of Max HP, increases DMG dealt by follow-up attacks by an extra 24~48%.",
+    },
+  },{
+    name: "The Day The Cosmos Fell",
+    rarity: 4,
+    path: "Erudition",
+    image: "https://cdn.starrailstation.com/assets/c023b67317b1628e33f662ccb5f01efe8cd7287da9a2b24cfb0043e461b77450.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Stratagem",
+      pDescrip: "Increases the wearer's ATK by 16~24%. When the wearer uses an attack and at least 2 attacked enemies have the corresponding Weakness, the wearer's CRIT DMG increases by 20~40% for 2 turns.",
+    },
+  },{
+    name: "The Moles Welcome You",
+    rarity: 4,
+    equip: false,
+    obtained: false,
+    path: "Destruction",
+    image: "https://cdn.starrailstation.com/assets/37eab4a9c2ce50f95a7b82c0e449a74f8a3f6aba5853d7a336181caf113d6360.webp",
+    stats: {
+      HP: 1058,
+      ATK: 476,
+      DEF: 364,
+    },
+    passive: {
+      pName: "Fantastic Adventure",
+      pDescrip: "When the wearer uses Basic ATK, Skill, or Ultimate to attack enemies, the wearer gains one stack of Mischievous. Each stack increases the wearer's ATK by 12~24%.",
+    },
+  },{
+    name: "The Seriousness of Breakfast",
+    rarity: 4,
+    path: "Erudition",
+    image: "https://cdn.starrailstation.com/assets/d632f88d897084c1d3faa957ea7931165902b9d399b0d72426b9fe542e588af8.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 846,
+      ATK: 476,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Get Ready",
+      pDescrip: "Increases the wearer's DMG by 12~24%. For every defeated enemy, the wearer's ATK increases by 4~8%, stacking up to 3 time(s).",
+    },
+  },{
+    name: "This Is Me!",
+    rarity: 4,
+    path: "Preservation",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/02610cfc46833ce27cbfe06f4e47d187678897498bc6ee4fbc54cc50eb549643.webp",
+    stats: {
+      HP: 846,
+      ATK: 370,
+      DEF: 529,
+    },
+    passive: {
+      pName: "New Chapter",
+      pDescrip: "Increases the wearer's DEF by 16~32%. Increases the DMG of the wearer when they use their Ultimate by 60~120% of the wearer's DEF. This effect only apply 1 time per enemy target.",
+    },
+  },{
+    name: "Today is Another Peaceful Day",
+    rarity: 4,
+    path: "Erudition",
+    image: "https://cdn.starrailstation.com/assets/373e99d7fe4003f00901e94302c69004d0be11700b03bdeb1885c0330c875f3c.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 846,
+      ATK: 529,
+      DEF: 330,
+    },
+    passive: {
+      pName: "A Storm Is Coming",
+      pDescrip: "After entering battle, increases the wearer's DMG based on their Max Energy. DMG increases by 0.20~0.40% per point of Energy, up to 160 Energy.",
+    },
+  },{
+    name: "Trend of the Universal Market",
+    rarity: 4,
+    path: "Preservation",
+    image: "https://cdn.starrailstation.com/assets/516d0ef908d27ed2fb87de6b622c1799bdbceacfcc2f7fc90a85fca8ec8d8e37.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 1058,
+      ATK: 370,
+      DEF: 396,
+    },
+    passive: {
+      pName: "A New Round of Shuffling",
+      pDescrip: "Increases the wearer's DEF by 16~32%. When the wearer is attacked, there is a 100~120% base chance to Burn the enemy. For each turn, the wearer deals DoT that is equal to 40~80% of the wearer's DEF for 2 turn(s).",
+    },
+  },{
+    name: "Under the Blue Sky",
+    rarity: 4,
+    path: "Destruction",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/3ca8583b0d674334719194f8a6e03cac2bd16b7734f522ca4cfea7b612d5572e.webp",
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Rye Under the Sun",
+      pDescrip: "Increases the wearer's ATK by 16~32%. When the wearer defeats an enemy, the wearer's CRIT Rate increases by 12~24% for 3 turn(s).",
+    },
+  },{
+    name: "Warmth Shortens Cold Nights",
+    rarity: 4,
+    path: "Abundance",
+    image: "https://cdn.starrailstation.com/assets/7d7597c91ae0ae194b127ed317f0fe6276790844e11d5ddf86d6e3103e785670.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 1058,
+      ATK: 370,
+      DEF: 396,
+    },
+    passive: {
+      pName: "Tiny Light",
+      pDescrip: "Increases the wearer's Max HP by 16~32%. When using Basic ATK or Skill, restores all allies' HP by an amount equal to 2.0~4.0% of their respective Max HP.",
+    },
+  },{
+    name: "We Are Wildfire",
+    rarity: 4,
+    path: "Preservation",
+    image: "https://cdn.starrailstation.com/assets/4dc7b85adfda121ffc0b9e8687137e4c5d3203f869eb90d97edd191bb1e1af0a.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 740,
+      ATK: 476,
+      DEF: 463,
+    },
+    passive: {
+      pName: "Teary-Eyed",
+      pDescrip: "At the start of the battle, the DMG dealt to all allies decreases by 8~16% for 5 turn(s). At the same time, immediately restores HP to all allies equal to 30~50% of the respective HP difference between the characters' Max HP and current HP.",
+    },
+  },{
+    name: "We Will Meet Again",
+    rarity: 4,
+    path: "Nihility",
+    image: "https://cdn.starrailstation.com/assets/1afa42b70cb744423e6e719b31a0f2ea68e767773277011d1dbdbc0a3ae607a7.webp",
+    equip: false,
+    obtained: false,
+    stats: {
+      HP: 846,
+      ATK: 529,
+      DEF: 330,
+    },
+    passive: {
+      pName: "A Discourse in Arms",
+      pDescrip: "After the wearer uses Basic ATK or Skill, deals Additional DMG equal to 48~96% of the wearer's ATK to a random enemy that has been attacked.",
+    },
+  },{
+    name: "What Is Real?",
+    rarity: 4,
+    path: "Abundance",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/ecf2fed64846a503c7ee14904e1499278e2f1d8562c0c2201992825905c20372.webp",
+    stats: {
+      HP: 1058,
+      ATK: 423,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Hypothesis",
+      pDescrip: "Increases the wearer's Break Effect by 24~48%. After using their Basic ATK, restore HP for the wearer by an amount equal to 2.0~4.0% of their max HP plus 800.",
+    },
+  },{
+    name: "Woof! Walk Time",
+    rarity: 4,
+    path: "Destruction",
+    equip: false,
+    obtained: false,
+    image: "https://cdn.starrailstation.com/assets/31a06bf62127a65eaedd30d144d9fd8dad9391f821b0bbd156339395342cd21c.webp",
+    stats: {
+      HP: 952,
+      ATK: 476,
+      DEF: 330,
+    },
+    passive: {
+      pName: "Run!",
+      pDescrip: "Increases the wearer's ATK by 10~20%, and increases their DMG to enemies afflicted with Burn or Bleed by 16~32%. This also applies to DoT.",
     },
   },
 ];
+
 </script>

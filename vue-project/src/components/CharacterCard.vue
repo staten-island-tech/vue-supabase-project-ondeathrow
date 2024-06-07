@@ -1,9 +1,29 @@
 <template>
-   <router-link :to="charPath" class="card" draggable="false">
-    <img draggable="false" class="image-of-char" :src="Character.icon" :alt="Character.name"/>
-    <h2 draggable="false" class="char-name">{{ Character.name }}</h2>
-    <img draggable="false" class="star-rare" :src="Character.rarityicon"/>
-  </router-link>
+  <template v-if="Character.obtained">
+    <router-link :to="charPath" class="card" draggable="false">
+      <img
+        draggable="false"
+        class="image-of-char"
+        :src="Character.icon"
+        :alt="Character.name"
+      />
+      <h2 draggable="false" class="char-name">{{ Character.name }}</h2>
+      <img draggable="false" class="star-rare" :src="Character.rarityicon" />
+    </router-link>
+  </template>
+  <template v-else>
+    <div class="card disabled">
+      <img
+        draggable="false"
+        class="image-of-char"
+        :src="Character.icon"
+        :alt="Character.name"
+        style="filter: grayscale(100%);"
+      />
+      <h2 draggable="false" class="char-name">{{ Character.name }}</h2>
+      <img draggable="false" class="star-rare" :src="Character.rarityicon" />
+    </div>
+  </template>
 </template>
 
 <script setup>
@@ -16,18 +36,6 @@ const props = defineProps({
 const charPath = computed(()=>{
   return `character/${props.Character.name}`;
 });
-
-function colorscale(){
-  for(let i=0; i<characters.length; i++){
-    if(characters[i].obtained === true){
-      document.querySelector(".card").classList.remove("unobtained");
-      document.querySelector(".card").classList.add("obtained");
-    } else {
-      document.querySelector(".card").classList.remove("obtained");
-      document.querySelector(".card").classList.add("unobtained");
-    }
-  }
-}
 </script>
 
 <style scoped>

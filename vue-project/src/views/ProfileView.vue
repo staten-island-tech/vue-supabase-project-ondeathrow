@@ -1,10 +1,8 @@
 <template>
     <h1>Character Index</h1>
     <div :style="{ backgroundImage: 'url(' + linkIm + ')' }" class="profile">
-        <h2>[username]</h2>
-        <h4>[img avatar]</h4>
-        <p class="signature" maxlength="75"> signature/bio here!!! </p>
-        <h6>{{ linkIm }}</h6>
+        <h2>Welcome!</h2>
+        <textarea v-model="signature" class="signature-input" placeholder="Click here to change your signature!"></textarea>
     </div>
     <div class="container">
         <CharacterCard
@@ -22,6 +20,7 @@ import CharacterCard from "@/components/CharacterCard.vue";
 import { ref, onMounted } from 'vue';
 console.log(characters.length);
 
+const signature = ref('');
 const linkIm = ref('');
 onMounted(() => {
     let item = wallpapers[Math.floor(Math.random() * wallpapers.length)];
@@ -31,6 +30,17 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.signature-input{
+    border: none;
+    background-color: transparent;
+    color: white;
+    height: 90%;
+    width: 85%;
+    resize: none;
+}
+.signature-input::placeholder{
+    color: white;
+}
 .container{
     display: flex;
     flex-wrap: wrap;
