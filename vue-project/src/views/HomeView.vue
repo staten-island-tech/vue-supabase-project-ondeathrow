@@ -1,10 +1,6 @@
-import { supabase } from "../lib/supabaseClient.js";
-import { ref } from "vue";
-const email = ref("");
-const password = ref("");
-
+<template>
     <div class="signup">
-      <h1>sign over here</h1>
+      <h1>sign up over here</h1>
       <form @submit.prevent="register()">
         <label for="email">email</label>
         <input type="email" v-model="email" id="email" />
@@ -14,6 +10,31 @@ const password = ref("");
       </form>
     </div>
   </div>
+
+    <div class="signin">
+      <h1>sign in over here</h1>
+      <form @submit.prevent="login()">
+        <label for="email">email</label>
+        <input type="email" v-model="user" id="email" />
+        <label for="password">password</label>
+        <input type="password" v-model="login" id="password" />
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+  </div>
+
+   
+</template>
+
+<script setup>
+
+import { supabase } from "../lib/supabaseClient.js";
+import { ref } from "vue";
+const email = ref("");
+const password = ref("");
+const user = ref("");
+const login = ref(");
+
 
 async function register() {
   try {
@@ -25,38 +46,29 @@ async function register() {
     console.log(email.value);
     console.log(password.value);
     console.log(data);
+      let user = data
+      const { user, error } = await supabase
+  .from('users')
+  .insert([
+    { user_name: 'email.value', pass_word: 'password.value' },
+  ])
+  .select()
     if (error) throw error;
   } catch (error) {
     console.error(error);
-
-
-
-    <div class="signin">
-      <h1>sign over here</h1>
-      <form @submit.prevent="login()">
-        <label for="email">email</label>
-        <input type="email" v-model="email" id="email" />
-        <label for="password">password</label>
-        <input type="password" v-model="password" id="password" />
-        <button type="submit">Sign In</button>
-      </form>
-    </div>
-  </div>
   
   async function login() {
   try {
     console.log("abc");
-    const { data, error } = await supabase.auth.signIn({
-      email: email.value,
-      password: password.value,
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email: user.value,
+      password: login.value,
     });
-    console.log(email.value);
-    console.log(password.value);
+    console.log(user.value);
+    console.log(login.value);
     console.log(data);
     if (error) throw error;
   } catch (error) {
     console.error(error);
-
-
-
+</script>
 
