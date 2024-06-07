@@ -1,16 +1,11 @@
 <template>
   <div class="content">
-    <div>
-      <div><img src="https://images.dotgg.gg/honkai/spriteoutput/itemfigures/900001.webp" class="icon">3200</div>
-      <div><img src="https://ih1.redbubble.net/image.4988445162.5653/st,small,507x507-pad,600x600,f8f8f8.jpg" class="icon">10</div>
-    </div>
   
     <div class="sidebar">
       <button class="sidebarbtn" @click="openpage('Acheron')">Words of Yore</button> 
       <button class="sidebarbtn" @click="openpage('Luocha')">Laic Pursuit</button>
       <button class="sidebarbtn" @click="openpage('LC1')">Brilliant Fixation</button> 
       <button class="sidebarbtn" @click="openpage('LC2')">Bygone Reminiscience</button> 
-      <button class="sidebarbtn" @click="openpage('Standard')">Stellar Warp</button> 
     </div>
   
     <div v-show="currentpage === 'Acheron'" class="page"> 
@@ -19,7 +14,7 @@
         <h5>Every 10 Warps guarantees a 4-star or above entity</h5>
         <h5>Featured characters receive a drop rate boost</h5>
       </div>
-      <img src="https://starrail.honeyhunterworld.com/img/character/acheron-character_cut_in_front.webp?x91856">
+      <img class = "splash" src="https://starrail.honeyhunterworld.com/img/character/acheron-character_cut_in_front.webp?x91856">
     </div>
   
     <div v-show="currentpage === 'Luocha'" class="page"> 
@@ -28,7 +23,7 @@
         <h5>Every 10 Warps guarantees a 4-star or above entity</h5>
         <h5>Featured characters receive a drop rate boost</h5>
       </div>
-      <img src="https://starrail.honeyhunterworld.com/img/character/luocha-character_cut_in_front.webp?x91856">
+      <img class = "splash" src="https://starrail.honeyhunterworld.com/img/character/luocha-character_cut_in_front.webp?x91856">
     </div>
   
     <div v-show="currentpage === 'LC1'" class="page"> 
@@ -37,7 +32,7 @@
         <h5>Every 10 Warps guarantees a 4-star or above entity</h5>
         <h5>Featured Light Cones receive a drop rate boost</h5>
       </div>
-      <img src="https://starrail.honeyhunterworld.com/img/item/along-the-passing-shore-item_icon_thumbnail_medium.webp?x91856">
+      <img class = "splashlc" src="https://starrail.honeyhunterworld.com/img/item/along-the-passing-shore-item_icon_thumbnail_medium.webp?x91856">
     </div>
   
     <div v-show="currentpage === 'LC2'" class="page"> 
@@ -46,15 +41,7 @@
         <h5>Every 10 Warps guarantees a 4-star or above entity</h5>
         <h5>Featured Light Cones receive a drop rate boost</h5>
       </div>
-      <img src="https://starrail.honeyhunterworld.com/img/item/echoes-of-the-coffin-item_icon_thumbnail_medium.webp?x91856ty">
-    </div>
-  
-    <div v-show="currentpage === 'Standard'" class="page"> 
-      <div>Stellar Warp</div>
-      <div class="bannerbox">
-        <h5>Every 10 Warps guarantees a 4-star or above entity</h5>
-        <h5>Permanent</h5>
-      </div>
+      <img class = "splashlc" src="https://starrail.honeyhunterworld.com/img/item/echoes-of-the-coffin-item_icon_thumbnail_medium.webp?x91856ty">
     </div>
   
     <div v-if="history" class="popup"> 
@@ -64,9 +51,7 @@
         <table class=table>
           <tbody>
             <tr>
-              <td>Entity Type</td>
               <td>Entity Name</td>
-              <td>Warp Name</td>
               <td>Warp Time</td>
             </tr>
           </tbody>
@@ -80,15 +65,15 @@
       <h1>BANNER NAME</h1>
       <h1 class="grayheader">Boosted Drop Rate</h1>
       <h2 class="tanheader">Drop Rate (out of 5-star entities): 50%</h2>
-      <h1>IMAGE OF FEATURED FIVE STAR GOES HERE</h1>
+      <h1>ACHERON, LUOCHA, WORDS OF YORE, ECHOES OF THE COFFIN</h1>
       <h2 class="tanheader">Drop Rate (out of 4-star entities): 50%</h2>
-      <h1>IMAGE OF FEATURED FOUR STARS GO HERE</h1>
+      <h1>GALLAGHER, PELA, DAN HENG</h1>
       <h1 class="grayheader">Details</h1>
-      <h3>BANNER NAME has started</h3>
+      <h3>WORDS OF YORE, LAIC PURSUIT, BRILLIANT FIXATION, and BYGONE REMINISCIENCE have started</h3>
       <h3>Event Details</h3>
-      <h3>During the event, BANNER NAME, you can use your Star Rail Special Passes for Warps</h3>
+      <h3>During the event, WORDS OF YORE, LAIC PURSUIT, BRILLIANT FIXATION, and BYGONE REMINISCIENCE, you can use your Star Rail Special Passes for Warps</h3>
       <ul>
-        <li>There is a greatly increased Warp success rate for the limited 5-star character NAME (type: path), and 4-star characters NAME (type: path), NAME (type: Path), and NAME (type: PATH).</li>
+        <li>There is a greatly increased Warp success rate for the limited 5-star character ACHERON (NIHILITY: LIGHTNING), LUOCHA (ABUNDANCE: IMAGINARY) and 4-star characters GALLAGHER (ABUNDANCE: FIRE), PELA (NIHILITY: ICE), and DAN HENG (THE HUNT: WIND).</li>
         <li>Among the above characters, the limited character will not be available in the Stellar Warp event</li>
       </ul>
       <h3>※ This Warp is considered a Character Event Warp. The cumulative Warp count for a guaranteed 5-star character in any Character Event Warp will always be carried over to other Character Event Warps, but is independent and unaffected by other types of Warps.</h3>
@@ -102,16 +87,16 @@
           </thead>
           <tbody>
             <tr>
-              <td>FEATURED FIVE STAR</td>
-              <td>Bronya</td>
-              <td>Bailu</td>
-              <td>Gepard</td>
+              <td>ACHERON, LUOCHA/WORDS OF YORE, ECHOES OF THE COFFIN</td>
+              <td>Bronya/But the Battle Isn't Over</td>
+              <td>Bailu/Time Waits for No One</td>
+              <td>Gepard/Moment of Victory</td>
             </tr>
             <tr>
-              <td>Welt</td>
-              <td>Himeko</td>
-              <td>Yanqing</td>
-              <td>Clara</td>
+              <td>Welt/In the Name of the World</td>
+              <td>Himeko/Night on the Milky Way</td>
+              <td>Yanqing/Sleep Like the Dead</td>
+              <td>Clara/Something Irreplaceable</td>
             </tr>
           </tbody>
         </table>
@@ -256,13 +241,11 @@
     <div>
       <button class="left" @click="detailspopup">View Details</button>
       <button class="left" @click="historypopup">History</button>
-      <button class="left">Shop</button>
-      <button class="left">Game</button>
     </div>
 
     <div>
-      <button class="right" @click="pull">x1 | Warp x1</button>
-      <button class="right" @click="pull">x10 | Warp x10</button>
+      <button class="right" @click="() => pulllogic()">x1 | Warp x1</button>
+      <button class="right" @click="() => ten">x10 | Warp x10</button>
     </div>
   
   </div>
@@ -270,15 +253,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { acheron, luocha, LC1, LC2, standard } from '@/stores/warp';
-
-const date = new Date();
-let day = date.getDate();
-let month = date.getMonth() + 1;
-let year = date.getFullYear();
-var today = new Date();
-var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-let currentdate = `${month}/${day}/${year}: ${time}`;
+import { acheron, luocha, LC1, LC2, } from '@/stores/warp';
 let count = 0; 
 
 const history = ref(false);
@@ -441,10 +416,152 @@ const pulllogic = () => {
       }
     }
   }
+  else if (currentpage === "LC1") {
+    if (count === 9) {
+      const fourfive = Math.floor(Math.random() * 5100) + 1;
+      if (fourfive <= 306) {
+        const winloss = Math.floor(Math.random() * 2) + 1;
+        if (winloss === 1) {
+          result = "Along the Passing Shore";
+        } else {
+          const lossarr = [...LC1[0].loss];
+          const losswho = Math.floor(Math.random() * lossarr.length);
+          result = lossarr[losswho];
+        }
+      } else {
+        const rateup = Math.floor(Math.random() * 76) + 1;
+        if (rateup <= 38) {
+          const allfour = [...LC1[0].fourstarchara, ...LC1[0].fourstarlc];
+          const which = Math.floor(Math.random() * allfour.length);
+          result = allfour[which];
+        } else {
+          const whichrate = Math.floor(Math.random() * 3) + 1;
+          if (whichrate === 1) {
+            result = "Good Night and Sleep Well";
+          } else if (whichrate === 2) {
+            result = "Post-Op Conversation";
+          } else {
+            result = "Subscribe for More!";
+          }
+        }
+      }
+      count = 0;  
+    } else {
+      const reg = Math.floor(Math.random() * 1000) + 1;
+      if (reg <= 6) {
+        const fourfive = Math.floor(Math.random() * 5100) + 1;
+        if (fourfive <= 306) {
+          const winloss = Math.floor(Math.random() * 2) + 1;
+          if (winloss === 1) {
+            result = "Along the Passing Shore";
+          } else {
+            const lossarr = [...LC1[0].loss];
+            const losswho = Math.floor(Math.random() * lossarr.length);
+            result = lossarr[losswho];
+          }
+        }
+      } else if (reg > 6 && reg <= 51) {
+        const rateup = Math.floor(Math.random() * 76) + 1;
+        if (rateup <= 38) {
+          const allfour = [...LC1[0].fourstarchara, ...LC1[0].fourstarlc];
+          const which = Math.floor(Math.random() * allfour.length);
+          result = allfour[which];
+        } else {
+          const whichrate = Math.floor(Math.random() * 3) + 1;
+          if (whichrate === 1) {
+            result = "Good Night and Sleep Well";
+          } else if (whichrate === 2) {
+            result = "Post-Op Conversation";
+          } else {
+            result = "Subscribe for More!";
+          }
+        }
+        count = 0; 
+      } else {
+        const allthree = [...LC1[0].threestars];
+        const whichthree = Math.floor(Math.random() * allthree.length);
+        result = allthree[whichthree];
+        count++; 
+      }
+    }
+  }
+  else if (currentpage === "LC2") {
+    if (count === 9) {
+      const fourfive = Math.floor(Math.random() * 5100) + 1;
+      if (fourfive <= 306) {
+        const winloss = Math.floor(Math.random() * 2) + 1;
+        if (winloss === 1) {
+          result = "Echoes of the Coffin";
+        } else {
+          const lossarr = [...LC2[0].loss];
+          const losswho = Math.floor(Math.random() * lossarr.length);
+          result = lossarr[losswho];
+        }
+      } else {
+        const rateup = Math.floor(Math.random() * 76) + 1;
+        if (rateup <= 38) {
+          const allfour = [...LC2[0].fourstarchara, ...LC2[0].fourstarlc];
+          const which = Math.floor(Math.random() * allfour.length);
+          result = allfour[which];
+        } else {
+          const whichrate = Math.floor(Math.random() * 3) + 1;
+          if (whichrate === 1) {
+            result = "Good Night and Sleep Well";
+          } else if (whichrate === 2) {
+            result = "Post-Op Conversation";
+          } else {
+            result = "Subscribe for More!";
+          }
+        }
+      }
+      count = 0;  
+    } else {
+      const reg = Math.floor(Math.random() * 1000) + 1;
+      if (reg <= 6) {
+        const fourfive = Math.floor(Math.random() * 5100) + 1;
+        if (fourfive <= 306) {
+          const winloss = Math.floor(Math.random() * 2) + 1;
+          if (winloss === 1) {
+            result = "Echoes of the Coffin";
+          } else {
+            const lossarr = [...LC2[0].loss];
+            const losswho = Math.floor(Math.random() * lossarr.length);
+            result = lossarr[losswho];
+          }
+        }
+      } else if (reg > 6 && reg <= 51) {
+        const rateup = Math.floor(Math.random() * 76) + 1;
+        if (rateup <= 38) {
+          const allfour = [...LC2[0].fourstarchara, ...LC2[0].fourstarlc];
+          const which = Math.floor(Math.random() * allfour.length);
+          result = allfour[which];
+        } else {
+          const whichrate = Math.floor(Math.random() * 3) + 1;
+          if (whichrate === 1) {
+            result = "Good Night and Sleep Well";
+          } else if (whichrate === 2) {
+            result = "Post-Op Conversation";
+          } else {
+            result = "Subscribe for More!";
+          }
+        }
+        count = 0; 
+      } else {
+        const allthree = [...LC2[0].threestars];
+        const whichthree = Math.floor(Math.random() * allthree.length);
+        result = allthree[whichthree];
+        count++; 
+      }
+    }
+  }
   return result;
 };
 
-
+const ten = (arr) => {
+  for (let i = 0; i < 10; i++) {
+    pulllogic(arr)
+  }
+}
 
 const rng = pulllogic();
 console.log(rng);
@@ -510,11 +627,6 @@ console.log(rng);
   padding: 8px;
 }
 
-.icon{
-  height: 50px;
-  width: 50px;
-}
-
 .sidebar {
   float: left;
   border: 1px solid #ccc;
@@ -548,10 +660,19 @@ console.log(rng);
 .page {
   float: left;
   padding: 0px 12px;
-  border: 1px solid #ccc;
   width: 70%;
   border-left: none;
-  height: 300px;
+  height: 525px;
+}
+
+.splash {
+  height: 600px;
+  width: 600px;
+}
+
+.splashlc {
+  height: 385.2px;
+  width: 477.6;
 }
 
 .bannerbox {

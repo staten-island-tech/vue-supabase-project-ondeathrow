@@ -1,5 +1,5 @@
 <template>
-    <h1>Click</h1>
+    <h1>Click to farm relics</h1>
     <div>
         <h1>Cavern Of Corrosion</h1>
         <button>Path of Gelid Wind - Hunter of Glacial Frost & Eagle of Twilight Line</button>
@@ -22,4 +22,13 @@
         <button>World 8 - Firmament Frontline Glamoth & Penacony, Land of Dreams</button>
         <button>World 9 - Sigonia, The Unclaimed Destination & Izumo Gensai and Takama Divine Realm</button>
     </div>
+
+    <div>
+        <h2>Inventory</h2>
+    </div>
 </template>
+
+<script>
+import { relics } from '@/stores/relics';
+
+</script>
