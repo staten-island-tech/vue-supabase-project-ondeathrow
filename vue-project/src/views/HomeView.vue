@@ -281,6 +281,7 @@ var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds(
 let currentdate = `${month}/${day}/${year}: ${time}`;
 let count = 0; 
 
+<<<<<<< HEAD
 const history = ref(false);
 const details = ref(false);
 const wishHistory = ref([]);
@@ -374,6 +375,21 @@ const pulllogic = () => {
     }
   } else if (currentpage.value === "Luocha" ) {
     
+=======
+async function login() {
+  try {
+    console.log("abc");
+    const { data, error } = await supabase.auth.signIn({
+      email: email.value,
+      password: password.value,
+    });
+    console.log(email.value);
+    console.log(password.value);
+    console.log(data);
+    if (error) throw error;
+  } catch (error) {
+    console.error(error);
+>>>>>>> parent of fccd591 (Update HomeView.vue)
   }
   return result;
 };
