@@ -1,14 +1,12 @@
 <template>
   <div class="content">
-  
-    <div class="sidebar">
-      <button class="sidebarbtn" @click="openpage('Acheron')">Words of Yore</button> 
+     <div class="sidebar">
+      <button class="sidebarbtn" @click="openpage('Acheron')">Words of Yore</button>
       <button class="sidebarbtn" @click="openpage('Luocha')">Laic Pursuit</button>
-      <button class="sidebarbtn" @click="openpage('LC1')">Brilliant Fixation</button> 
-      <button class="sidebarbtn" @click="openpage('LC2')">Bygone Reminiscience</button> 
+      <button class="sidebarbtn" @click="openpage('LC1')">Brilliant Fixation</button>
+      <button class="sidebarbtn" @click="openpage('LC2')">Bygone Reminiscience</button>
     </div>
-  
-    <div v-show="currentpage === 'Acheron'" class="page"> 
+     <div v-show="currentpage === 'Acheron'" class="page">
       <div>Words of Yore</div>
       <div class="bannerbox">
         <h5>Every 10 Warps guarantees a 4-star or above entity</h5>
@@ -16,8 +14,7 @@
       </div>
       <img class = "splash" src="https://starrail.honeyhunterworld.com/img/character/acheron-character_cut_in_front.webp?x91856">
     </div>
-  
-    <div v-show="currentpage === 'Luocha'" class="page"> 
+     <div v-show="currentpage === 'Luocha'" class="page">
       <div>Laic Pursuit</div>
       <div class="bannerbox">
         <h5>Every 10 Warps guarantees a 4-star or above entity</h5>
@@ -25,8 +22,7 @@
       </div>
       <img class = "splash" src="https://starrail.honeyhunterworld.com/img/character/luocha-character_cut_in_front.webp?x91856">
     </div>
-  
-    <div v-show="currentpage === 'LC1'" class="page"> 
+     <div v-show="currentpage === 'LC1'" class="page">
       <div>Brilliant Fixation</div>
       <div class="bannerbox">
         <h5>Every 10 Warps guarantees a 4-star or above entity</h5>
@@ -34,8 +30,7 @@
       </div>
       <img class = "splashlc" src="https://starrail.honeyhunterworld.com/img/item/along-the-passing-shore-item_icon_thumbnail_medium.webp?x91856">
     </div>
-  
-    <div v-show="currentpage === 'LC2'" class="page"> 
+     <div v-show="currentpage === 'LC2'" class="page">
       <div>Bygone Reminiscience</div>
       <div class="bannerbox">
         <h5>Every 10 Warps guarantees a 4-star or above entity</h5>
@@ -43,26 +38,22 @@
       </div>
       <img class = "splashlc" src="https://starrail.honeyhunterworld.com/img/item/echoes-of-the-coffin-item_icon_thumbnail_medium.webp?x91856ty">
     </div>
-  
-    <div v-if="history" class="popup"> 
-      <button class="exit" @click="exitpopup">X</button> 
-      <h1>Wish History</h1>
+     <div v-if="history" class="popup">
+      <button class="exit" @click="exitpopup">X</button>
+      <h1 class="top">Wish History</h1>
       <div class="tablecontainer">
         <table class=table>
           <tbody>
             <tr>
               <td>Entity Name</td>
-              <td>Warp Time</td>
             </tr>
           </tbody>
         </table>
       </div>
       <li v-for="(item, index) in wishHistory.slice().reverse()" :key="index">{{ item }}</li>
     </div>
-  
-    <div v-if="details" class="popup"> 
-      <button class="exit" @click="exitpopup">X</button> 
-      <h1>BANNER NAME</h1>
+     <div v-if="details" class="popup">
+      <button class="exit" @click="exitpopup">X</button>
       <h1 class="grayheader">Boosted Drop Rate</h1>
       <h2 class="tanheader">Drop Rate (out of 5-star entities): 50%</h2>
       <h1>ACHERON, LUOCHA, WORDS OF YORE, ECHOES OF THE COFFIN</h1>
@@ -77,7 +68,7 @@
         <li>Among the above characters, the limited character will not be available in the Stellar Warp event</li>
       </ul>
       <h3>※ This Warp is considered a Character Event Warp. The cumulative Warp count for a guaranteed 5-star character in any Character Event Warp will always be carried over to other Character Event Warps, but is independent and unaffected by other types of Warps.</h3>
-      <h1 class="grayheader">Entity List</h1> 
+      <h1 class="grayheader">Entity List</h1>
       <div class="tablecontainer">
         <table class="table">
           <thead>
@@ -237,48 +228,58 @@
         </table>
       </div>
     </div>
-
+ 
+ 
     <div>
       <button class="left" @click="detailspopup">View Details</button>
       <button class="left" @click="historypopup">History</button>
     </div>
-
+ 
+ 
     <div>
-      <button class="right" @click="() => pulllogic()">x1 | Warp x1</button>
-      <button class="right" @click="() => ten">x10 | Warp x10</button>
+      <button class="right" @click="() => fin()">x1 | Warp x1</button>
+      <button class="right" @click="() => multi()">x10 | Warp x10</button>
     </div>
-  
-  </div>
-</template>
-
-<script setup>
-import { ref } from 'vue';
-import { acheron, luocha, LC1, LC2, } from '@/stores/warp';
-let count = 0; 
-
-const history = ref(false);
-const details = ref(false);
-const wishHistory = ref([]);
-const currentpage = ref('Acheron');
-const historypopup = () => {
+   </div>
+ </template>
+ 
+ 
+ <script setup>
+ import { ref } from 'vue';
+ import { acheron, luocha, LC1, LC2, } from '@/stores/warp';
+ import { characters, lightCones } from '@/components/CharacterList.vue';
+ let count = 0;
+ 
+ 
+ const history = ref(false);
+ const details = ref(false);
+ const wishHistory = ref([]);
+ const currentpage = ref('Acheron');
+ const historypopup = () => {
   history.value = true;
-};
-
-const detailspopup = () => {
+ };
+ 
+ 
+ const detailspopup = () => {
   details.value = true;
-};
-
-const exitpopup = () => {
+ };
+ 
+ 
+ const exitpopup = () => {
   details.value = false;
   history.value = false;
-};
-
-const openpage = (bannername) => {
+ };
+ 
+ 
+ const openpage = (bannername) => {
   currentpage.value = bannername;
-};
-
-const pulllogic = () => {
+ };
+ 
+ 
+ const pulllogic = () => {
   let result;
+ 
+ 
   if (currentpage.value === "Acheron") {
     if (count === 9) {
       const fourfive = Math.floor(Math.random() * 5100) + 1;
@@ -308,44 +309,46 @@ const pulllogic = () => {
           }
         }
       }
-      count = 0;  
+      count = 0; 
     } else {
       const reg = Math.floor(Math.random() * 1000) + 1;
       if (reg <= 6) {
-        const fourfive = Math.floor(Math.random() * 5100) + 1;
-        if (fourfive <= 306) {
-          const winloss = Math.floor(Math.random() * 2) + 1;
-          if (winloss === 1) {
-            result = "Acheron";
-          } else {
-            const lossarr = [...acheron[0].loss];
-            const losswho = Math.floor(Math.random() * lossarr.length);
-            result = lossarr[losswho];
-          }
-        }
-      } else if (reg > 6 && reg <= 51) {
-        const rateup = Math.floor(Math.random() * 76) + 1;
-        if (rateup <= 38) {
-          const allfour = [...acheron[0].fourstarchara, ...acheron[0].fourstarlc];
-          const which = Math.floor(Math.random() * allfour.length);
-          result = allfour[which];
-        } else {
-          const whichrate = Math.floor(Math.random() * 3) + 1;
-          if (whichrate === 1) {
-            result = "Gallagher";
-          } else if (whichrate === 2) {
-            result = "Pela";
-          } else {
-            result = "Dan Heng";
-          }
-        }
-        count = 0; 
+  const fourfive = Math.floor(Math.random() * 5100) + 1;
+  if (fourfive <= 306) {
+    const winloss = Math.floor(Math.random() * 2) + 1;
+    if (winloss === 1) {
+      result = "Acheron";
+    } else {
+      const lossarr = [...acheron[0].loss];
+      const losswho = Math.floor(Math.random() * lossarr.length);
+      result = lossarr[losswho];
+    }
+  } else {
+    const rateup = Math.floor(Math.random() * 76) + 1;
+    if (rateup <= 38) {
+      const allfour = [...acheron[0].fourstarchara, ...acheron[0].fourstarlc];
+      const which = Math.floor(Math.random() * allfour.length);
+      result = allfour[which];
+    } else {
+      const whichrate = Math.floor(Math.random() * 3) + 1;
+      if (whichrate === 1) {
+        result = "Gallagher";
+      } else if (whichrate === 2) {
+        result = "Pela";
       } else {
-        const allthree = [...acheron[0].threestars];
-        const whichthree = Math.floor(Math.random() * allthree.length);
-        result = allthree[whichthree];
-        count++; 
+        result = "Dan Heng";
       }
+    }
+    count = 0;
+  }
+ } else {
+  const allthree = [...acheron[0].threestars];
+  const whichthree = Math.floor(Math.random() * allthree.length);
+  result = allthree[whichthree];
+  count++;
+ }
+ 
+ 
     }
   } else if (currentpage.value === "Luocha" ) {
     if (count === 9) {
@@ -376,47 +379,47 @@ const pulllogic = () => {
           }
         }
       }
-      count = 0;  
+      count = 0; 
     } else {
       const reg = Math.floor(Math.random() * 1000) + 1;
       if (reg <= 6) {
-        const fourfive = Math.floor(Math.random() * 5100) + 1;
-        if (fourfive <= 306) {
-          const winloss = Math.floor(Math.random() * 2) + 1;
-          if (winloss === 1) {
-            result = "Luocha";
-          } else {
-            const lossarr = [...luocha[0].loss];
-            const losswho = Math.floor(Math.random() * lossarr.length);
-            result = lossarr[losswho];
-          }
-        }
-      } else if (reg > 6 && reg <= 51) {
-        const rateup = Math.floor(Math.random() * 76) + 1;
-        if (rateup <= 38) {
-          const allfour = [...luocha[0].fourstarchara, ...luocha[0].fourstarlc];
-          const which = Math.floor(Math.random() * allfour.length);
-          result = allfour[which];
-        } else {
-          const whichrate = Math.floor(Math.random() * 3) + 1;
-          if (whichrate === 1) {
-            result = "Gallagher";
-          } else if (whichrate === 2) {
-            result = "Pela";
-          } else {
-            result = "Dan Heng";
-          }
-        }
-        count = 0; 
+  const fourfive = Math.floor(Math.random() * 5100) + 1;
+  if (fourfive <= 306) {
+    const winloss = Math.floor(Math.random() * 2) + 1;
+    if (winloss === 1) {
+      result = "Luocha";
+    } else {
+      const lossarr = [...luocha[0].loss];
+      const losswho = Math.floor(Math.random() * lossarr.length);
+      result = lossarr[losswho];
+    }
+  } else {
+    const rateup = Math.floor(Math.random() * 76) + 1;
+    if (rateup <= 38) {
+      const allfour = [...luocha[0].fourstarchara, ...luocha[0].fourstarlc];
+      const which = Math.floor(Math.random() * allfour.length);
+      result = allfour[which];
+    } else {
+      const whichrate = Math.floor(Math.random() * 3) + 1;
+      if (whichrate === 1) {
+        result = "Gallagher";
+      } else if (whichrate === 2) {
+        result = "Pela";
       } else {
-        const allthree = [...luocha[0].threestars];
-        const whichthree = Math.floor(Math.random() * allthree.length);
-        result = allthree[whichthree];
-        count++; 
+        result = "Dan Heng";
       }
     }
+    count = 0;
   }
-  else if (currentpage === "LC1") {
+ } else {
+  const allthree = [...acheron[0].threestars];
+  const whichthree = Math.floor(Math.random() * allthree.length);
+  result = allthree[whichthree];
+  count++;
+ }
+    }
+  }
+  if (currentpage.value === "LC1") {
     if (count === 9) {
       const fourfive = Math.floor(Math.random() * 5100) + 1;
       if (fourfive <= 306) {
@@ -439,51 +442,50 @@ const pulllogic = () => {
           if (whichrate === 1) {
             result = "Good Night and Sleep Well";
           } else if (whichrate === 2) {
-            result = "Post-Op Conversation";
+            result = "Pela";
           } else {
-            result = "Subscribe for More!";
+            result = "Dan Heng";
           }
         }
       }
-      count = 0;  
+      count = 0; 
     } else {
       const reg = Math.floor(Math.random() * 1000) + 1;
       if (reg <= 6) {
-        const fourfive = Math.floor(Math.random() * 5100) + 1;
-        if (fourfive <= 306) {
-          const winloss = Math.floor(Math.random() * 2) + 1;
-          if (winloss === 1) {
-            result = "Along the Passing Shore";
-          } else {
-            const lossarr = [...LC1[0].loss];
-            const losswho = Math.floor(Math.random() * lossarr.length);
-            result = lossarr[losswho];
-          }
-        }
-      } else if (reg > 6 && reg <= 51) {
-        const rateup = Math.floor(Math.random() * 76) + 1;
-        if (rateup <= 38) {
-          const allfour = [...LC1[0].fourstarchara, ...LC1[0].fourstarlc];
-          const which = Math.floor(Math.random() * allfour.length);
-          result = allfour[which];
-        } else {
-          const whichrate = Math.floor(Math.random() * 3) + 1;
-          if (whichrate === 1) {
-            result = "Good Night and Sleep Well";
-          } else if (whichrate === 2) {
-            result = "Post-Op Conversation";
-          } else {
-            result = "Subscribe for More!";
-          }
-        }
-        count = 0; 
+  const fourfive = Math.floor(Math.random() * 5100) + 1;
+  if (fourfive <= 306) {
+    const winloss = Math.floor(Math.random() * 2) + 1;
+    if (winloss === 1) {
+      result = "Acheron";
+    } else {
+      const lossarr = [...acheron[0].loss];
+      const losswho = Math.floor(Math.random() * lossarr.length);
+      result = lossarr[losswho];
+    }
+  } else {
+    const rateup = Math.floor(Math.random() * 76) + 1;
+    if (rateup <= 38) {
+      const allfour = [...acheron[0].fourstarchara, ...acheron[0].fourstarlc];
+      const which = Math.floor(Math.random() * allfour.length);
+      result = allfour[which];
+    } else {
+      const whichrate = Math.floor(Math.random() * 3) + 1;
+      if (whichrate === 1) {
+        result = "Good Night and Sleep Well";
+      } else if (whichrate === 2) {
+        result = "Post-Op Conversation";
       } else {
-        const allthree = [...LC1[0].threestars];
-        const whichthree = Math.floor(Math.random() * allthree.length);
-        result = allthree[whichthree];
-        count++; 
+        result = "Subscribe for More!";
       }
     }
+    count = 0;
+  }
+ } else {
+  const allthree = [...LC1[0].threestars];
+  const whichthree = Math.floor(Math.random() * allthree.length);
+  result = allthree[whichthree];
+  count++;
+ }}
   }
   else if (currentpage === "LC2") {
     if (count === 9) {
@@ -491,7 +493,7 @@ const pulllogic = () => {
       if (fourfive <= 306) {
         const winloss = Math.floor(Math.random() * 2) + 1;
         if (winloss === 1) {
-          result = "Echoes of the Coffin";
+          result === "Echoes of the Coffin";
         } else {
           const lossarr = [...LC2[0].loss];
           const losswho = Math.floor(Math.random() * lossarr.length);
@@ -514,7 +516,7 @@ const pulllogic = () => {
           }
         }
       }
-      count = 0;  
+      count = 0; 
     } else {
       const reg = Math.floor(Math.random() * 1000) + 1;
       if (reg <= 6) {
@@ -545,63 +547,73 @@ const pulllogic = () => {
             result = "Subscribe for More!";
           }
         }
-        count = 0; 
+        count = 0;
       } else {
         const allthree = [...LC2[0].threestars];
         const whichthree = Math.floor(Math.random() * allthree.length);
         result = allthree[whichthree];
-        count++; 
+        count++;
       }
     }
   }
-  return result;
-};
-
-const ten = (arr) => {
+  return result
+ };
+ 
+ 
+ const fin = (character) => {
+  const ap = pulllogic(character)
+  wishHistory.value.push(ap);
+  console.log(ap);
+ }
+ 
+ 
+ const multi = (character) => {
   for (let i = 0; i < 10; i++) {
-    pulllogic(arr)
+    fin(character)
   }
-}
-
-const rng = pulllogic();
-console.log(rng);
-
-</script>
-
-<style scoped>
-.background-image {
+ }
+ 
+ 
+ </script>
+ 
+ 
+ <style scoped>
+ .background-image {
   width: 100vw;
   height: calc(100vh - 40px);
   object-fit: cover;
-}
-
-.popup {
+ }
+ 
+ 
+ .popup {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  background-color: white;
+  background-color: #25233B;
   border: 2px solid black;
   border-radius: 2px;
-  color: black;
-  height: 80vh; 
-  width: 80vw; 
+  height: 80vh;
+  width: 80vw;
   overflow: auto;
-}
-
-.grayheader {
+ }
+ 
+ 
+ .grayheader {
   background-color: gray;
   color: white;
   width: 250px;
-}
-
-.tanheader {
+ }
+ 
+ 
+ .tanheader {
   background: #DBD6D2;
   color: #6E6A6F;
-}
-
-.exit {
+ }
+ 
+ 
+ .exit {
   position: absolute;
   right: 10px;
   top: 5px;
@@ -609,34 +621,48 @@ console.log(rng);
   border: none;
   font-size: 1.5em;
   cursor: pointer;
-}
-
-.left {
+  color: white;
+ }
+ 
+ 
+ .left, .right {
   border: solid #6a6a6a;
   border-radius: 10px;
-}
-
-.table {
+  color: black;
+ }
+ 
+ 
+ .top{
+  color: white;
+ }
+ 
+ 
+ .table {
   border-collapse: collapse;
   width: 100%;
-}
-
-.table th,
-.table td {
+  color: black;
+ }
+ 
+ 
+ .table th,
+ .table td {
   border: 1px solid #ddd;
   padding: 8px;
-}
-
-.sidebar {
+  color: white;;
+ }
+ 
+ 
+ .sidebar {
   float: left;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   width: 30%;
   height: 350px;
   width: 120px;
-}
-
-.sidebar button {
+ }
+ 
+ 
+ .sidebar button {
   display: block;
   background-color: inherit;
   color: black;
@@ -647,38 +673,50 @@ console.log(rng);
   text-align: left;
   cursor: pointer;
   transition: 0.3s;
-}
-
-.sidebar button:hover {
+ }
+ 
+ 
+ .sidebar button:hover {
   background-color: #ddd;
-}
-
-.sidebar button.active {
+ }
+ 
+ 
+ .sidebar button.active {
   background-color: #ccc;
-}
-
-.page {
+ }
+ 
+ 
+ .page {
   float: left;
   padding: 0px 12px;
   width: 70%;
   border-left: none;
   height: 525px;
-}
-
-.splash {
+ }
+ 
+ 
+ .splash {
   height: 600px;
   width: 600px;
-}
-
-.splashlc {
+ }
+ 
+ 
+ .splashlc {
   height: 385.2px;
   width: 477.6;
-}
-
-.bannerbox {
+ }
+ 
+ 
+ .bannerbox {
   border-radius: 0px 40px 0px 0px;
   background-color: #6a6a6a;
   width: 150px;
   color: white;
-}
-</style>
+ }
+ </style>
+ 
+ 
+ 
+ 
+ 
+ 
