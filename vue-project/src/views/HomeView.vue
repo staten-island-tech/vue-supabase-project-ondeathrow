@@ -23,7 +23,7 @@
 
 </template>
 
-<script setup >
+<script setup>
 
 import { supabase } from "../lib/supabaseClient.js";
 import { ref } from "vue";
