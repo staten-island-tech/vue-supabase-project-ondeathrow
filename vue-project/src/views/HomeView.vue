@@ -32,24 +32,34 @@ const password = ref("");
 const user = ref("");
 const login = ref("");
 
+async function insertData() {
+  const {data: insertData, error: insertError} = await supabase 
+  .from('users')
+  .insert([
+    { user_name: 'email.value', pass_word: 'password.value' },
+  ])
+  if (insertError) {
+    console.log(insertError)
+  } else {
+    console.log(userData)
+  }
+}
+
 
 async function register() {
   try {
-    console.log("aaa");
-    const { data, error } = await supabase.auth.signUp({
+    // console.log("aaa");
+    const { data, error: insertError } = await supabase.auth.signUp({
     email: email.value,
     password: password.value,
     });
     console.log(email.value);
     console.log(password.value);
     console.log(data);
-      let user = data
-      const { user, error } = await supabase
-  .from('users')
-  .insert([
-    { user_name: 'email.value', pass_word: 'password.value' },
-  ])
-  .select()
+       user.value = data
+      //const { user, error } = await supabase
+      insertData()
+  // .select()
     if (error) throw error;
   } catch (error) {
     console.error(error);
@@ -67,5 +77,9 @@ async function register() {
     if (error) throw error;
   } catch (error) {
     console.error(error);
+  }
+}
+  }
+}
 </script>
 
