@@ -54,7 +54,7 @@ export const characters = [
     rarityicon: fiveStar,
     path: "Nihility",
     element: "Lightning",
-    obtained: false,
+    obtained: true,
     fullBody: "https://honkailab.com/wp-content/uploads/Acheron.webp",
     desc: `A drifter claiming to be a Galaxy Ranger. Her true name is unknown. She walks the cosmos alone, carrying with her a long sword.`,
     baseStats: {
