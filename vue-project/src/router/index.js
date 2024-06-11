@@ -9,11 +9,6 @@ const router = createRouter({
       component: () => import('../views/HomeView.vue')
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
-    },
-    {
       path: '/character',
       name: 'profile',
       component: () => import('../views/ProfileView.vue')
@@ -22,16 +17,7 @@ const router = createRouter({
       path: '/character/:name',
       name: 'data',
       component: () => import('../views/CharacterData.vue')
-    }, {
-      path: '/warp',
-      name: 'warp',
-      component: () => import('../views/HSRPulling.vue')
-    },
-    {
-      path: '/Relics',
-      name: 'relics',
-      component: () => import('../views/RelicFarming.vue')
-    },
+    }, 
   ]
 })
 

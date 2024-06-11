@@ -1,26 +1,18 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
-  <div class="wrapper">
+  <div>
+    <header>
       <nav>
-        <RouterLink to="/character">Inventory</RouterLink>
         <RouterLink to="/">Wish</RouterLink>
-        <RouterLink to="/Relics">Relics</RouterLink>
+        <RouterLink to="/character">Index</RouterLink>
       </nav>
+    </header>
+    <div class="routerstuff">
+      <RouterView />
     </div>
-  <RouterView />
+  </div>
 </template>
 
 <style scoped>
-/* .wrapper{
-  background-color: #8d8ba7;
-  height: 600px;
-}
-a{
-  margin: auto 5%;
-} */
 body {
   margin: 0;
 }
@@ -32,7 +24,7 @@ header {
   width: 100%;
   box-shadow: 0 2px 4px;
   z-index: 1000;
-  background-color: #ffffff;
+  background-color: #1f1d31;
   height: 40px;
   text-align: center;
 }
@@ -48,6 +40,7 @@ nav a {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
+  color: white;
 }
 
 nav a:first-of-type {

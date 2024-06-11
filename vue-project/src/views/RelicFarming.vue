@@ -2,7 +2,7 @@
     <h1>Click to farm relics</h1>
     <div>
         <h1>Cavern Of Corrosion</h1>
-        <button>Path of Gelid Wind - Hunter of Glacial Frost & Eagle of Twilight Line</button>
+        <button class="">Path of Gelid Wind - Hunter of Glacial Frost & Eagle of Twilight Line</button>
         <button>Path of Jabbing Punch - Champion of Streetwise Boxing & Thief of Shooting Meteor</button>
         <button>Path of Drifting - Passerby of Wandering Cloud & Musketeer of Wild Wheat</button>
         <button>Path of Providence - Guard of Wuthering Snow & Genius of Brilliant Stars</button>
@@ -29,6 +29,11 @@
 </template>
 
 <script>
-import { relics } from '@/stores/relics';
-
+import { relics, ornaments} from '@/stores/relics';//scrapped
 </script>
+
+<style scoped>
+button{
+    color: black;
+}
+</style>

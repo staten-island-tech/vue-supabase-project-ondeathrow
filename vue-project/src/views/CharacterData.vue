@@ -1,5 +1,5 @@
 <template>
-  <div class="displayChar">
+  <div v-if="character" class="displayChar">
     <img class="imageFull" :src="character.fullBody" />
     <p class="cDesc">{{ character.desc }}</p>
     <div class="charinfo">
@@ -24,8 +24,8 @@
               <p>ATK: {{ character.equippedLightcone.stats.ATK }}</p>
               <p>DEF: {{ character.equippedLightcone.stats.DEF }}</p>
               <div class="lightcone-description">
-                <h6> {{ character.equippedLightcone.passive.pName }} </h6>
-                <p> {{ character.equippedLightcone.passive.pDescrip }}</p>
+                <h6>{{ character.equippedLightcone.passive.pName }}</h6>
+                <p>{{ character.equippedLightcone.passive.pDescrip }}</p>
               </div>
             </div>
           </div>
@@ -33,11 +33,14 @@
       </div>
     </div>
   </div>
+  <div v-else>Loading character data...</div>
   <div class="lightCC">
     <div v-if="showPopup" class="popup">
       <div class="lightcone-flex">
-        <!-- selected -> if selectedLightcone exists & selected = lightcone.name ; unobtained is when lightcone.obtained is falsewje -->
-        <div v-for="lightcone in lightCones" :key="lightcone.name" class="lightcone-card" :class="{ selected: selectedLightcone && selectedLightcone.name === lightcone.name, unobtained: !lightcone.obtained }" @click="selectLightcone(lightcone)">
+        <div v-for="lightcone in lightCones" :key="lightcone.name" 
+             class="lightcone-card" 
+             :class="{ selected: selectedLightcone && selectedLightcone.name === lightcone.name, unobtained: !lightcone.obtained }" 
+             @click="selectLightcone(lightcone)">
           <img draggable="false" :src="lightcone.image" :alt="lightcone.name" />
           <h4 class="lightconeNameP">{{ lightcone.name }}</h4>
         </div>
@@ -55,7 +58,7 @@ export default {
   setup() {
     const route = useRoute();
     const characterName = ref(route.params.name);
-    const character = ref(characters.find(char => char.name === characterName.value));
+    const character = ref(characters.find(char => char.name === characterName.value) || null);
     const lightCones = ref(lightConesData);
     const showPopup = ref(false);
     const selectedLightcone = ref(null);
@@ -81,7 +84,6 @@ export default {
       console.log('New character stats:', character.value.baseStats);
     };
 
-    // true or false? both true -> calls function; then hide and not hide pop up wjedekrt
     const togglePopup = () => {
       if (showPopup.value && selectedLightcone.value) {
         equipLightcone();
@@ -97,10 +99,12 @@ export default {
         console.log('Cannot select an unobtained lightcone');
       }
     };
+
     return { character, lightCones, showPopup, selectedLightcone, togglePopup, selectLightcone };
   }
 };
 </script>
+
 
 <style scoped>
 *{

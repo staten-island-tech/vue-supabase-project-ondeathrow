@@ -1,4 +1,5 @@
 const relics = [
+    //scrapped
     {
         name: "Path of Gelid Wind",
         type: ["Hunter of Glacial Frost", "Eagle of Twilight Line"], 
@@ -71,6 +72,9 @@ const relics = [
         body: ["Pioneer's Sealed Lead Apron", "Watchmaker's Illusory Formal Suit"], 
         feet: ["Pioneer's Starfaring Anchor", "Watchmaker's Dream-Concealing Dress Shoes"],
     },
+]
+
+const ornaments = [
     {
         name: "World 3",
         type: ["Space Sealing Station", "Fleet of the Ageless"],
@@ -115,4 +119,4 @@ const relics = [
     },
 ]
 
-export {relics}
+export {relics, ornaments}

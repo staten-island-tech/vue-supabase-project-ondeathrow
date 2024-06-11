@@ -46,13 +46,12 @@
   
     <div v-if="history" class="popup"> 
       <button class="exit" @click="exitpopup">X</button> 
-      <h1>Wish History</h1>
+      <h1 class="top">Wish History</h1>
       <div class="tablecontainer">
         <table class=table>
           <tbody>
             <tr>
               <td>Entity Name</td>
-              <td>Warp Time</td>
             </tr>
           </tbody>
         </table>
@@ -62,7 +61,6 @@
   
     <div v-if="details" class="popup"> 
       <button class="exit" @click="exitpopup">X</button> 
-      <h1>BANNER NAME</h1>
       <h1 class="grayheader">Boosted Drop Rate</h1>
       <h2 class="tanheader">Drop Rate (out of 5-star entities): 50%</h2>
       <h1>ACHERON, LUOCHA, WORDS OF YORE, ECHOES OF THE COFFIN</h1>
@@ -177,7 +175,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>Post-Op</td>
+              <td>Post-Op Conversation</td>
               <td>Resolution Shines As Pearls of Sweat</td>
               <td>Trend of the Universal Market</td>
               <td>Subscribe for More!</td>
@@ -185,7 +183,7 @@
             <tr>
               <td>Dance! Dance! Dance!</td>
               <td>Under the Blue Sky</td>
-              <td>Geniuses' Repose</td>
+              <td>Geniuses's Repose</td>
               <td>Indelible Promise</td>
             </tr>
             <tr>
@@ -244,16 +242,18 @@
     </div>
 
     <div>
-      <button class="right" @click="() => pulllogic()">x1 | Warp x1</button>
-      <button class="right" @click="() => ten">x10 | Warp x10</button>
+      <button class="right" @click="() => fin()">x1 | Warp x1</button>
+      <button class="right" @click="() => multi()">x10 | Warp x10</button>
     </div>
   
   </div>
 </template>
 
 <script setup>
+
 import { ref } from 'vue';
 import { acheron, luocha, LC1, LC2, } from '@/stores/warp';
+import { characters, lightCones } from '@/components/CharacterList.vue';
 let count = 0; 
 
 const history = ref(false);
@@ -278,7 +278,8 @@ const openpage = (bannername) => {
 };
 
 const pulllogic = () => {
-  let result;
+  let result; 
+
   if (currentpage.value === "Acheron") {
     if (count === 9) {
       const fourfive = Math.floor(Math.random() * 5100) + 1;
@@ -312,40 +313,41 @@ const pulllogic = () => {
     } else {
       const reg = Math.floor(Math.random() * 1000) + 1;
       if (reg <= 6) {
-        const fourfive = Math.floor(Math.random() * 5100) + 1;
-        if (fourfive <= 306) {
-          const winloss = Math.floor(Math.random() * 2) + 1;
-          if (winloss === 1) {
-            result = "Acheron";
-          } else {
-            const lossarr = [...acheron[0].loss];
-            const losswho = Math.floor(Math.random() * lossarr.length);
-            result = lossarr[losswho];
-          }
-        }
-      } else if (reg > 6 && reg <= 51) {
-        const rateup = Math.floor(Math.random() * 76) + 1;
-        if (rateup <= 38) {
-          const allfour = [...acheron[0].fourstarchara, ...acheron[0].fourstarlc];
-          const which = Math.floor(Math.random() * allfour.length);
-          result = allfour[which];
-        } else {
-          const whichrate = Math.floor(Math.random() * 3) + 1;
-          if (whichrate === 1) {
-            result = "Gallagher";
-          } else if (whichrate === 2) {
-            result = "Pela";
-          } else {
-            result = "Dan Heng";
-          }
-        }
-        count = 0; 
+  const fourfive = Math.floor(Math.random() * 5100) + 1;
+  if (fourfive <= 306) {
+    const winloss = Math.floor(Math.random() * 2) + 1;
+    if (winloss === 1) {
+      result = "Acheron";
+    } else {
+      const lossarr = [...acheron[0].loss];
+      const losswho = Math.floor(Math.random() * lossarr.length);
+      result = lossarr[losswho];
+    }
+  } else {
+    const rateup = Math.floor(Math.random() * 76) + 1;
+    if (rateup <= 38) {
+      const allfour = [...acheron[0].fourstarchara, ...acheron[0].fourstarlc];
+      const which = Math.floor(Math.random() * allfour.length);
+      result = allfour[which];
+    } else {
+      const whichrate = Math.floor(Math.random() * 3) + 1;
+      if (whichrate === 1) {
+        result = "Gallagher";
+      } else if (whichrate === 2) {
+        result = "Pela";
       } else {
-        const allthree = [...acheron[0].threestars];
-        const whichthree = Math.floor(Math.random() * allthree.length);
-        result = allthree[whichthree];
-        count++; 
+        result = "Dan Heng";
       }
+    }
+    count = 0; 
+  }
+} else {
+  const allthree = [...acheron[0].threestars];
+  const whichthree = Math.floor(Math.random() * allthree.length);
+  result = allthree[whichthree];
+  count++;
+}
+
     }
   } else if (currentpage.value === "Luocha" ) {
     if (count === 9) {
@@ -380,43 +382,43 @@ const pulllogic = () => {
     } else {
       const reg = Math.floor(Math.random() * 1000) + 1;
       if (reg <= 6) {
-        const fourfive = Math.floor(Math.random() * 5100) + 1;
-        if (fourfive <= 306) {
-          const winloss = Math.floor(Math.random() * 2) + 1;
-          if (winloss === 1) {
-            result = "Luocha";
-          } else {
-            const lossarr = [...luocha[0].loss];
-            const losswho = Math.floor(Math.random() * lossarr.length);
-            result = lossarr[losswho];
-          }
-        }
-      } else if (reg > 6 && reg <= 51) {
-        const rateup = Math.floor(Math.random() * 76) + 1;
-        if (rateup <= 38) {
-          const allfour = [...luocha[0].fourstarchara, ...luocha[0].fourstarlc];
-          const which = Math.floor(Math.random() * allfour.length);
-          result = allfour[which];
-        } else {
-          const whichrate = Math.floor(Math.random() * 3) + 1;
-          if (whichrate === 1) {
-            result = "Gallagher";
-          } else if (whichrate === 2) {
-            result = "Pela";
-          } else {
-            result = "Dan Heng";
-          }
-        }
-        count = 0; 
+  const fourfive = Math.floor(Math.random() * 5100) + 1;
+  if (fourfive <= 306) {
+    const winloss = Math.floor(Math.random() * 2) + 1;
+    if (winloss === 1) {
+      result = "Luocha";
+    } else {
+      const lossarr = [...luocha[0].loss];
+      const losswho = Math.floor(Math.random() * lossarr.length);
+      result = lossarr[losswho];
+    }
+  } else {
+    const rateup = Math.floor(Math.random() * 76) + 1;
+    if (rateup <= 38) {
+      const allfour = [...luocha[0].fourstarchara, ...luocha[0].fourstarlc];
+      const which = Math.floor(Math.random() * allfour.length);
+      result = allfour[which];
+    } else {
+      const whichrate = Math.floor(Math.random() * 3) + 1;
+      if (whichrate === 1) {
+        result = "Gallagher";
+      } else if (whichrate === 2) {
+        result = "Pela";
       } else {
-        const allthree = [...luocha[0].threestars];
-        const whichthree = Math.floor(Math.random() * allthree.length);
-        result = allthree[whichthree];
-        count++; 
+        result = "Dan Heng";
       }
     }
+    count = 0; 
   }
-  else if (currentpage === "LC1") {
+} else {
+  const allthree = [...acheron[0].threestars];
+  const whichthree = Math.floor(Math.random() * allthree.length);
+  result = allthree[whichthree];
+  count++;
+}
+    }
+  }
+  if (currentpage.value === "LC1") {
     if (count === 9) {
       const fourfive = Math.floor(Math.random() * 5100) + 1;
       if (fourfive <= 306) {
@@ -439,9 +441,9 @@ const pulllogic = () => {
           if (whichrate === 1) {
             result = "Good Night and Sleep Well";
           } else if (whichrate === 2) {
-            result = "Post-Op Conversation";
+            result = "Pela";
           } else {
-            result = "Subscribe for More!";
+            result = "Dan Heng";
           }
         }
       }
@@ -449,43 +451,42 @@ const pulllogic = () => {
     } else {
       const reg = Math.floor(Math.random() * 1000) + 1;
       if (reg <= 6) {
-        const fourfive = Math.floor(Math.random() * 5100) + 1;
-        if (fourfive <= 306) {
-          const winloss = Math.floor(Math.random() * 2) + 1;
-          if (winloss === 1) {
-            result = "Along the Passing Shore";
-          } else {
-            const lossarr = [...LC1[0].loss];
-            const losswho = Math.floor(Math.random() * lossarr.length);
-            result = lossarr[losswho];
-          }
-        }
-      } else if (reg > 6 && reg <= 51) {
-        const rateup = Math.floor(Math.random() * 76) + 1;
-        if (rateup <= 38) {
-          const allfour = [...LC1[0].fourstarchara, ...LC1[0].fourstarlc];
-          const which = Math.floor(Math.random() * allfour.length);
-          result = allfour[which];
-        } else {
-          const whichrate = Math.floor(Math.random() * 3) + 1;
-          if (whichrate === 1) {
-            result = "Good Night and Sleep Well";
-          } else if (whichrate === 2) {
-            result = "Post-Op Conversation";
-          } else {
-            result = "Subscribe for More!";
-          }
-        }
-        count = 0; 
+  const fourfive = Math.floor(Math.random() * 5100) + 1;
+  if (fourfive <= 306) {
+    const winloss = Math.floor(Math.random() * 2) + 1;
+    if (winloss === 1) {
+      result = "Acheron";
+    } else {
+      const lossarr = [...acheron[0].loss];
+      const losswho = Math.floor(Math.random() * lossarr.length);
+      result = lossarr[losswho];
+    }
+  } else {
+    const rateup = Math.floor(Math.random() * 76) + 1;
+    if (rateup <= 38) {
+      const allfour = [...acheron[0].fourstarchara, ...acheron[0].fourstarlc];
+      const which = Math.floor(Math.random() * allfour.length);
+      result = allfour[which];
+    } else {
+      const whichrate = Math.floor(Math.random() * 3) + 1;
+      if (whichrate === 1) {
+        result = "Good Night and Sleep Well";
+      } else if (whichrate === 2) {
+        result = "Post-Op Conversation";
       } else {
-        const allthree = [...LC1[0].threestars];
-        const whichthree = Math.floor(Math.random() * allthree.length);
-        result = allthree[whichthree];
-        count++; 
+        result = "Subscribe for More!";
       }
     }
+    count = 0; 
   }
-  else if (currentpage === "LC2") {
+} else {
+  const allthree = [...LC1[0].threestars];
+  const whichthree = Math.floor(Math.random() * allthree.length);
+  result = allthree[whichthree];
+  count++;
+}
+  }}
+  else {
     if (count === 9) {
       const fourfive = Math.floor(Math.random() * 5100) + 1;
       if (fourfive <= 306) {
@@ -554,17 +555,28 @@ const pulllogic = () => {
       }
     }
   }
-  return result;
+  return result
 };
 
-const ten = (arr) => {
-  for (let i = 0; i < 10; i++) {
-    pulllogic(arr)
+const fin = (character) => {
+  const ap = pulllogic(character)
+  wishHistory.value.push(ap);
+  console.log(ap);
+  const characterindex = characters.findIndex((char) => char.name === ap);
+  if (characterindex !== -1) {
+    characters[characterindex].obtained = true;
+  }
+  const lightconeindex = lightCones.findIndex((char) => char.name === ap)
+  if (lightconeindex !== -1) {
+    lightCones[lightconeindex].obtained = true; 
   }
 }
 
-const rng = pulllogic();
-console.log(rng);
+const multi = (character) => {
+  for (let i = 0; i < 10; i++) {
+    fin(character)
+  }
+}
 
 </script>
 
@@ -581,12 +593,11 @@ console.log(rng);
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  background-color: white;
+  background-color: #25233B;
   border: 2px solid black;
   border-radius: 2px;
-  color: black;
-  height: 80vh; 
-  width: 80vw; 
+  height: 80vh;
+  width: 80vw;
   overflow: auto;
 }
 
@@ -609,22 +620,30 @@ console.log(rng);
   border: none;
   font-size: 1.5em;
   cursor: pointer;
+  color: white;
 }
 
-.left {
+.left, .right {
   border: solid #6a6a6a;
   border-radius: 10px;
+  color: black;
+}
+
+.top{
+  color: white;
 }
 
 .table {
   border-collapse: collapse;
   width: 100%;
+  color: black;
 }
 
 .table th,
 .table td {
   border: 1px solid #ddd;
   padding: 8px;
+  color: white;;
 }
 
 .sidebar {
@@ -639,7 +658,7 @@ console.log(rng);
 .sidebar button {
   display: block;
   background-color: inherit;
-  color: black;
+  color: black; 
   padding: 22px 16px;
   width: 100%;
   border: none;
