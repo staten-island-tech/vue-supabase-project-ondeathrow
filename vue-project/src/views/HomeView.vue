@@ -36,7 +36,7 @@ async function insertData() {
   const {data: insertData, error: insertError} = await supabase 
   .from('users')
   .insert([
-    { user_name: 'email.value', pass_word: 'password.value' },
+    { user_name: 'email.value', user_pass: 'password.value' },
   ])
   if (insertError) {
     console.log(insertError)
@@ -67,7 +67,7 @@ async function register() {
   async function login() {
   try {
     console.log("abc");
-    const { data, error } = await supabase.auth.signInWithPassword({
+    const { data: insertData, error: insertError } = await supabase.auth.signInWithPassword({
       email: user.value,
       password: login.value,
     });
