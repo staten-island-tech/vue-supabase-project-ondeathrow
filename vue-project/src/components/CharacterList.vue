@@ -673,6 +673,7 @@ export const characters = [
   {
     name: "Yanqing",
     rarity: 5,
+    rarityicon: fiveStar,
     path: "The Hunt",
     fullBody: "https://cdn.starrailstation.com/assets/b659b322647073771c900434c7e1f1417b8702e184c535f166ab9ed5ddf3245c.webp",
     desc: `General Jing Yuan's retainer. A gifted swordsman who hasn't even come of age. No one can best Yanqing when he holds a sword in hand.`,
