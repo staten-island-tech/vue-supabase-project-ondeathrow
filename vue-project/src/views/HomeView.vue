@@ -14,7 +14,7 @@
                   <h1>sign in over here</h1> 
                   <form @submit.prevent="login("› 
                         ‹label for="email"›email‹/label>
-                        <input type="loginemail" v-model="user" id="loginemail" /> <label for="password"›password‹/labels
+                        <input type="loginemail" v-model="user" id="loginemail" /> <label for="password"›password‹/label>
                         <input type= "loginpassword" v-model="loginpass" id="loginpassword" /> 
                         <button type="submit"›Sign In‹/buttons
                   </form> 
