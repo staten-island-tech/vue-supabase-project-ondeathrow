@@ -1,22 +1,23 @@
 <template> 
-      ‹div> 
-            ‹div class = "signup">
+      <div> 
+            <div class="signup">
                   <h1>sign up over here</h1> 
-                  <form @submit.prevent "register")
-                        ‹label for="email"›email‹/label›
-                        <input type="email" v-model="email" id="email" /> ‹label for="password"›password‹/label›
+                  <form @submit.prevent="register()">
+                        <label for="email">email</label>
+                        <input type="email" v-model="email" id="email" /> <label for="password">password</label>
                         <input type="password" v-model="password" id="password" /> 
-                        ‹button type="submit"›Sign Up‹/button>
+                        <button type="submit">Sign Up</button>
                   </form> 
             </div>
       
-            ‹div class-"signin"› 
+            <div class="signin"> 
                   <h1>sign in over here</h1> 
-                  <form @submit.prevent="login("› 
-                        ‹label for="email"›email‹/label>
-                        <input type="loginemail" v-model="user" id="loginemail" /> <label for="password"›password‹/label>
+                  <form @submit.prevent="login()"> 
+                        <label for="email">email</label>
+                        <input type="loginemail" v-model="user" id="loginemail" /> 
+                        <label for="password">password</label>
                         <input type= "loginpassword" v-model="loginpass" id="loginpassword" /> 
-                        <button type="submit"›Sign In‹/buttons
+                        <button type="submit">Sign In</button>
                   </form> 
             </div> 
       </div> 
