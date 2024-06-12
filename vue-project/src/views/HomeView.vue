@@ -21,9 +21,9 @@
             </div> 
       </div> 
 </template>
+                              
 <script setup>
-      
-import { supabase } from "../lib/supabaseclient.js" 
+import { supabase } from "../lib/supabaseClient.js" 
 import { ref } from "vue" 
 const email = ref(""); 
 const password = ref("");
@@ -31,40 +31,43 @@ const user = ref("");
 const loginpass = ref ("") ;
                        
 async function register() {
-console. log("hii").
+console.log("hii");
 try {
-const { error } = await supabase.auth. signUp({
-      async function register) {
-console.log ("hii");
-try {
-const { error } = await supabase.auth.signUp({
-email: email.value, password: password. value,
-3;
-console. log (email.value) ;
-await insertData;
-if (error) throw error;
-catch (error) {
-console. error (error);
+   const { error } = await supabase.auth.signUp({
+      email: email.value, 
+      password: password.value,
+   });
+   console.log(email.value);
+   await insertData();
+   if (error) throw error;
+   } catch (error) {
+   console.error(error);
+   }
 }
-async function login.) {
-try
-console.log ("abc");
-const data: insertData, error: insertError
-await supabase.auth. signInkithPassword {
-email: user. value, password: loganpass. value,
-console. log (user ‚value);
-console.log (loginpass .value) ;
-console. log data;
-catch insertError)
-{
-console. log (insertError);
-async function insertData0 {
-console.log ("add");
-try {
-const error ) = await supabase
-•from("users")
-insert (If user_name: email,value, user_pass: password.value 31) select ;
-console. log (email.value);
-console. log password.value);
-catch (error) {
-console.error (error).
+
+async function login() {
+      try {
+            console.log ("abc");
+            const {data: insertData, error: insertError}= 
+             await supabase.auth.ignInWithPassword({
+              email: user.alue, 
+              password: loginpass.value,
+             });
+            console.log (user.value);
+            console.log (loginpass.value);
+            console.log (data);
+      }     catch (insertError){
+            console. log (insertError);
+async function insertData() {
+      console.log("add");
+      try {
+       const error ) = await supabase
+            .from("users")
+            .insert ([{ user_name: email.value, user_pass: password.value }]) 
+            .select();
+      console. log (email.value);
+      console. log password.value);
+      } catch (error) {
+      console.error(error);
+     }
+}
