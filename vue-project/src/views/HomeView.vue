@@ -23,12 +23,12 @@
 </template>
 <script setup>
       
-import { supabase } from "… ./11b/supabaseclient.js" 
+import { supabase } from "../lib/supabaseclient.js" 
 import { ref } from "vue" 
-const email - ref(*"); 
-const password - ref("");
-const user - ref("");
-const loginpass - ref ("*) ;
+const email = ref(""); 
+const password = ref("");
+const user = ref("");
+const loginpass = ref ("") ;
                        
 async function register() {
 console. log("hii").
