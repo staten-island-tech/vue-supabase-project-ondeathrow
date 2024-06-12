@@ -72,3 +72,5 @@ async function insertData() {
       console.error(error);
      }
 }
+
+      </script>
