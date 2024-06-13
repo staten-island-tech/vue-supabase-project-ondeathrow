@@ -16,6 +16,17 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
 </template>
 
+<script setup>
+import {useUserStore} from './stores/user'
+  export default {
+    setup () {
+      const userStore = useUserStore()
+
+      return {userStore}
+    }
+  }
+</script>
+
 <style scoped>
 body {
   margin: 0;
