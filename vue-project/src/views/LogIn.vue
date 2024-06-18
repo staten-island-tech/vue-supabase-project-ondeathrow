@@ -83,5 +83,5 @@ async function insertData() {
   color: #352D39
 }
 .button{
-    color: #000000
+    color: #3F2A2B
 </style>  
