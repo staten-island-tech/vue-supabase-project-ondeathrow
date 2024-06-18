@@ -711,6 +711,7 @@ const multi = (character) => {
   width: 150px;
   color: white;
  }
+
  </style>
  
  
