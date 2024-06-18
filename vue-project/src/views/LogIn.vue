@@ -77,3 +77,12 @@ async function insertData() {
     }
 }
 </script>
+
+<style scoped>
+.signup{
+  color: #ffffff
+}
+.signin{
+  color: #ffffff
+}
+</style>  
