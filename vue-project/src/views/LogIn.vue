@@ -4,13 +4,9 @@
             <h1>sign up over here</h1> 
             <form @submit.prevent="register()">
                 <label for="email">email</label>
-                <div class="signupemail">
-                <input type="email" v-model="email" id="email" /> 
-                </div>
+                <input class type="email" v-model="email" id="email" /> 
                 <label for="password">password</label>
-                <div class="signuppass">
-                <input type="password" v-model="password" id="password" /> 
-                </div>
+                <input class type="password" v-model="password" id="password" /> 
                 <button type="submit">Sign Up</button>
             </form> 
         </div>
