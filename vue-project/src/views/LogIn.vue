@@ -4,9 +4,9 @@
             <h1>sign up over here</h1> 
             <form @submit.prevent="register()">
                 <label for="email">email</label>
-                <input class type="email" v-model="email" id="email" /> 
+                <input class="email" type="email" v-model="email" id="email" /> 
                 <label for="password">password</label>
-                <input class type="password" v-model="password" id="password" /> 
+                <input class="password" type="password" v-model="password" id="password" /> 
                 <button type="submit">Sign Up</button>
             </form> 
         </div>
@@ -15,13 +15,9 @@
             <h1>sign in over here</h1> 
             <form @submit.prevent="login()"> 
                 <label for="loginemail">email</label>
-                <div class="signinemail">
-                <input type="email" v-model="user" id="loginemail" />
-                </div>
+                <input class="email" type="email" v-model="user" id="loginemail" />
                 <label for="loginpassword">password</label>
-                <div class="signinpass">
-                <input type="password" v-model="loginpass" id="loginpassword" />
-                </div>
+                <input class="password" type="password" v-model="loginpass" id="loginpassword" />
                 <button type="submit">Sign In</button>
             </form> 
         </div> 
@@ -83,16 +79,10 @@ async function insertData() {
 </script>
 
 <style scoped>
-.signupemail{
+.email{
   color: #352D39
 }
-.signuppass{
-  color: #352D39
-}
-.signinemail{
-  color: #352D39
-}
-.signinpass{
+.password{
   color: #352D39
 }
 </style>  
