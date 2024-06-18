@@ -78,11 +78,12 @@ async function insertData() {
 }
 </script>
 
-<style scoped>
-.imput{
-  color: #352D39
+<style<style scoped>
+.imput {
+  color: #352D39;
 }
-.smacker{
-    color: #3F2A2B
+
+.smacker {
+  color: #3F2A2B; 
 }
-</style>  
+</style>
