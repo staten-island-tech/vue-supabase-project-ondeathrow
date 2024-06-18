@@ -25,7 +25,7 @@
 </template>
                               
 <script setup>
-import { supabase } from "../lib/supabaseClient.js" 
+import { supabase } from "../lib/supabaseClient.js"
 import { ref } from "vue" 
 
 const email = ref(""); 

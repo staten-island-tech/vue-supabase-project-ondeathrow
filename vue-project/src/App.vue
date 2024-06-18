@@ -1,6 +1,3 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
 
 <template>
   <div>
@@ -8,6 +5,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav>
         <RouterLink to="/">Wish</RouterLink>
         <RouterLink to="/character">Index</RouterLink>
+        <RouterLink to="/login">Login</RouterLink>
       </nav>
     </header>
     <div class="routerstuff">
@@ -16,7 +14,8 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
 </template>
 
-<script setup>
+<script >
+import { RouterLink, RouterView } from 'vue-router'
 import {useUserStore} from './stores/user'
   export default {
     setup () {
