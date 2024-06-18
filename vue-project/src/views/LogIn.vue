@@ -84,4 +84,5 @@ async function insertData() {
 }
 .smacker{
     color: #3F2A2B
+}
 </style>  
