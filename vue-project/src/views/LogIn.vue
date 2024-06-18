@@ -7,7 +7,7 @@
                 <input class="imput" type="email" v-model="email" id="email" /> 
                 <label for="password">password</label>
                 <input class="imput" type="password" v-model="password" id="password" /> 
-                <button class="button" type="submit">Sign Up</button>
+                <button class="smacker" type="submit">Sign Up</button>
             </form> 
         </div>
   
@@ -18,7 +18,7 @@
                 <input class="imput" type="email" v-model="user" id="loginemail" />
                 <label for="loginpassword">password</label>
                 <input class="imput" type="password" v-model="loginpass" id="loginpassword" />
-                <button class="button" type="submit">Sign In</button>
+                <button class="smacker" type="submit">Sign In</button>
             </form> 
         </div> 
     </div> 
@@ -82,6 +82,6 @@ async function insertData() {
 .imput{
   color: #352D39
 }
-.button{
+.smacker{
     color: #3F2A2B
 </style>  
