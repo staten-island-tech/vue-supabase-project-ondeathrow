@@ -80,9 +80,9 @@ async function insertData() {
 
 <style scoped>
 .signup{
-  color: #000000
+  color: #352D39
 }
 .signin{
-  color: #000000
+  color: #352D39
 }
 </style>  
